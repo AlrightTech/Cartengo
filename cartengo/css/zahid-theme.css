@@ -4,8 +4,8 @@
 }
 
 .sellcars-cards-icons {
-    width: 236px;
-    height: 236px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
 }
 
@@ -15,8 +15,10 @@
     font-size: 16px;
     text-align: center;
 }
-.sell-cars-lastdesc{
-    margin-top: -20px;
+
+
+.sell-yourcar-section{
+    background-color: #003E15;
 }
 
 /* Query for mobile screens */
