@@ -1,0 +1,30 @@
+/* zahid khattak id - 0396 starts here */
+.Gray-bg-banner {
+    background-color: #E9E9E9;
+}
+
+.sellcars-cards-icons {
+    width: 236px;
+    height: 236px;
+    object-fit: cover;
+}
+
+.sellcars-cards-description {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.sell-cars-lastdesc{
+    margin-top: -20px;
+}
+
+/* Query for mobile screens */
+@media (min-width:320px) and (max-width:768px) {
+    .sell-cars-rightarrow{
+        transform: rotate(90deg);
+        /* margin-left: 50%; */
+    }
+}
+
+/* zahid khattak id - 0396 ends here */
