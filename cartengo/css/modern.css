@@ -40576,10 +40576,11 @@ body {
   height: 470px;
 }
 
-.carousel-indicators {
+
 
   /* top: 411px !important; */
 }
+
 
 .first-carousel-indicators {
   top: 411px !important;
@@ -41155,3 +41156,20 @@ body {
   left: 6px;
   width: 12px;
 }
+
+
+
+
+
+/* Query for mobile screens */
+@media (min-width: 320px) and (max-width: 768px) {
+ 
+
+.social-icons-box:hover{
+  background-color: transparent !important;
+  border: 1px solid black;
+  img{
+      filter: invert(1);
+  }
+}
+/* zahid khattak id - 0396 ends here */
