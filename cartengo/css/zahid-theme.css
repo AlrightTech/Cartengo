@@ -1,0 +1,52 @@
+/* zahid khattak id - 0396 starts here */
+.Gray-bg-banner {
+    background-color: #e9e9e9;
+}
+
+.sellcars-cards-icons {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.sellcars-cards-description {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sell-yourcar-section {
+    background-color: #003e15;
+}
+
+.car-sell-apply {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.Sellcars-howitsworks {
+    position: absolute;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 49.98px;
+    letter-spacing: 0%;
+}
+
+/* Query for mobile screens */
+@media (min-width: 320px) and (max-width: 768px) {
+    .sell-cars-rightarrow {
+        transform: rotate(90deg);
+        /* margin-left: 50%; */
+    }
+
+    .howitsworks-bg-img {
+        width: 100% !important;
+    }
+}
+
+/* zahid khattak id - 0396 ends here */
