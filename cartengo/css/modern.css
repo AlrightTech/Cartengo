@@ -41340,10 +41340,7 @@ body {
   height: 470px;
 }
 
-.carousel-indicators {
 
-  /* top: 411px !important; */
-}
 .first-carousel-indicators {
   top: 411px !important;
 }
@@ -41847,13 +41844,22 @@ body {
     letter-spacing: 0%;
     
 }
+
+
+
+/* zahid khattak id - 0396 starts here */
 /* Query for mobile screens */
 @media (min-width: 320px) and (max-width: 768px) {
-  
-
   .howitsworks-bg-img {
       width: 100% !important;
   }
 }
 
+.social-icons-box:hover{
+  background-color: transparent !important;
+  border: 1px solid black;
+  img{
+      filter: invert(1);
+  }
+}
 /* zahid khattak id - 0396 ends here */
