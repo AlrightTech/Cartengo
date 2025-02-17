@@ -41479,7 +41479,7 @@ body {
     
     font-size: 18px !important;
     
-
+  }
   .header-title-down {
     font-size: 30px;
     line-height: 35.51px;
@@ -41819,3 +41819,41 @@ body {
   padding: 15px;
   border-radius: 50%;
 }
+
+.Sellcars-howitsworks {
+  position: absolute;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 49.98px;
+  letter-spacing: 0%;
+}
+.orange-oval1{
+  max-width: 450px;
+  width: 100% ;
+}
+
+.car-auctions-p {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333333;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58.51px;
+    letter-spacing: 0%;
+    
+}
+/* Query for mobile screens */
+@media (min-width: 320px) and (max-width: 768px) {
+  
+
+  .howitsworks-bg-img {
+      width: 100% !important;
+  }
+}
+
+/* zahid khattak id - 0396 ends here */
