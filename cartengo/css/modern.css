@@ -41172,4 +41172,30 @@ body {
       filter: invert(1);
   }
 }
+
+.Notification-icon{
+  width:fit-content !important;
+}
+
+.Bold-Para {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.Main-heading-Underline {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 37px;
+  border-bottom: 5px solid #ff6f00;
+}
+
+.Para-lighttext {
+  font-weight: 400;
+}
+.Cartengo-bold-list {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+}
 /* zahid khattak id - 0396 ends here */
