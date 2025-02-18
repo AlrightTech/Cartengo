@@ -40524,6 +40524,16 @@ div.dataTables_wrapper span.select-item {
     height: 150px !important;
   }
 
+  .subs-head {
+
+    font-size: 30px !important;
+  }
+
+  .subs-para {
+
+    font-size: 18px !important;
+  }
+
 }
 
 @media (max-width: 554px) {
@@ -40534,6 +40544,11 @@ div.dataTables_wrapper span.select-item {
   .header-subtitle {
     font-size: 28px;
     line-height: 35px;
+  }
+
+  .subscribe-input-field {
+
+    font-size: 13px !important;
   }
 }
 
@@ -40696,11 +40711,25 @@ body {
     left: 22.5% !important;
 
   }
+
+
+}
+
+@media (max-width: 992px) {
   .car-auctions-p {
-   
-    left: 22.5% !important;
-   
+
+    left: 30.5% !important;
+
   }
+
+}
+
+@media (max-width: 769px) {
+  .car-auctions-p {
+    left: 41.5% !important;
+  }
+
+
 }
 
 @media (max-width: 768px) {
@@ -40719,9 +40748,6 @@ body {
     left: 41.5% !important;
   }
 
-  .car-auctions-p {
-    left: 41.5% !important;
-}
 
   .header-title-down {
 
@@ -40744,7 +40770,7 @@ body {
   .brandheader-logoo {
     width: 70px !important;
     height: 70px !important;
-}
+  }
 }
 
 
@@ -40754,9 +40780,9 @@ body {
   .car-auctions-p {
     left: 46.5% !important;
     font-size: 32px !important;
-}
+  }
 
-  
+
 }
 
 
@@ -40924,17 +40950,17 @@ body {
   font-size: 12px;
 }
 
-.car-time11{
+.car-time11 {
   font-family: Montserrat, sans-serif;
-  bottom: 15px;
-  left: 15px;
+  bottom: 4px;
+  left: 5px;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 10px;
   background: #FF6F00;
   color: #FFFDFD;
   font-weight: 600;
   font-size: 7.5px;
-  padding-block: 12px;
+  padding-block: 2.4px;
 }
 
 
@@ -40943,8 +40969,8 @@ body {
   transform: rotate(16.44deg);
   transform-origin: center;
   top: 13px;
-    right: 6px;
-  
+  right: 6px;
+
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 10px;
   background: #FF6F00;
@@ -40997,6 +41023,7 @@ body {
   color: #FFFFFF;
   font-family: Montserrat, sans-serif;
 }
+
 .marquee {
   display: inline-block;
   white-space: nowrap;
@@ -41005,12 +41032,14 @@ body {
 
 @keyframes marquee-scroll {
   from {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
+
   to {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
+
 .subscribe-sec {
   background: #003E15;
 
@@ -41181,13 +41210,27 @@ body {
 .car-auctions-p {
   position: absolute;
   top: 50%;
-  left: 18.5%;
+  left: 18%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #333333;
+  font-family: Montserrat;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 48px;
   line-height: 58.51px;
+  letter-spacing: 0%;
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .social-icons-box:hover {
+    background-color: transparent !important;
+    border: 1px solid black;
+
+    img {
+      filter: invert(1);
+    }
+ 
 }
 
 
@@ -41264,18 +41307,213 @@ body {
   img {
     filter: invert(1);
   }
-}}
+}
 
 .video-closing-btn {
   position: absolute;
   top: 27px;
-right: 27px;
+  right: 27px;
   z-index: 10;
   background-color: white;
   border-radius: 50%;
   padding: 5px;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .car-auctions-p {
+
+    left: 23% !important;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 496px) {
+  .car-auctions-p {
+
+    left: 44% !important;
+  }
+}
+
+.toyota-card1 {
+  font-size: 13.5px !important;
+}
+
+.toyota-card11 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #666666;
+}
+
+.auction-endng-son-p {
+  color: #333333;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.text-overlay-exterior {
+  font-family: Montserrat, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.realizer-bg {
+  background: #E2E2E2;
+
+}
+
+.subscribe-input-fielddd {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12.5px;
+  color: #666666;
+
+}
+
+.favo-txt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #666666;
+
+}
+
+.favo-txt1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 11.5px;
+  color: #666666;
+
+}
+
+.historico-txt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12.8px;
+}
+
+
+.grater-sign-bg {
+  background: #003900;
+  width: 14px;
+  height: 14px;
+}
+
+.grater-sign-bg1 {
+  background: #003900;
+  width: 21px;
+  height: 21px;
+}
+
+.historico-txt1 {
+  background-color: #79837C;
+
+  letter-spacing: 3px;
+}
+
+.cars-infoo-label {
+  background-color: #004d22;
+  color: white;
+  /* padding: 10px 15px; */
+  /* border-radius: 20px; */
+  /* font-weight: bold; */
+  min-width: 120px;
+  text-align: center;
+}
+
+.cars-infoo-container {
+  background-color: #d3d3d3;
+  /* border-radius: 10px; */
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.equipmnto-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.equipmnto-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.equipmnto-item::before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  font-size: 8px;
+  /* Smaller bullet */
+  color: black;
+}
+
+.equip-item {
+  font-size: 13.5px !important;
+}
+
+.tol-tip-gren:hover {
+  background-color: rgba(0, 66, 37, 1);
+}
+
+.tol-tip-gren {
+  padding: 7px 10px 10px 10px;
+}
+
+.filter-container-fabricante {
+  background-color: #E6E6E6;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.fabricante-pill {
+  background-color: #004225;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.brand-name {
+  flex-grow: 1;
+  text-align: center;
+  color: #4A4A4A;
+  margin-right: 120px;
+  /* This helps center the text by offsetting the width of fabricante-pill */
+}
+
+@media (max-width: 576px) {
+  .fabricante-pill {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    margin-right: 90px;
+    /* Adjusted for smaller screens */
+  }
+}
 
 
 
