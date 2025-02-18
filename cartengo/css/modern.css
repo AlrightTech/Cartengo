@@ -40714,7 +40714,10 @@ body {
 
   }
 
-
+  .brandheader-logoo {
+    width: 70px !important;
+    height: 70px !important;
+}
 }
 
 @media (max-width: 430px) {
@@ -40868,6 +40871,12 @@ body {
   width: 30px;
 }
 
+.carar-orange-heart1 {
+  top: 7px;
+  left: 6px;
+  width: 12px;
+}
+
 .car-time1 {
   font-family: Montserrat, sans-serif;
   bottom: 15px;
@@ -40886,18 +40895,31 @@ body {
   font-size: 12px;
 }
 
-.car-time22 {
+.car-time11{
   font-family: Montserrat, sans-serif;
-  transform: rotate(16.44deg);
-  transform-origin: center;
-  top: 23px;
-  right: 9px;
+  bottom: 15px;
+  left: 15px;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 10px;
   background: #FF6F00;
   color: #FFFDFD;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 7.5px;
+  padding-block: 12px;
+}
+
+.car-time22 {
+  font-family: Montserrat, sans-serif;
+  transform: rotate(16.44deg);
+  transform-origin: center;
+  top: 13px;
+    right: 6px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+  background: #FF6F00;
+  color: #FFFDFD;
+  font-weight: 600;
+  font-size: 11px;
 }
 
 .car-time2 {
@@ -40943,7 +40965,20 @@ body {
   color: #FFFFFF;
   font-family: Montserrat, sans-serif;
 }
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 20s linear infinite;
+}
 
+@keyframes marquee-scroll {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
 .subscribe-sec {
   background: #003E15;
 
@@ -40971,12 +41006,14 @@ body {
 
 
 .subscribe-input-container {
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   padding: 16px 13px;
   display: flex;
   align-items: center;
   border: none;
+  justify-content: space-between;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -41124,21 +41161,21 @@ body {
     
 }
 
-
-
-/* zahid khattak id - 0396 starts here */
-/* Query for mobile screens */
 @media (min-width: 320px) and (max-width: 768px) {
-  .howitsworks-bg-img {
-      width: 100% !important;
-  }
-}
-
 .social-icons-box:hover{
   background-color: transparent !important;
   border: 1px solid black;
   img{
       filter: invert(1);
   }
+}}
+
+.video-closing-btn {
+  position: absolute;
+  top: 27px;
+right: 27px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
 }
-/* zahid khattak id - 0396 ends here */
