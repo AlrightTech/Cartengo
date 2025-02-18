@@ -2647,15 +2647,24 @@ textarea.form-control-lg {
   background-position: right 0.7rem center;
   background-repeat: no-repeat;
   background-size: 16px 12px;
-  border: 1px solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  color: #495057;
+
   display: block;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  line-height: 1.5;
+
+  
+
   padding: 0.25rem 2.1rem 0.25rem 0.7rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+  /* askdlad */
+   
+  border: 1px solid rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: "Montserrat", serif;
   width: 100%;
 }
 
@@ -2737,7 +2746,7 @@ textarea.form-control-lg {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: 1.79px solid rgba(0, 0, 0, 1);
   height: 1em;
   margin-top: 0.25em;
   -webkit-print-color-adjust: exact;
@@ -2759,14 +2768,14 @@ textarea.form-control-lg {
 }
 
 .form-check-input:focus {
-  border-color: #9dbeee;
-  box-shadow: 0 0 0 0.25rem rgba(59, 125, 221, 0.25);
+  border-color:none;
+  box-shadow:none;
   outline: 0;
 }
 
 .form-check-input:checked {
-  background-color: #3b7ddd;
-  border-color: #3b7ddd;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -2800,13 +2809,19 @@ textarea.form-control-lg {
 }
 
 .form-switch .form-check-input {
-  --bs-form-switch-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='rgba(0, 0, 0, 0.25)'/%3E%3C/svg%3E");
+  /* --bs-form-switch-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='rgba(0, 0, 0, 0.25)'/%3E%3C/svg%3E"); */
+  
+    --bs-form-switch-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.43736' cy='7.9647' r='7.17857' fill='black'/%3E%3C/svg%3E");
+   
+  
   background-image: var(--bs-form-switch-bg);
+
   background-position: 0;
   border-radius: 2em;
   margin-left: -2.5em;
   transition: background-position 0.15s ease-in-out;
-  width: 2em;
+  width: 4em;
+  height: 1.5em;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2814,9 +2829,14 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-
+/* 
 .form-switch .form-check-input:focus {
   --bs-form-switch-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%239dbeee'/%3E%3C/svg%3E");
+} */
+
+
+.form-switch .form-check-input:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.43736' cy='7.9647' r='7.17857' fill='black'/%3E%3C/svg%3E");
 }
 
 .form-switch .form-check-input:checked {
@@ -3647,20 +3667,20 @@ fieldset:disabled .btn {
 }
 
 .btn-dark {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #153d77;
-  --bs-btn-border-color: #153d77;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #385a8b;
-  --bs-btn-hover-border-color: #2c5085;
+  --bs-btn-color:rgba(0, 0, 0, 0.7) !important;
+  --bs-btn-bg: rgba(195, 195, 195, 1);
+  --bs-btn-border-color: rgba(195, 195, 195, 1);
+  --bs-btn-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: rgba(0, 0, 0, 0.7);
   --bs-btn-focus-shadow-rgb: 56, 90, 139;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #446492;
+  --bs-btn-active-color: rgba(0, 0, 0, 0.7);
+  --bs-btn-active-bg: transparent
   --bs-btn-active-border-color: #2c5085;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #153d77;
-  --bs-btn-disabled-border-color: #153d77;
+  --bs-btn-disabled-color: rgba(0, 0, 0, 0.7);
+  --bs-btn-disabled-bg: rgba(0, 0, 0, 0.7);
+  --bs-btn-disabled-border-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-outline-primary {
@@ -16448,7 +16468,7 @@ fieldset:disabled .btn {
 .btn-danger:hover:not(:disabled):not(.disabled),
 .btn-danger:not(:disabled):not(.disabled).active,
 .btn-danger:not(:disabled):not(.disabled):active,
-.btn-dark,
+
 .btn-dark.disabled,
 .btn-dark.focus,
 .btn-dark.hover:not(:disabled):not(.disabled),
@@ -16553,6 +16573,14 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+.btn-dark{
+  color: rgba(0, 0, 0, 0.7) !important;
+
+      font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    font-family: "Montserrat", serif;
+}
 .btn-primary.focus,
 .btn-primary.hover:not(:disabled):not(.disabled),
 .btn-primary:disabled,
@@ -38477,6 +38505,17 @@ body.tempusdominus-bootstrap-datetimepicker-widget-day-click {
   background: none;
 }
 
+
+.input-group {
+  position: relative;
+}
+
+.eyeicons{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 1000;
+}
 .input-group [data-toggle="datetimepicker"] {
   cursor: pointer;
 }
@@ -40515,6 +40554,16 @@ div.dataTables_wrapper span.select-item {
     height: 150px !important;
   }
 
+  .subs-head {
+
+    font-size: 30px !important;
+  }
+
+  .subs-para {
+
+    font-size: 18px !important;
+  }
+
 }
 
 @media (max-width: 554px) {
@@ -40525,6 +40574,11 @@ div.dataTables_wrapper span.select-item {
   .header-subtitle {
     font-size: 28px;
     line-height: 35px;
+  }
+
+  .subscribe-input-field {
+
+    font-size: 13px !important;
   }
 }
 
@@ -40675,6 +40729,7 @@ body {
     font-size: 45px !important;
 
 
+
   }
 
   .car-auctions-p {
@@ -40682,6 +40737,25 @@ body {
     left: 22.5% !important;
 
   }
+
+
+}
+
+@media (max-width: 992px) {
+  .car-auctions-p {
+
+    left: 30.5% !important;
+
+  }
+
+}
+
+@media (max-width: 769px) {
+  .car-auctions-p {
+    left: 41.5% !important;
+  }
+
+
 }
 
 @media (max-width: 768px) {
@@ -40693,11 +40767,13 @@ body {
 
     font-size: 35px !important;
 
+
   }
 
   .car-auctions-p {
     left: 41.5% !important;
   }
+
 
   .header-title-down {
 
@@ -40707,7 +40783,8 @@ body {
   }
 }
 
-@media (max-width: 595px) {
+@media (max-width: 595px) 
+{
 
 
   .orange-banner {
@@ -40716,8 +40793,12 @@ body {
 
   }
 
-
+  .brandheader-logoo {
+    width: 70px !important;
+    height: 70px !important;
+  }
 }
+
 
 @media (max-width: 430px) {
 
@@ -40729,6 +40810,7 @@ body {
 
 
 }
+
 
 @media (max-width: 390px) {
 
@@ -40870,6 +40952,12 @@ body {
   width: 30px;
 }
 
+.carar-orange-heart1 {
+  top: 7px;
+  left: 6px;
+  width: 12px;
+}
+
 .car-time1 {
   font-family: Montserrat, sans-serif;
   bottom: 15px;
@@ -40888,18 +40976,34 @@ body {
   font-size: 12px;
 }
 
-.car-time22 {
+.car-time11 {
   font-family: Montserrat, sans-serif;
-  transform: rotate(16.44deg);
-  transform-origin: center;
-  top: 23px;
-  right: 9px;
+  bottom: 4px;
+  left: 5px;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 10px;
   background: #FF6F00;
   color: #FFFDFD;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 7.5px;
+  padding-block: 2.4px;
+}
+
+
+.car-time22 {
+  font-family: Montserrat, sans-serif;
+  transform: rotate(16.44deg);
+  transform-origin: center;
+  top: 13px;
+  right: 6px;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+  background: #FF6F00;
+  color: #FFFDFD;
+  font-weight: 600;
+  font-size: 11px;
+
 }
 
 .car-time2 {
@@ -40946,6 +41050,22 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .subscribe-sec {
   background: #003E15;
 
@@ -40973,12 +41093,14 @@ body {
 
 
 .subscribe-input-container {
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   padding: 16px 13px;
   display: flex;
   align-items: center;
   border: none;
+  justify-content: space-between;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -41114,14 +41236,62 @@ body {
 .car-auctions-p {
   position: absolute;
   top: 50%;
-  left: 18.5%;
+  left: 18%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333333;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+  letter-spacing: 0%;
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .social-icons-box:hover {
+    background-color: transparent !important;
+    border: 1px solid black;
+
+    img {
+      filter: invert(1);
+    }
+ 
+}
+
+
+.bgheadimg
+{
+  background:url('../img/sell your car images/strip-circle.png');
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.car-auctions-pp{
+ 
   text-align: center;
   color: #333333;
   font-weight: 700;
   font-size: 44px;
   line-height: 58.51px;
 }
+
+@media(max-width:768px)
+{
+  .car-auctions-pp {
+  font-size: 30px;
+  }
+}
+@media(max-width:554px)
+{
+  .car-auctions-pp {
+  font-size: 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
 
 .amount-tag {
   font-family: Montserrat, sans-serif;
@@ -41162,6 +41332,212 @@ body {
 
   img {
     filter: invert(1);
+  }
+}
+
+.video-closing-btn {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .car-auctions-p {
+
+    left: 23% !important;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 496px) {
+  .car-auctions-p {
+
+    left: 44% !important;
+  }
+}
+
+.toyota-card1 {
+  font-size: 13.5px !important;
+}
+
+.toyota-card11 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #666666;
+}
+
+.auction-endng-son-p {
+  color: #333333;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.text-overlay-exterior {
+  font-family: Montserrat, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.realizer-bg {
+  background: #E2E2E2;
+
+}
+
+.subscribe-input-fielddd {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12.5px;
+  color: #666666;
+
+}
+
+.favo-txt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #666666;
+
+}
+
+.favo-txt1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 11.5px;
+  color: #666666;
+
+}
+
+.historico-txt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12.8px;
+}
+
+
+.grater-sign-bg {
+  background: #003900;
+  width: 14px;
+  height: 14px;
+}
+
+.grater-sign-bg1 {
+  background: #003900;
+  width: 21px;
+  height: 21px;
+}
+
+.historico-txt1 {
+  background-color: #79837C;
+
+  letter-spacing: 3px;
+}
+
+.cars-infoo-label {
+  background-color: #004d22;
+  color: white;
+  /* padding: 10px 15px; */
+  /* border-radius: 20px; */
+  /* font-weight: bold; */
+  min-width: 120px;
+  text-align: center;
+}
+
+.cars-infoo-container {
+  background-color: #d3d3d3;
+  /* border-radius: 10px; */
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.equipmnto-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.equipmnto-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.equipmnto-item::before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  font-size: 8px;
+  /* Smaller bullet */
+  color: black;
+}
+
+.equip-item {
+  font-size: 13.5px !important;
+}
+
+.tol-tip-gren:hover {
+  background-color: rgba(0, 66, 37, 1);
+}
+
+.tol-tip-gren {
+  padding: 7px 10px 10px 10px;
+}
+
+.filter-container-fabricante {
+  background-color: #E6E6E6;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.fabricante-pill {
+  background-color: #004225;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.brand-name {
+  flex-grow: 1;
+  text-align: center;
+  color: #4A4A4A;
+  margin-right: 120px;
+  /* This helps center the text by offsetting the width of fabricante-pill */
+}
+
+@media (max-width: 576px) {
+  .fabricante-pill {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    margin-right: 90px;
+    /* Adjusted for smaller screens */
   }
 }
 
