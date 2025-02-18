@@ -296,13 +296,13 @@ sup {
 }
 
 a {
-  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  color: black !important;
   text-decoration: none;
 }
 
 a:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 a:not([href]):not([class]),
@@ -10362,7 +10362,7 @@ fieldset:disabled .btn {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: black !important;
 }
 
 .bg-black {
@@ -40630,10 +40630,6 @@ body {
   height: 470px;
 }
 
-
-
-/* top: 411px !important; */
-}
 
 
 .first-carousel-indicators {
