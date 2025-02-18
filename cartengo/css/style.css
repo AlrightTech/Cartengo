@@ -56,6 +56,60 @@ margin-inline: 5px;
     color: white;
 }
 
+
+
+/*##########> Config banner Start <############ */
+.detailbanner img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.configmain h2{
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    font-family: "Montserrat", serif;
+   
+}
+.configmain h3{
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    font-family: "Montserrat", serif;
+   
+}
+.configmain p{
+    color:rgba(51, 51, 51, 0.8);
+    font-size: 20px;
+    font-weight:500;
+    line-height: 24.38px;
+    font-family: "Montserrat", serif;
+   
+}
+
+.detailsmodak h2{
+    text-align: center;
+    color:rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight:700;
+    line-height: 24.38px;
+    font-family: "Montserrat", serif;
+}
+.detailsmodak p{
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    font-size: 16px;
+    font-weight:500;
+    line-height: 19.5px;
+    font-family: "Montserrat", serif;   
+}
+/*##########> Config banner End   <############ */
+
+
+
 @media(min-width:992px)
 {
     .w-lg-75{
