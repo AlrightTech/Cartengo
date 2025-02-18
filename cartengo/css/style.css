@@ -1,0 +1,92 @@
+.fravor{
+    background-color: rgba(249, 249, 249, 1);
+    border: 2px solid rgba(242, 242, 242, 1);
+}
+.fravor p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+
+    line-height:21.94px;
+
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.mainformsetting{
+    border: 1px solid rgba(77, 14, 14, 1);
+    border-radius: 40px;
+
+    padding: 30px;
+}
+
+.formheading{
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+   line-height: 21.94px;
+
+}
+
+
+.btn-toggle {
+    border-radius: 20px !important;
+ 
+    transition: all 0.3s;
+
+margin-inline: 5px;
+ 
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+   
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    font-family: "Montserrat", serif;
+    padding: 0.25rem 0.7rem;
+}
+.btn-check:checked + .btn-toggle {
+    background-color: black;
+    color: white;
+}
+.btn-check:hover + .btn-toggle {
+    background-color: black;
+    color: white;
+}
+
+@media(min-width:992px)
+{
+    .w-lg-75{
+        width: 75%;
+
+    }
+    .w-lg-50{
+        width: 50%;
+
+    }
+}
+
+
+@media(max-width:768px)
+{
+    .btn-group{
+        flex-wrap: wrap;
+    }
+    
+.mainformsetting{
+
+    padding: 20px;
+  border-radius: 20px;
+}
+}
+@media(max-width:554px)
+{
+    
+.mainformsetting{
+    
+    padding: 15px;
+  border-radius: 15px;
+}
+}
