@@ -13,7 +13,7 @@
 	<link href="./css/modern.css" rel="stylesheet">
 
 	<!-- favicon -->
-    <link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon">
 
 </head>
 
@@ -32,7 +32,8 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
+					<ul
+						class="navbar-nav align-items-center ms-lg-auto mb-2 mb-lg-0 justify-content-lg-center justify-content-start">
 						<li class="nav-item px-3">
 							<a class="nav-link active" aria-current="page" href="#">SUBASTAS</a>
 						</li>
@@ -45,12 +46,10 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">COMUNIDAD</a>
 						</li>
-
-
 					</ul>
-					<form class="d-flex">
+					<form class="d-flex flex-column flex-lg-row">
 						<!-- <input class="custom-form-control form-control py-3 rounded-4  me-2" type="search" placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search"> -->
-						<div class="position-relative me-2">
+						<div class="position-relative mb-lg-2 me-0 mb-lg-0 mb-3">
 							<input class="custom-form-control form-control py-3" type="search"
 								placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
 							<span class="position-absolute custm-serch-icon1 ps-3">
@@ -69,7 +68,6 @@
 							</span>
 						</div>
 
-
 						<button class="btn btn-secondary px-3 py-2 border-3" type="submit">INICIA SESIÓN</button>
 					</form>
 				</div>
@@ -82,45 +80,133 @@
 	<!--#############> Hero Section Start   <##################-->
 
 	<div class="container">
-        <div class="row">
+		<div class="row">
 			<!--#############> Left side Start   <##################-->
 
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="position-relative">
-                            <img src="img/photos/detail-pg-car.png" class="img-fluid w-100" alt="Unsplash">        
-                            <div class="amount-tag position-absolute d-flex justify-content-center align-items-center rounded-5 fs-1 px-4 py-1">$28,500</div>
-                        </div>
-                    </div>
-                </div>
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="position-relative">
+							<img src="img/photos/detail-pg-car.png" class="img-fluid w-100" alt="Unsplash">
+							<div
+								class="amount-tag position-absolute d-flex justify-content-center align-items-center rounded-5 fs-1 px-4 py-1">
+								$28,500</div>
+						</div>
+					</div>
+				</div>
 				<div class="row mt-lg-3">
 					<div class="col-lg-6 position-relative">
 						<img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">
-						<p class="text-overlay">Exterior</p>
-					</div>					
-					<div class="col-lg-6">
-						<img src="img/photos/detailpg-cars.png" class="img-fluid w-100" alt="Unsplash">        
+						<p class="text-overlay-exterior text-white">EXTERIOR</p>
+					</div>
+					<div class="col-lg-6 position-relative">
+						<img src="img/photos/detailpg-cars.png" class="img-fluid w-100" alt="Unsplash">
+						<p class="text-overlay-exterior text-white">INTERIOR</p>
 					</div>
 				</div>
 
-            </div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="realizer-bg">
+							<div class="container">
+								<div class="row pt-3 pb-2 mt-2 mb-3">
+									<div class="col-lg-6 ps-5">
+										<button class="subscribe-input-container py-2 px-4 rounded-5">
+											<span class="subscribe-input-fielddd text-start">Ingrese oferta aqui</span>
+											<svg width="18" height="15" viewBox="0 0 21 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z"
+													fill="#666666" />
+											</svg>
+										</button>
+										<p class="mb-0 favo-txt1 ps-4 mt-1">Monto minimo actual $29,000</p>
+									</div>
+									<div class="col-lg-3">
+										<button class="btn btn-primary px-3 py-2 border-2 rounded-5"
+											style="  font-family: Montserrat, sans-serif;"> Realizer Oferta</button>
+
+
+									</div>
+									<div class="col-lg-3">
+										<div class="d-flex mt-2">
+											<img src="./img/grey-unfilled-heart.svg" class="me-2">
+											<p class="mb-0 favo-txt1 ">Agregar a Favoicos</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex mb-2">
+					<h6 class="historico-txt me-2">Historico oficial</h6>
+					<div class="grater-sign-bg d-flex align-items-center justify-content-center rounded-circle me-2">
+						<img src="./img/greater-green-icon.svg" width="5" height="9">
+					</div>
+					<h6 class="historico-txt">
+						<span class="historico-txt1">CARFA</span><span>X</span>
+					</h6>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						
+
+							<div class="filter-container-fabricante">
+								<span class="fabricante-pill">Fabricante</span>
+								<span class="brand-name">Toyoto</span>
+							</div>
+					</div>
+					<div class="col-lg-6">
+
+					</div>
+				</div>
+
+				<div>
+					<div class="d-flex gap-3 align-items-center">
+						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle ">
+							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+						</div>
+						<p class="auction-endng-son-p mb-0">Equipamento</p>
+					</div>
+					<div>
+						<ul class="list-group ps-3 mt-3 mb-5">
+							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<button type="button" class="btn btn-secondary tol-tip-gren rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip" data-bs-title="Tu decides Una vez tu carro es aceptado, tú eliges el precio mínimo por el que estás dispuesto a vender. ¡Recuerda, es grComisiones claras, precios justos: Solo cobramos entre entre 2.5% y 4% al ganador de la subasta, sobre el monto final ofertado.">
+					<img src="./img/tol-tip-personicon.svg" >
+				</button>
+
+
+			</div>
 			<!--#############> Left side end   <##################-->
-			
+
 			<!--#############> Right side Start   <##################-->
-            <div class="col-lg-4">
+			<div class="col-lg-4">
 				<div class="row">
 					<div class="col-lg-12 mb-3">
-						
-                            <img src="img/photos/detailpg-cars (2).png" class="img-fluid w-100" alt="Unsplash">        
-                            
+
+						<img src="img/photos/detailpg-cars (2).png" class="img-fluid w-100" alt="Unsplash">
+
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						
-                            <img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">        
-                            
+
+						<img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">
+
 					</div>
 				</div>
 
@@ -130,34 +216,38 @@
 						<div class="card mb-0">
 							<div class="carar-container position-relative">
 								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-		
+
 								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg" class="carar-orange-heart1 position-absolute"
-									alt="Unsplash">
-								
+								<img src="img/photos/orange-unfilled-heart.svg"
+									class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
 								<!-- Timer - Top Right -->
-		
-								<div class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">$28,500</div>
+
+								<div
+									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+									$28,500</div>
 
 								<!-- Price - Bottom Left -->
-		
-								<div class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1" alt="Unsplash">
+
+								<div
+									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+										alt="Unsplash">
 									55:50
 								</div>
-							</div>		
+							</div>
 							<div class="card-header">
-								<h5 class="card-title mb-0 fs-6">2014 Toyota Fj Cruiser</h5>
+								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
 							</div>
 							<div class="card-body">
 								<div class="d-flex justify-content-between">
 									<div>
-										<p class="card-text mb-1">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text">Azul marino</p>
+										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+										<p class="card-text toyota-card11">Azul marino</p>
 									</div>
 
 								</div>
-								<a href="" class="card-link">Cuauhtemoc, 06600</a>
+								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
 							</div>
 						</div>
 					</div>
@@ -165,31 +255,38 @@
 						<div class="card mb-0">
 							<div class="carar-container position-relative">
 								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-		
+
 								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-heart.svg" class="carar-orange-heart position-absolute"
-									alt="Unsplash">
-								<!-- Price - Bottom Left -->
-		
-								<div class="car-time1 position-absolute d-flex justify-content-center align-items-center">55:50
-								</div>
+								<img src="img/photos/orange-unfilled-heart.svg"
+									class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
 								<!-- Timer - Top Right -->
-		
-								<div class="car-time2 position-absolute d-flex justify-content-center align-items-center">Puja
-									$17,000</div>
-							</div>		
+
+								<div
+									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+									$28,500</div>
+
+								<!-- Price - Bottom Left -->
+
+								<div
+									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+										alt="Unsplash">
+									55:50
+								</div>
+							</div>
 							<div class="card-header">
-								<h5 class="card-title mb-0">2014 Toyota Fj Cruiser</h5>
+								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
 							</div>
 							<div class="card-body">
 								<div class="d-flex justify-content-between">
 									<div>
-										<p class="card-text mb-1">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text">Azul marino</p>
+										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+										<p class="card-text toyota-card11">Azul marino</p>
 									</div>
 
 								</div>
-								<a href="" class="card-link">Cuauhtemoc, 06600</a>
+								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
 							</div>
 						</div>
 					</div>
@@ -197,7 +294,7 @@
 			</div>
 			<!--#############> Right side Start   <##################-->
 
-        </div>
+		</div>
 
 	</div>
 
@@ -205,96 +302,101 @@
 
 	<!--#############> Video Section Start   <##################-->
 
-	
+
 
 	<!--#############> Video Section End   <##################-->
 
 	<!--#############> Cards Section Start   <##################-->
-	
+
 	<!--#############> Cards Section end   <##################-->
 
-		<!--#############> orange banner  Start   <##################-->
-		
-		<!--#############> orange banner  end   <##################-->
+	<!--#############> orange banner  Start   <##################-->
 
-		<!--#############> subscribe section Start   <##################-->
-				
-		<!--#############> subscribe section  end   <##################-->
+	<!--#############> orange banner  end   <##################-->
 
-		<!--#############> footer section  start   <##################-->
-		<footer class="footer pt-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 mb-4 text-center">
-						<div class="d-flex justify-content-center">
-							<img src="./img/footer-logo.png" class="brandfooter-logoo" alt="">
-						</div>
-						<p class="copyright mt-2">COPYRIGHT 2024 CARTENGO</p>
+	<!--#############> subscribe section Start   <##################-->
+
+	<!--#############> subscribe section  end   <##################-->
+
+	<!--#############> footer section  start   <##################-->
+	<footer class="footer pt-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 mb-4 text-center">
+					<div class="d-flex justify-content-center">
+						<img src="./img/footer-logo.png" class="brandfooter-logoo" alt="">
 					</div>
-					
-					
-					<div class="col-sm-6 col-lg-2 mb-4">
-						<p class="footer-headings">COMO FUNCIONA</h6>
-						<ul class="footer-links">
-							<li><a href="#">Comprar un carro</a></li>
-							<li><a href="#">Comprar un carro</a></li>
-							<li><a href="#">Comprar un carro</a></li>
-							<li><a href="#">Comprar un carro</a></li>
-						</ul>
-					</div>
-					
-					<div class="col-sm-6 col-lg-2 mb-4">
-						<p class="footer-headings">COMO FUNCIONA</h6>
-						<ul class="footer-links">
-							<li><a href="#">Comprar un carro</a></li>
-							<li><a href="#">Comprar un carro</a></li>
-							<li><a href="#">Comprar un carro</a></li>
-							<li><a href="#">Comprar un carro</a></li>
-						</ul>
-					</div>
-					
-					<div class="col-sm-6 col-lg-2 mb-4">
-						<p class="footer-headings">COMO FUNCIONA</h6>
-						<ul class="footer-links">
-							
-							<li><a href="#">Comprar un carro</a></li>
-						</ul>
-					</div>
-					
-					<div class="col-lg-3 mb-4">
-						<p class="footer-headings">COMO FUNCIONA</h6>
-						<div class="social-icons d-flex flex-wrap gap-1">
-							<a href="#" target="_blank">
-								<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;">
-									<img src="./img/u-tube-icon.svg" style="width: 24px; height: 24px;">
-								</div>								
-							</a>
-							<a href="#" target="_blank">
-								<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;">
-									<img src="./img/insta-icon.svg" style="width: 24px; height: 24px;">
-								</div>								
-							</a>
-							<a href="#" target="_blank">
-								<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;">
-									<img src="./img/fb-icon.svg" style="width: 24px; height: 24px;">
-								</div>								
-							</a>
-							<a href="#" target="_blank">
-								<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;">
-									<img src="./img/tiktok-icon.svg" style="width: 24px; height: 24px;">
-								</div>								
-							</a>
-							<a href="#" target="_blank">
-								<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;">
-									<img src="./img/twitter-icon.svg" style="width: 24px; height: 24px;">
-								</div>								
-							</a>
-						</div>
+					<p class="copyright mt-2">COPYRIGHT 2024 CARTENGO</p>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-2 mb-4">
+					<p class="footer-headings">COMO FUNCIONA</h6>
+					<ul class="footer-links">
+						<li><a href="#">Comprar un carro</a></li>
+						<li><a href="#">Comprar un carro</a></li>
+						<li><a href="#">Comprar un carro</a></li>
+						<li><a href="#">Comprar un carro</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 col-lg-2 mb-4">
+					<p class="footer-headings">COMO FUNCIONA</h6>
+					<ul class="footer-links">
+						<li><a href="#">Comprar un carro</a></li>
+						<li><a href="#">Comprar un carro</a></li>
+						<li><a href="#">Comprar un carro</a></li>
+						<li><a href="#">Comprar un carro</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 col-lg-2 mb-4">
+					<p class="footer-headings">COMO FUNCIONA</h6>
+					<ul class="footer-links">
+
+						<li><a href="#">Comprar un carro</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 mb-4">
+					<p class="footer-headings">COMO FUNCIONA</h6>
+					<div class="social-icons d-flex flex-wrap gap-1">
+						<a href="#" target="_blank">
+							<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle"
+								style="width: 50px; height: 50px;">
+								<img src="./img/u-tube-icon.svg" style="width: 24px; height: 24px;">
+							</div>
+						</a>
+						<a href="#" target="_blank">
+							<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle"
+								style="width: 50px; height: 50px;">
+								<img src="./img/insta-icon.svg" style="width: 24px; height: 24px;">
+							</div>
+						</a>
+						<a href="#" target="_blank">
+							<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle"
+								style="width: 50px; height: 50px;">
+								<img src="./img/fb-icon.svg" style="width: 24px; height: 24px;">
+							</div>
+						</a>
+						<a href="#" target="_blank">
+							<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle"
+								style="width: 50px; height: 50px;">
+								<img src="./img/tiktok-icon.svg" style="width: 24px; height: 24px;">
+							</div>
+						</a>
+						<a href="#" target="_blank">
+							<div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle"
+								style="width: 50px; height: 50px;">
+								<img src="./img/twitter-icon.svg" style="width: 24px; height: 24px;">
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!--#############> footer section  end   <##################-->
+		</div>
+	</footer>
+	<!--#############> footer section  end   <##################-->
 
 	<!--#############> Script   Start   <##################-->
 	<script src="js/app.js"></script>
