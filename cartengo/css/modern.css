@@ -41281,9 +41281,7 @@ body {
 
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  }
-}
+ 
 
   .bgheadimg {
     background: url('../img/sell your car images/strip-circle.png');
@@ -41384,7 +41382,7 @@ padding-left: 16px; */
     border-radius: 50%;
     padding: 5px;
   }
-}
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .car-auctions-p {
@@ -41775,10 +41773,6 @@ font-size: 18.5px;
 }
 
 
- 
-font-size: 20px;
-color: #666666;
-}
 
 .carar-orange-heart2 {
   width: 24px;
