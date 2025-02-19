@@ -656,7 +656,7 @@ progress {
 .container-md,
 .container-sm,
 .container-xl {
-  --bs-gutter-x: 0.75rem;
+  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   margin-left: auto;
   margin-right: auto;
@@ -715,7 +715,7 @@ progress {
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 1rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -3958,9 +3958,9 @@ fieldset:disabled .btn {
   --bs-dropdown-spacer: 0.125rem;
   --bs-dropdown-font-size: 0.9375rem;
   --bs-dropdown-color: var(--bs-body-color);
-  --bs-dropdown-bg: var(--bs-body-bg);
-  --bs-dropdown-border-color: var(--bs-border-color-translucent);
-  --bs-dropdown-border-radius: var(--bs-border-radius);
+  --bs-dropdown-bg:rgba(255, 255, 255, 1);
+  --bs-dropdown-border-color: none;
+  --bs-dropdown-border-radius: 15px;
   --bs-dropdown-border-width: var(--bs-border-width);
   --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
@@ -4213,15 +4213,40 @@ fieldset:disabled .btn {
   border: 0;
   border-radius: var(--bs-dropdown-item-border-radius, 0);
   clear: both;
-  color: var(--bs-dropdown-link-color);
+  color:  rgba(117, 117, 117, 1) !important;
+
   display: block;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", serif;
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
   text-align: inherit;
   white-space: nowrap;
   width: 100%;
 }
 
+
+@media(min-width:992px)
+{
+
+  .mainheader {
+    z-index: 10000 !important;
+    position: relative;
+  }
+  .navbar .nav-item .dropdown-menu {
+    line-height: 1.5;
+    width: 300px;
+    z-index: 10000;
+}
+}
+@media(max-width:992px)
+{
+  .navbar-collapse{
+    height: 400px;
+    overflow-y: auto;
+  }
+}
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color: var(--bs-dropdown-link-hover-bg);
@@ -17105,6 +17130,7 @@ a.card {
   animation-iteration-count: 1;
   animation-name: dropdownAnimation;
   animation-timing-function: ease;
+  z-index: 10000;
 }
 
 @keyframes dropdownAnimation {
@@ -17168,9 +17194,9 @@ a.card {
   width: 16px;
 }
 
-.footer {
+/* .footer {
   padding: 1rem 0.5rem;
-}
+} */
 
 @media (min-width: 992px) {
   .footer {
@@ -40570,11 +40596,11 @@ div.dataTables_wrapper span.select-item {
 
 @media (max-width: 554px) {
   .header-title {
-    font-size: 27px !important;
+    font-size: 25px !important;
   }
 
   .header-subtitle {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 35px;
   }
 
@@ -41603,6 +41629,13 @@ font-weight: 400;
 }
 
 
+.Main-heading-Underline {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 37px;
+  border-bottom: 5px solid #ff6f00;
+}
+
 /* Query for mobile screens */
 @media (min-width: 320px) and (max-width: 768px) {
   .Notification-icon {
@@ -41755,6 +41788,12 @@ font-weight: 400;
 .big-toyota-p {
   font-family: Montserrat, sans-serif;
 font-weight: 600;
+ 
+font-size: 18.5px;
+}
+
+
+ 
 font-size: 20px;
 color: #666666;
 }
@@ -41783,3 +41822,24 @@ color: #666666;
 
 
 }
+ 
+
+
+/*################## > Stcky Header start <################### */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.sticky-header .brandheader-logoo {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+
+/*################## > Stcky Header End   <###################*/
