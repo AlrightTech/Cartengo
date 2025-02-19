@@ -41585,6 +41585,13 @@ font-size: 14px;
 }
 
 
+.Main-heading-Underline {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 37px;
+  border-bottom: 5px solid #ff6f00;
+}
+
 /* Query for mobile screens */
 @media (min-width: 320px) and (max-width: 768px) {
   .Notification-icon {
