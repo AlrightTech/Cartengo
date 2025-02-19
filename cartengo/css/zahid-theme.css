@@ -125,6 +125,160 @@
 
 /* About Us page styling ends here */
 
+
+
+/* Modals styling starts here */
+.LogIn-SignUp-Modal {
+    width: 350px;
+    height: auto;
+    font-family: Montserrat;
+}
+
+.Cartengo-Modal-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29.26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.Cartengo-Modal-links {
+    color: #FF6F00 !important;
+}
+
+.Modal-paragraph {
+    font-family: Montserrat;
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 21.94px;
+    letter-spacing: 0%;
+}
+
+.Cartengo-Modal-links:hover {
+    cursor: pointer;
+}
+
+.ContinueWith-Buttons {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 3px gray !important;
+    font-weight: 500;
+}
+
+.ContinueWith-Buttons:hover {
+    background-color: transparent !important;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+
+    bi {
+        filter: invert(1);
+    }
+}
+
+.Continue-Facebook {
+    background-color: #0078F6 !important;
+}
+
+.Modal-outline-btn:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.ContinueWith-Apple {
+    background-color: black;
+    color: white;
+}
+
+.ContinueWith-Apple:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.Cartengo-Modals-input {
+    width: 100%;
+    padding-block: 7px;
+    border: 1px solid #787878;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333333 !important;
+}
+
+.Cartengo-Modals-input::placeholder {
+    color: #333333 !important;
+}
+
+.Cartengo-Modals-input::placeholder,
+.Cartengo-Modals-input {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Cartengo-Modals-input:focus {
+    outline: 1px solid black;
+}
+
+.Cartengo-Checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #FF6F00;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+/* When checked, show the tick image */
+.Cartengo-Checkbox:checked {
+    background-image: url('../img/Modals Images/checkbox tick icon.png');
+    background-size: 14px 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Cartengo-Checkbox-label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.Cartengo-checkbox-highlightedtext {
+    color: #FF6F00;
+}
+
+.Verify-Email-Modal-text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #FF2B2B;
+}
+
+.EmailsendText{
+font-weight: 700;
+font-size: 13px;
+text-align: center;
+line-height: 16px !important;
+}
+
+.OfferModal-Para{
+    color: #07070780;
+}
+
+.Modal-MutedText{
+    color: #666666;
+}
+/* Modals styling ends here */
+
+
 /* Query for mobile screens */
 @media (min-width: 320px) and (max-width: 768px) {
     .sell-cars-rightarrow {
@@ -144,13 +298,17 @@
         top: 15rem !important;
     }
 
-    .AboutUs-Titles,.Main-heading-Underline {
+    .AboutUs-Titles,
+    .Main-heading-Underline {
         font-size: 30px !important;
     }
-    .AboutUS-WhyChooseUS-text{
+
+    .AboutUS-WhyChooseUS-text {
         font-size: 29px !important;
     }
-    .How-We-Work, .How-We-Work > .Main-heading-Underline{
+
+    .How-We-Work,
+    .How-We-Work>.Main-heading-Underline {
         font-size: 26px !important;
     }
 }
