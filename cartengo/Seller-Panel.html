@@ -26,11 +26,27 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+
+    	<!-- AOS CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <!--#############> Header Start <##################  -->
-    <header>
+      	<!-- ################> Window  Loader start <######## -->
+	<div class="loader-main">
+		<div class="loader"></div>
+	</div>
+	<!-- ################> Window  Loader  End <######## -->
+
+	<!--#############> Back to top buttonbtmtop  start <#############-->
+	<a id="buttonbtmtop"></a>
+	<!--#############> Back to top buttonbtmtop  start <#############-->
+
+     <!--#############> Header Start <##################  -->
+     <header class="mainheader" data-aos="fade-down" data-aos-duration="1000">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-lg-5 py-3">
             <div class="container-fluid">
@@ -56,8 +72,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">COMUNIDAD</a>
                         </li>
+
+
                     </ul>
-                    <form class="d-flex align-items-center">
+                    <form class="d-flex">
+                        <!-- <input class="custom-form-control form-control py-3 rounded-4  me-2" type="search" placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search"> -->
                         <div class="position-relative me-2">
                             <input class="custom-form-control form-control py-3" type="search"
                                 placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
@@ -77,20 +96,277 @@
                             </span>
                         </div>
 
-                        <!-- notifications icon -->
-                        <a href="#" class="Notification-icon ms-3 me-3">
-                            <img src="./img/About Us Images/bill icon.png" alt="notification icon" class="img-fluid"
-                                width="30px" height="30px">
-                        </a>
 
-                        <!-- user icon -->
-                        <a href="#" class="User-Icon">
-                            <img src="./img/About Us Images/User icon.png" alt="user icon" class="img-fluid"
-                                width="45px" height="45px">
-                        </a>
+                        <!-- Log in" or "Sign in button ||  INICIA SESIÓN -->
+
+                        <!-- OFERTA modal button -->
+                        <button type="button" class="btn btn-secondary px-3 py-2 border-3" data-bs-toggle="modal"
+                            data-bs-target="#Offer">
+                            INICIA SESIÓN
+                        </button>
 
 
-                        <!-- <button class="btn btn-secondary px-3 py-2 border-3" type="submit">INICIA SESIÓN</button> -->
+                        <!-- Offer modal -->
+                        <div class="modal fade" id="Offer" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-md" role="document">
+                                <div class="modal-content rounded-0">
+                                    <!-- close button of modal -->
+                                    <div class="d-flex justify-content-end w-100">
+                                        <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer;"
+                                            data-bs-dismiss="modal" aria-label="Close"></i>
+                                    </div>
+                                    <div
+                                        class="modal-body p-0 mx-4 d-flex flex-column align-items-center justify-content-center">
+
+                                        <h1 class="Cartengo-checkbox-highlightedtext fw-bolder text-center">OFERTA</h1>
+                                        <!-- logo -->
+                                        <img src="./img/Modals Images/Brand.png" alt="logo" width="100px" height="100px"
+                                            class="mt-3">
+
+                                        <p class="mt-3 fw-semibold">Antes de ofertar, lea con atension:</p>
+
+                                        <p class="OfferModal-Para">Antes de ofertar, lea con atension:Antes de ofertar,
+                                            lea con atension:Antes
+                                            de ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
+                                            ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
+                                            ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
+                                            ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
+                                            ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
+                                            ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
+                                            ofertar, lea con atension:Antes de ofertar, lea con atension.</p>
+
+                                        <div class="container-fluid">
+
+                                            <form action="">
+                                                <!-- Offer input -->
+                                                <div class="row d-flex justify-content-center">
+                                                    <div
+                                                        class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                                                        <label for="YourOffer" class="fw-semibold">TU OFERTA</label>
+                                                        <input type="text" class="form-control py-2 rounded-5 border-2"
+                                                            id="YourOffer">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Cardholder's Name input -->
+                                                <div class="row d-flex justify-content-center mt-3">
+                                                    <div
+                                                        class="col-12 col-md-8 col-lg-8 d-flex flex-column align-items-center">
+                                                        <label for="CardHolder" class="fw-semibold">Nombre del Titular
+                                                            en la Tarjeta</label>
+                                                        <input type="email" class="form-control py-2 rounded-5 border-2"
+                                                            id="CardHolder">
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- Card Number input -->
+                                                <div class="row d-flex justify-content-center mt-3">
+                                                    <div
+                                                        class="col-12 col-md-8 col-lg-8 d-flex flex-column align-items-center">
+                                                        <label for="Card-Number" class="fw-semibold">Numere de
+                                                            Tarjeta</label>
+                                                        <input type="number"
+                                                            class="form-control py-2 rounded-5 border-2"
+                                                            id="Card-Number">
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- CCV & Expiration Date input -->
+                                                <div class="row d-flex justify-content-center mt-3">
+                                                    <!-- CVV input field -->
+                                                    <div
+                                                        class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center">
+                                                        <label for="CardVerification-Value"
+                                                            class="fw-semibold">CVV</label>
+                                                        <input type="number"
+                                                            class="form-control py-2 rounded-5 border-2"
+                                                            id="CardVerification-Value">
+                                                    </div>
+
+                                                    <!--Expiration Date input field || Fecha de expiracion  -->
+                                                    <div
+                                                        class="col-12 col-md-4 col-lg-4 mt-3 mt-md-0 mt-lg-0 d-flex flex-column align-items-center">
+                                                        <label for="Card-Expiration" class="fw-semibold">Fecha de
+                                                            expiracion</label>
+                                                        <input type="number"
+                                                            class="form-control py-2 rounded-5 border-2"
+                                                            id="Card-Expiration">
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- Postal Code || C.P & Contact Cell Phone || Celular de contacto input -->
+                                                <div class="row d-flex justify-content-center mt-3">
+                                                    <!-- C.P, input field -->
+                                                    <div
+                                                        class="col-12 col-md-4 col-lg-4  d-flex flex-column align-items-center">
+                                                        <label for="PostalCode" class="fw-semibold">C.P,</label>
+                                                        <input type="number"
+                                                            class="form-control py-2 rounded-5 border-2"
+                                                            id="PostalCode">
+                                                    </div>
+
+                                                    <!--Contact Phone Number input field || Fecha de expiracion  -->
+                                                    <div
+                                                        class="col-12 col-md-4 col-lg-4 mt-3 mt-md-0 mt-lg-0 d-flex flex-column align-items-center">
+                                                        <label for="ContactNumber" class="fw-semibold">Celular de
+                                                            contacto</label>
+                                                        <input type="number"
+                                                            class="form-control py-2 rounded-5 border-2"
+                                                            id="ContactNumber">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Accept terms and conditions 1 -->
+                                                <div class="px-md-5 ms-md-5 mt-3 d-flex align-items-center gap-2">
+                                                    <input type="checkbox" class="" id="Accept-Terms&Conditions1">
+                                                    <label class="fw-semibold" for="Accept-Terms&Conditions1"><span
+                                                            class="Modal-MutedText"> Accept </span> Terms &
+                                                        Condition</label>
+                                                </div>
+
+                                                <!-- Accept terms and conditions 2 -->
+                                                <div class="px-md-5 ms-md-5 d-flex align-items-center gap-2">
+                                                    <input type="checkbox" class="" id="Accept-Terms&Conditions2">
+                                                    <label class="fw-semibold" for="Accept-Terms&Conditions2"><span
+                                                            class="Modal-MutedText"> Accept </span> Terms &
+                                                        Condition</label>
+                                                </div>
+
+
+
+                                                <!-- Next button -->
+                                                <div class="d-flex justify-content-center">
+                                                    <button
+                                                        class="btn btn-primary m-5 px-5 py-2 border-2 rounded-5 mt-4"
+                                                        type="button" data-bs-target="#CarImgModal"
+                                                        data-bs-toggle="modal"> SIGUIENTE</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Car image Modal -->
+                        <div class="modal fade" id="CarImgModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-md" role="document">
+                                <div class="modal-content rounded-0">
+                                    <!-- close button of modal -->
+                                    <div class="d-flex justify-content-end w-100">
+                                        <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer;"
+                                            data-bs-dismiss="modal" aria-label="Close"></i>
+                                    </div>
+                                    <div
+                                        class="modal-body p-0 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <img class="card-img-top"
+                                                        src="./img/Modals Images/Car img modal.png" alt="car img modal">
+                                                    <div class="card-header">
+                                                        <h5 class="card-title text-center mb-0 fs-5">2014 Toyota FJ
+                                                            Cruiser Trail Teams Ultimate Edition</h5>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center">
+                                                                <img src="./img/Modals Images/Brand.png" alt="logo"
+                                                                    width="100px" height="100px">
+                                                            </div>
+
+                                                            <div
+                                                                class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center">
+                                                                <!-- Modal Inputs field -->
+                                                                <div class="d-flex flex-column align-items-center">
+
+
+                                                                    <!-- YOUR OFFER Input field || TU OFERTA  -->
+                                                                    <div class="row mt-3">
+                                                                        <div class="col-12">
+                                                                            <input type="text" id=""
+                                                                                class="Cartengo-Modals-input rounded-5 py-2"
+                                                                                placeholder="TU OFERTA">
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- CARTENGO COMMISSION Input field || COMISION CARTENGO  -->
+                                                                    <div class="row mt-3">
+                                                                        <div class="col-12">
+                                                                            <input type="text" id=""
+                                                                                class="Cartengo-Modals-input rounded-5 px-2 py-2"
+                                                                                placeholder="COMISION CARTENGO">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- TOTAL Input field   -->
+                                                                    <div class="row mt-3">
+                                                                        <div class="col-12">
+                                                                            <input type="number" id=""
+                                                                                class="Cartengo-Modals-input rounded-5 py-2"
+                                                                                placeholder="TOTAL">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div
+                                                                class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                                                                <!-- Offer Button || OFERTA Button -->
+                                                                <button
+                                                                    class="btn btn-primary px-md-5 py-md-5 rounded-5"
+                                                                    data-bs-target="#GoodLuck-Modal"
+                                                                    data-bs-toggle="modal">OFERTA</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Good Luck Modal  -->
+                        <div class="modal fade" id="GoodLuck-Modal" tabindex="-1" role="dialog" aria-hidden="true"
+                            aria-labelledby="GoodLuck-Modal">
+                            <div class="modal-dialog modal-md d-flex justify-content-center align-items-center">
+                                <div class="modal-content rounded-0 ">
+                                    <!-- close button of modal -->
+                                    <div class="d-flex justify-content-end w-100">
+                                        <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer;"
+                                            data-bs-dismiss="modal" aria-label="Close"></i>
+                                    </div>
+                                    <div
+                                        class="modal-body p-0 d-flex flex-column justify-content-center align-items-center">
+                                        <!-- Logo -->
+                                        <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px"
+                                            height="100px">
+                                        <h4 class="Cartengo-Modal-title mt-3 mb-3 ">Estas cada vez mas cerca del auto
+                                            que deseas.<br>
+                                            <span class="Cartengo-checkbox-highlightedtext">!Buena suerte!</span>
+                                        </h4>
+                                        <p class="Cartengo-checkbox-highlightedtext">Nos pondremos en contacto contigo
+                                            si resultas ganador.
+                                            Checa tus correos, por ese medio te avisaremos si alguien ha superado tu
+                                            oferta. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
                     </form>
                 </div>
             </div>
@@ -109,25 +385,24 @@
 
 
 
-
     <!--#############> Main Page  Start   <##################-->
     <main>
         <div class="container-fluid">
 
             <!-- main image -->
-            <div class="detailbanner">
+            <div class="detailbanner" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./img/detailbanner.png" alt="">
             </div>
 
             <!-- Seller Panel main Heading || Panel devendedor -->
-            <div class="d-flex justify-content-center align-items-center position-relative mt-3">
+            <div class="d-flex justify-content-center align-items-center position-relative mt-3" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./img/sell your car images/strip-circle.png" alt="strip cicle image" class="img-fluid w-25 howitsworks-bg-img
                 ">
                 <p class="Sellcars-howitsworks mt-5 mb-5 text-center">Panel devendedor</p>
             </div>
 
             <!-- jeep cards -->
-            <div class="container py-md-4 px-md-5 border border-black border-2 position-relative rounded-4">
+            <div class="container py-md-4 px-md-5 border border-black border-2 position-relative rounded-4" data-aos="fade-up" data-aos-duration="1000">
                 <h4 class="SellerPanel-Heading">Subastas Pasadas</h4>
                 <!-- Swiper for jeep cards on bottom -->
                 <div class="swiper mySwiper h-100">
@@ -309,6 +584,21 @@
     <!--#############> Script   Start   <##################-->
 
     <script src="js/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="./js/zahid.js"></script>
+
+    <script src="./js/stickyheader.js"></script>
+
+
+	<!-- AOS JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
