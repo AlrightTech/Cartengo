@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+    <meta name="author" content="Bootlab">
+
+    <title>Cartengo || Seller Panel </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="./css/modern.css" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/zahid-theme.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!--#############> Header Start <##################  -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-lg-5 py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">SUBASTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn-scnd" href="#">VENDER TU AUTO</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COMUNIDAD</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center">
+                        <div class="position-relative me-2">
+                            <input class="custom-form-control form-control py-3" type="search"
+                                placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
+                            <span class="position-absolute custm-serch-icon1 ps-3">
+                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="18" height="18" fill="url(#pattern0_4035_18291)" />
+                                    <defs>
+                                        <pattern id="pattern0_4035_18291" patternContentUnits="objectBoundingBox"
+                                            width="1" height="1">
+                                            <use xlink:href="#image0_4035_18291" transform="scale(0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_4035_18291" width="34" height="34"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBvVfRceIwEF2ZBkgH7uCSCvBVAFcBvgou+bwPsD3wn6SCmAouV8E5FcQdnPKXzzQA5C0jMmKRbYE1vBkNaLV6fl6tpLUiD+R5PhwMBtPtdpuge40W78dgq5VSGu15vV6/wFfTGVDULiDBAzK0hPxRbjab4lRBqkHAMIqiDH9v6Xw8GEEfPs7KISKGiH9khb8HNMR894lO5CsCuVBhiW5BfIN2NZ/PFf9yn+2cKw7+HR/zUgeUJYKX49Uhgt/qJ8arDi7mmIDjvoHjpm2ZviJicuKAAG+5MgQVeQB+z+zP88RQbPgboQwBO/6XIrIsS+lMFEVRYsmmts3kS+Xy30UEE3Jh1xDSZ8eQma9tGx8FTf7KFQ0o/8Fhpp7gc8gkv8195coV+EWJsNUhRBghFe828cDU5RshXGNhW1FAgP+v3TfXxLEQDMS2AaGrKCAkH4R9c/lxsl4Lm6aw0KIfU4OQA/jeDb7w5XMJGVJA+PKxEC1sMYVFLPq1UwiS52DAsZ17QfJhc7w5/TDwIhzHFBZTIeyPyynC9iptA1djfCJSAPBtTGJXcjnp8o04qx2n31PfpDVlxb0wl01F0m7XQEgh7LGD5CS46hIuHZv8vwojXNsPWJZfYpwL4btTzhYrEqltx8s+oqxovNEjyzGn462cctW2XC69Etjctq9SBAMvpNvmKkHUVrPWGCtNsmmOksmjGN88Izxo0vXZgfF0NputOoV0iQmBJjGuI16buvOResDMv3PYy8ViMT0S2EbG0eEyUtaeHQK4GCr2tSl+Oc+ejh4sIqN8yM1yJfg75voFJPYhpdH4+7dC/qxcO8xHjJeQEOgSczEhXWIuKqRFzMeALoyqqurRaPSGKEws8/vFhQgx+6T//QnonHH2sKAyywAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <!-- notifications icon -->
+                        <a href="#" class="Notification-icon ms-3 me-3">
+                            <img src="./img/About Us Images/bill icon.png" alt="notification icon" class="img-fluid"
+                                width="30px" height="30px">
+                        </a>
+
+                        <!-- user icon -->
+                        <a href="#" class="User-Icon">
+                            <img src="./img/About Us Images/User icon.png" alt="user icon" class="img-fluid"
+                                width="45px" height="45px">
+                        </a>
+
+
+                        <!-- <button class="btn btn-secondary px-3 py-2 border-3" type="submit">INICIA SESIÓN</button> -->
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--#############> Header End   <##################-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--#############> Main Page  Start   <##################-->
+    <main>
+        <div class="container-fluid">
+
+            <!-- main image -->
+            <div class="detailbanner">
+                <img src="./img/detailbanner.png" alt="">
+            </div>
+
+            <!-- Seller Panel main Heading || Panel devendedor -->
+            <div class="d-flex justify-content-center align-items-center position-relative mt-3">
+                <img src="./img/sell your car images/strip-circle.png" alt="strip cicle image" class="img-fluid w-25 howitsworks-bg-img
+                ">
+                <p class="Sellcars-howitsworks mt-5 mb-5 text-center">Panel devendedor</p>
+            </div>
+
+            <!-- jeep cards -->
+            <div class="container py-md-4 px-md-5 border border-black border-2 position-relative rounded-4">
+                <h4 class="SellerPanel-Heading">Subastas Pasadas</h4>
+                <!-- Swiper for jeep cards on bottom -->
+                <div class="swiper mySwiper h-100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <!-- jeep card 1  -->
+                            <div class="card mb-0">
+                                <div class="carar-container ">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                                <div class="card-body text-start">
+                                    <span>Automatica, 4x4, 6 Cil.</span>
+                                    <p class="d-block">Azul marino</p>
+                                    <p>Cuauhtemoc, 06600</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 2  -->
+                        <div class="swiper-slide ">
+                            <div class="card mb-0">
+                                <div class="carar-container">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 3  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 4  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- jeep card 5  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container ">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 6  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!--#############> Main Page   End   <##################-->
+
+
+    <!--#############> footer section  start   <##################-->
+    <footer class="footer pt-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 text-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="./img/footer-logo.png" class="brandfooter-logoo" alt="">
+                    </div>
+                    <p class="copyright mt-2">COPYRIGHT 2024 CARTENGO</p>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+
+                        <li><a href="#">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <div class="social-icons d-flex flex-wrap gap-1">
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/u-tube-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/insta-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/fb-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/tiktok-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/twitter-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--#############> footer section  end   <##################-->
+
+
+    <!--#############> Script   Start   <##################-->
+
+    <script src="js/app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 4,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
+
+
+    <!--#############> Script   End   <##################-->
+
+
+</body>
+
+</html>

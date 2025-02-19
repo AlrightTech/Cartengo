@@ -262,21 +262,32 @@
     color: #FF2B2B;
 }
 
-.EmailsendText{
-font-weight: 700;
-font-size: 13px;
-text-align: center;
-line-height: 16px !important;
+.EmailsendText {
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    line-height: 16px !important;
 }
 
-.OfferModal-Para{
+.OfferModal-Para {
     color: #07070780;
 }
 
-.Modal-MutedText{
+.Modal-MutedText {
     color: #666666;
 }
+
 /* Modals styling ends here */
+
+
+/* Seller Panel Page styling starts here */
+.SellerPanel-Heading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Seller Panel Page styling ends here */
 
 
 /* Query for mobile screens */
