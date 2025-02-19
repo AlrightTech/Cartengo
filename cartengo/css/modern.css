@@ -41849,3 +41849,84 @@ color: #666666;
 
 
 /*################## > Stcky Header End   <###################*/
+
+
+/*###############> Loader Website star <#############t  */
+        /* Loader Styling */
+        .loader-main {
+          display: flex; /* Ensure the loader is visible by default */
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: #111;
+
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 100000000;
+      }
+
+      .loader {
+          width: 60px;
+          height: 60px;
+          border: 2px solid transparent;
+          border-top: 3px solid rgba(255, 111, 0, 1);
+          border-radius: 50%;
+          animation: spin 1.5s linear infinite, glow 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+
+      @keyframes glow {
+          0% { box-shadow: 0 0 10px rgba(255, 111, 0, 1); }
+          100% { box-shadow: 0 0 30px rgba(255, 111, 0, 1); }
+      }
+
+   
+/*###############> Loader Website End  <#############*/
+
+
+
+/*##################> From Bottom to top Button start <################*/
+#buttonbtmtop {
+  display: inline-block;
+  background-color: #ff6f00;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#buttonbtmtop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#buttonbtmtop:hover {
+  cursor: pointer;
+  background-color: rgba(0, 66, 37, 1);
+}
+#buttonbtmtop:active {
+  background-color: rgba(0, 66, 37, 1);
+}
+#buttonbtmtop.show {
+  opacity: 1;
+  visibility: visible;
+}
+ 
+/*##################> From Bottom to top Button End   <################*/
