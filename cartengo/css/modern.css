@@ -2650,14 +2650,14 @@ textarea.form-control-lg {
 
   display: block;
 
-  
+
 
   padding: 0.25rem 2.1rem 0.25rem 0.7rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
 
   /* askdlad */
-   
+
   border: 1px solid rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 1);
   display: block;
@@ -40783,8 +40783,7 @@ body {
   }
 }
 
-@media (max-width: 595px) 
-{
+@media (max-width: 595px) {
 
 
   .orange-banner {
@@ -41256,75 +41255,74 @@ body {
     img {
       filter: invert(1);
     }
- 
-}
 
-
-.bgheadimg
-{
-  background:url('../img/sell your car images/strip-circle.png');
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.car-auctions-pp{
- 
-  text-align: center;
-  color: #333333;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 58.51px;
-}
-
-@media(max-width:768px)
-{
-  .car-auctions-pp {
-  font-size: 30px;
   }
-}
-@media(max-width:554px)
-{
-  .car-auctions-pp {
-  font-size: 25px;
+
+
+  .bgheadimg {
+    background: url('../img/sell your car images/strip-circle.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    position: relative;
   }
-}
 
-@media (min-width: 320px) and (max-width: 768px) {
+  .car-auctions-pp {
 
-.amount-tag {
-  font-family: Montserrat, sans-serif;
-  transform: rotate(9.44deg);
-  transform-origin: center;
-  top: 50px;
-  right: 28px;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  border-radius: 10px;
-  /* padding-top: 10px;
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58.51px;
+  }
+
+  @media(max-width:768px) {
+    .car-auctions-pp {
+      font-size: 30px;
+    }
+  }
+
+  @media(max-width:554px) {
+    .car-auctions-pp {
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+
+    .amount-tag {
+      font-family: Montserrat, sans-serif;
+      transform: rotate(9.44deg);
+      transform-origin: center;
+      top: 50px;
+      right: 28px;
+      box-shadow: 0px 4px 4px 0px #00000040;
+      border-radius: 10px;
+      /* padding-top: 10px;
   padding-right: 16px;
   padding-bottom: 10px;
   padding-left: 16px; */
-  background: #FF6F00;
-  color: #FFFDFD;
-  font-weight: 600;
-  font-size: 12px;
+      background: #FF6F00;
+      color: #FFFDFD;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .auction-endng-son-p {
+      font-family: Montserrat, sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      color: #333333;
+    }
+
+    .carar-orange-heart1 {
+      top: 7px;
+      left: 6px;
+      width: 12px;
+    }
+
+  }
 }
-
-.auction-endng-son-p {
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  font-size: 23px;
-  color: #333333;
-}
-
-.carar-orange-heart1 {
-  top: 7px;
-  left: 6px;
-  width: 12px;
-}
-
-
 
 .social-icons-box:hover {
   background-color: transparent !important;
@@ -41482,7 +41480,6 @@ body {
   position: absolute;
   left: 0.5rem;
   font-size: 8px;
-  /* Smaller bullet */
   color: black;
 }
 
@@ -41541,6 +41538,20 @@ body {
   }
 }
 
+.custom-tooltip1 .tooltip-inner {
+  background-color: #FF6F00 !important;
+  color: white !important;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  width: 300px !important; 
+  white-space: normal; 
+}
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow:before, .bs-tooltip-start .tooltip-arrow:before {
+    border-left-color: #FF6F00;}
+.custom-tooltip1 .tooltip-arrow {
+  border-top-color: #FF6F00 !important;
+}
 
 
 /* Query for mobile screens */
@@ -41574,3 +41585,88 @@ body {
 }
 
 /* zahid khattak id - 0396 ends here */
+
+.big-toyota-h {
+  color: #000000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 33.5px;
+  letter-spacing: 2px;
+}
+
+.stats-container {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  /* padding: 8px 16px; */
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 16px; */
+  position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 2px ;  background-color: #666666;
+}
+
+.stat-label {
+  font-family: Montserrat, sans-serif;
+font-weight: 600;
+font-size: 14px;
+color: #333333;
+
+}
+
+.stat-value {
+  font-family: Montserrat, sans-serif;
+font-weight: 600;
+font-size: 12.5px;
+color: #666666;
+
+}
+
+.actual-ofer-txt{
+  color: #333333;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  
+}
+
+
+.actual-ofer-pric {
+  font-family: Montserrat, sans-serif;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+  background: #FF6F00;
+  color: #FFFDFD;
+  font-weight: 600;
+
+  /* width: 197px; */
+/* height: 63.982906341552734; */
+
+
+font-size: 30.68px;
+
+
+
+}
+
+.oferta-btn {
+  font-family: Montserrat, sans-serif;
+font-weight: 600;
+font-size: 18.5px;
+
+
+}
