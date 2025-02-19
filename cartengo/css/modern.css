@@ -40824,6 +40824,10 @@ body {
     width: 70px !important;
     height: 70px !important;
   }
+  .auction-endng-son-p {
+    
+    font-size: 19px !important;
+}
 }
 
 
@@ -41283,7 +41287,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 768px) {
   }
-}
+
 
   .bgheadimg {
     background: url('../img/sell your car images/strip-circle.png');
@@ -41320,6 +41324,9 @@ body {
     .big-toyota-h {
       font-size: 20.5px !important;
   }
+  .subs-head {
+    font-size: 26px !important;
+}
   }
   .amount-tag {
     font-family: Montserrat, sans-serif;
@@ -41530,14 +41537,6 @@ padding-left: 16px; */
   font-size: 13.5px !important;
 }
 
-.tol-tip-gren:hover {
-  background-color: rgba(0, 66, 37, 1);
-}
-
-.tol-tip-gren {
-  padding: 7px 10px 10px 10px;
-}
-
 .filter-container-fabricante {
   background-color: #E6E6E6;
   border-radius: 25px;
@@ -41591,22 +41590,41 @@ font-size: 14px;
   }
 }
 
-.custom-tooltip1 .tooltip-inner {
-  background-color: #FF6F00 !important;
-  color: white !important;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  width: 300px !important;
-  white-space: normal;
+.tol-tip-gren {
+  background-color: #004225 !important;
+  padding: 7px 10px 10px 10px;
+  border: none;
 }
 
-.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow:before,
-.bs-tooltip-start .tooltip-arrow:before {
-  border-left-color: #FF6F00;
+.tol-tip-gren:hover {
+  background-color: rgba(0, 66, 37, 1) !important;
+}
+
+.custom-tooltip1 .tooltip-inner {
+  background: #FF6F00 !important;
+  color: white !important;
+  padding: 11px 28px;
+  border-radius: 50px;
+  max-width: 720px;
+  white-space: normal;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+  width: 100%;
+
+
+  font-family: Montserrat, sans-serif;
+font-weight: 400;
+
+}
+
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #FF6F00 !important;
 }
 
 .custom-tooltip1 .tooltip-arrow {
+  display: block;
   border-top-color: #FF6F00 !important;
 }
 
