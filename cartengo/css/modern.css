@@ -40824,6 +40824,10 @@ body {
     width: 70px !important;
     height: 70px !important;
   }
+  .auction-endng-son-p {
+    
+    font-size: 19px !important;
+}
 }
 
 
@@ -41281,9 +41285,6 @@ body {
 
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  }
-}
 
   .bgheadimg {
     background: url('../img/sell your car images/strip-circle.png');
@@ -41320,6 +41321,9 @@ body {
     .big-toyota-h {
       font-size: 20.5px !important;
   }
+  .subs-head {
+    font-size: 26px !important;
+}
   }
   .amount-tag {
     font-family: Montserrat, sans-serif;
@@ -41384,7 +41388,7 @@ padding-left: 16px; */
     border-radius: 50%;
     padding: 5px;
   }
-}
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .car-auctions-p {
@@ -41530,14 +41534,6 @@ padding-left: 16px; */
   font-size: 13.5px !important;
 }
 
-.tol-tip-gren:hover {
-  background-color: rgba(0, 66, 37, 1);
-}
-
-.tol-tip-gren {
-  padding: 7px 10px 10px 10px;
-}
-
 .filter-container-fabricante {
   background-color: #E6E6E6;
   border-radius: 25px;
@@ -41553,7 +41549,8 @@ padding-left: 16px; */
 .fabricante-pill {
   background-color: #004225;
   color: white;
-  padding: 7px 28px;
+  /* padding: 7px 28px; */
+  padding: 7px 0px;
   border-radius: 50px;
   margin-right: 10px;
   white-space: nowrap;
@@ -41561,6 +41558,7 @@ padding-left: 16px; */
   font-family: Montserrat, sans-serif;
 font-weight: 600;
 font-size: 14px;
+width:150px;
 
 
 }
@@ -41580,33 +41578,64 @@ font-size: 14px;
 
 @media (max-width: 576px) {
   .fabricante-pill {
-    padding: 6px 16px;
-    font-size: 14px;
+    /* padding: 6px 16px; */
+    /* width:150px; */
+    background-color: #004225;
+    color: white;
+    /* padding: 7px 28px; */
+    padding: 7px 0px;
+    border-radius: 50px;
+    margin-right: 10px;
+    white-space: nowrap;
+  
+    font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  width:130px;
   }
 
   .brand-name {
-    font-size: 14px;
-    margin-right: 90px;
+    font-size: 12px;
+    margin-right: 45px;
     /* Adjusted for smaller screens */
   }
 }
 
-.custom-tooltip1 .tooltip-inner {
-  background-color: #FF6F00 !important;
-  color: white !important;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  width: 300px !important;
-  white-space: normal;
+.tol-tip-gren {
+  background-color: #004225 !important;
+  padding: 7px 10px 10px 10px;
+  border: none;
 }
 
-.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow:before,
-.bs-tooltip-start .tooltip-arrow:before {
-  border-left-color: #FF6F00;
+.tol-tip-gren:hover {
+  background-color: rgba(0, 66, 37, 1) !important;
+}
+
+.custom-tooltip1 .tooltip-inner {
+  background: #FF6F00 !important;
+  color: white !important;
+  padding: 11px 28px;
+  border-radius: 50px;
+  max-width: 720px;
+  white-space: normal;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+  width: 100%;
+
+
+  font-family: Montserrat, sans-serif;
+font-weight: 400;
+
+}
+
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #FF6F00 !important;
 }
 
 .custom-tooltip1 .tooltip-arrow {
+  display: block;
   border-top-color: #FF6F00 !important;
 }
 
@@ -41770,15 +41799,10 @@ font-size: 14px;
 .big-toyota-p {
   font-family: Montserrat, sans-serif;
 font-weight: 600;
- 
-font-size: 18.5px;
-}
-
-
- 
-font-size: 20px;
+font-size: 18.5px; 
 color: #666666;
 }
+
 
 .carar-orange-heart2 {
   width: 24px;
@@ -41824,4 +41848,86 @@ color: #666666;
 }
 
 
+
 /*################## > Stcky Header End   <###################*/
+
+
+/*###############> Loader Website star <#############t  */
+        /* Loader Styling */
+        .loader-main {
+          display: flex; /* Ensure the loader is visible by default */
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: #111;
+
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 100000000;
+      }
+
+      .loader {
+          width: 60px;
+          height: 60px;
+          border: 2px solid transparent;
+          border-top: 3px solid rgba(255, 111, 0, 1);
+          border-radius: 50%;
+          animation: spin 1.5s linear infinite, glow 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+
+      @keyframes glow {
+          0% { box-shadow: 0 0 10px rgba(255, 111, 0, 1); }
+          100% { box-shadow: 0 0 30px rgba(255, 111, 0, 1); }
+      }
+
+   
+/*###############> Loader Website End  <#############*/
+
+
+
+/*##################> From Bottom to top Button start <################*/
+#buttonbtmtop {
+  display: inline-block;
+  background-color: #ff6f00;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#buttonbtmtop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#buttonbtmtop:hover {
+  cursor: pointer;
+  background-color: rgba(0, 66, 37, 1);
+}
+#buttonbtmtop:active {
+  background-color: rgba(0, 66, 37, 1);
+}
+#buttonbtmtop.show {
+  opacity: 1;
+  visibility: visible;
+}
+ 
+/*##################> From Bottom to top Button End   <################*/
