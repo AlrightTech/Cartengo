@@ -32,8 +32,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul
-						class="navbar-nav align-items-center ms-lg-auto mb-2 mb-lg-0 justify-content-lg-center justify-content-start">
+					<ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
 						<li class="nav-item px-3">
 							<a class="nav-link active" aria-current="page" href="#">SUBASTAS</a>
 						</li>
@@ -46,10 +45,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">COMUNIDAD</a>
 						</li>
+
+
 					</ul>
-					<form class="d-flex flex-column flex-lg-row">
+					<form class="d-flex">
 						<!-- <input class="custom-form-control form-control py-3 rounded-4  me-2" type="search" placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search"> -->
-						<div class="position-relative mb-lg-2 me-0 mb-lg-0 mb-3">
+						<div class="position-relative me-2">
 							<input class="custom-form-control form-control py-3" type="search"
 								placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
 							<span class="position-absolute custm-serch-icon1 ps-3">
@@ -67,6 +68,7 @@
 								</svg>
 							</span>
 						</div>
+
 
 						<button class="btn btn-secondary px-3 py-2 border-3" type="submit">INICIA SESIÓN</button>
 					</form>
@@ -161,6 +163,11 @@
 					</div>
 					<div class="col-lg-6">
 
+						<div class="filter-container-fabricante">
+							<span class="fabricante-pill">Fabricante</span>
+							<span class="brand-name">Toyoto</span>
+						</div>
+
 					</div>
 				</div>
 
@@ -184,10 +191,71 @@
 
 				</div>
 
-				<button type="button" class="btn btn-secondary tol-tip-gren rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top"
-					data-bs-custom-class="custom-tooltip" data-bs-title="Tu decides Una vez tu carro es aceptado, tú eliges el precio mínimo por el que estás dispuesto a vender. ¡Recuerda, es grComisiones claras, precios justos: Solo cobramos entre entre 2.5% y 4% al ganador de la subasta, sobre el monto final ofertado.">
-					<img src="./img/tol-tip-personicon.svg" >
-				</button>
+				<div class="row">
+					<div class="col-lg-12 text-end">
+						<button type="button" class="btn btn-secondary tol-tip-gren rounded-circle" data-bs-toggle="tooltip" data-bs-placement="left"
+						data-bs-custom-class="custom-tooltip1" data-bs-title="Tu decides Una vez tu carro es aceptado, tú eliges el precio mínimo por el que estás dispuesto a vender. ¡Recuerda, es grComisiones claras, precios justos: Solo cobramos entre entre 2.5% y 4% al ganador de la subasta, sobre el monto final ofertado.">
+						<img src="./img/tol-tip-personicon.svg" >
+						</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<h1 class="big-toyota-h">2014 Toyota FJ Cruiser Edicion Especial</h1>
+					<div class="col-lg-5">
+						<div class="stats-container">
+							<div class="stat-item pe-1">
+								<div class="stat-label text-center">Vendedor</div>
+								<div class="stat-value text-center">Juancho</div>
+							</div>
+							<div class="stat-item ps-1 pe-2">
+								<div class="stat-label text-center">Termina</div>
+								<div class="stat-value text-center">07/05/2024</div>
+							</div>
+							<div class="stat-item ps-1 pe-2">
+								<div class="stat-label text-center">Olertas</div>
+								<div class="stat-value text-center">5</div>
+							</div>
+							<div class="stat-item ps-1 pe-2">
+								<div class="stat-label text-center">Vistas</div>
+								<div class="stat-value text-center">2</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<h5 class="actual-ofer-txt">Oferta Actual</h5>
+							<div class="w-100 d-flex justify-content-center align-items-center ">
+								<div class="actual-ofer-pric rounded-5 px-4 py-2">
+									$28,500
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-4">
+						<form>
+							<div class="mb-3">
+								<input type="email" class="form-control py-2 rounded-5" placeholder="tu oferta">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control py-2 rounded-5" placeholder="Comision cartengo">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control py-2 rounded-5" placeholder="Comision cartengo">
+							</div>
+							
+						</form>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center ">
+						<button class="btn btn-primary px-3 py-2 border-2 rounded-5 oferta-btn"> Realizer Oferta
+						</button>
+						<button class="btn btn-primary px-3 py-2 border-2 rounded-5 oferta-btn"> Tiener dudae?
+						</button>
+					</div>
+				</div>
+				
+				
+
+
 
 
 			</div>
