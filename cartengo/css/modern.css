@@ -41549,7 +41549,8 @@ padding-left: 16px; */
 .fabricante-pill {
   background-color: #004225;
   color: white;
-  padding: 7px 28px;
+  /* padding: 7px 28px; */
+  padding: 7px 0px;
   border-radius: 50px;
   margin-right: 10px;
   white-space: nowrap;
@@ -41557,6 +41558,7 @@ padding-left: 16px; */
   font-family: Montserrat, sans-serif;
 font-weight: 600;
 font-size: 14px;
+width:150px;
 
 
 }
@@ -41576,13 +41578,25 @@ font-size: 14px;
 
 @media (max-width: 576px) {
   .fabricante-pill {
-    padding: 6px 16px;
-    font-size: 14px;
+    /* padding: 6px 16px; */
+    /* width:150px; */
+    background-color: #004225;
+    color: white;
+    /* padding: 7px 28px; */
+    padding: 7px 0px;
+    border-radius: 50px;
+    margin-right: 10px;
+    white-space: nowrap;
+  
+    font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  width:130px;
   }
 
   .brand-name {
-    font-size: 14px;
-    margin-right: 90px;
+    font-size: 12px;
+    margin-right: 45px;
     /* Adjusted for smaller screens */
   }
 }
@@ -41785,10 +41799,9 @@ font-weight: 400;
 .big-toyota-p {
   font-family: Montserrat, sans-serif;
 font-weight: 600;
- 
-font-size: 18.5px;
+font-size: 18.5px; 
+color: #666666;
 }
-
 
 
 .carar-orange-heart2 {
