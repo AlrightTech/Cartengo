@@ -4231,7 +4231,7 @@ fieldset:disabled .btn {
 {
 
   .mainheader {
-    z-index: 10000 !important;
+    z-index: 3 !important;
     position: relative;
   }
   .navbar .nav-item .dropdown-menu {
