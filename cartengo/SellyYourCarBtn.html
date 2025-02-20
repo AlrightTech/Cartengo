@@ -674,7 +674,7 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
 
                         <div class="row d-flex justify-content-center pt-5">
                             <div class="col-lg-6 text-center">
-                                <button class="btn btn-primary rounded-4 px-4 py-2 border-2">Enviar</button>
+                                <button class="btn btn-primary rounded-4 px-4 py-2 border-2" data-bs-target="#Enviar-Modal" data-bs-toggle="modal" type="button">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -1025,10 +1025,10 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
 		</div>
 	</div>
 
-	<!-- Modal Email Send to account || RECUPERAR CONTRASENA -->
-	<div class="modal fade" id="EmailSend-toAccount" tabindex="-1" role="dialog" aria-hidden="true"
-		aria-labelledby="EmailSend-toAccount">
-		<div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+	<!-- Enviar-Modal -->
+	<div class="modal fade" id="Enviar-Modal" tabindex="-1" role="dialog" aria-hidden="true"
+		aria-labelledby="Enviar-Modal">
+		<div class="modal-dialog modal-dialog-centered modal-sm d-flex justify-content-center align-items-center" role="document">
 			<div class="modal-content rounded-0 LogIn-SignUp-Modal">
 				<!-- close button of modal -->
 				<div class="d-flex justify-content-end w-100">
@@ -1040,13 +1040,38 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
 					<!-- Logo -->
 					<img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
 					<h4 class="Cartengo-Modal-title mt-3 mb-3 EmailsendText">
-						REVISA TU BANDEJA. <br />TE HEMOS ENVIADO UN CORREO PARA <br />
-						<span class="Cartengo-checkbox-highlightedtext">RECUPERAR TU CONTRASENA</span>
+						iGracias por tu informacion!
 					</h4>
+                    <span class="mt-2">Nos pondremos en contacto contigo lo antes posible.</span>
+                    <span class="mt-2 text-center">Te pedimos que para la llamada, tengas listas algunas fotografias de tu carro en <b> buena calidad</b> para revisalas en ese mometo.</span>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+    <!-- Modal Email Send to account || RECUPERAR CONTRASENA -->
+	<div class="modal fade" id="EmailSend-toAccount" tabindex="-1" role="dialog" aria-hidden="true"
+    aria-labelledby="EmailSend-toAccount">
+    <div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+        <div class="modal-content rounded-0 LogIn-SignUp-Modal">
+            <!-- close button of modal -->
+            <div class="d-flex justify-content-end w-100">
+                <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer" data-bs-dismiss="modal"
+                    aria-label="Close"></i>
+            </div>
+            <div
+                class="modal-body p-0 m-0 m-md-3 m-lg-3 d-flex flex-column justify-content-center align-items-center">
+                <!-- Logo -->
+                <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
+                <h4 class="Cartengo-Modal-title mt-3 mb-3 EmailsendText">
+                    REVISA TU BANDEJA. <br />TE HEMOS ENVIADO UN CORREO PARA <br />
+                    <span class="Cartengo-checkbox-highlightedtext">RECUPERAR TU CONTRASENA</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
 	<!--#################> Navbar Modal End   <################-->
 
 
