@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+    <meta name="author" content="Bootlab">
+
+    <title>Cartengo || Seller Panel </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="./css/modern.css" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/zahid-theme.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="select-photo-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="max-width: 348px;">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <p class="fw-semibold dat-txt-p mb-0 text-center">Foto de</p>
+
+                    <!-- Modal content here -->
+                    <div class="px-4">
+
+                        <div>
+                            <p class="fw-semibold dat-txt-p mb-0 mt-3">Foto de</p>
+                            <img id="modalImagePreview" src="./img/img-modal-photo.png" alt="Profile"
+                                class="img-fluid rounded-pill profile-image-mdl mb-3 d-block mx-auto">
+                            <button id="imageUploadBtn"
+                                class="btn btn-primary orng-lorem-btn rounded-4 custom-rounded px-3 d-block mx-auto">Lorem</button>
+                        </div>
+                        <input type="file" id="imageUploadInput" style="display: none;" accept="image/*">
+
+                        <div>
+                            <p class="fw-semibold dat-txt-p mt-3 mb-3">Foto de portada</p>
+                            <img id="modalImagePreview1" src="./img/img2-photo-mdl.png" alt="Profile"
+                                class="img-fluid profile-image-mdl2 mb-3">
+                            <button id="imageUploadBtn1"
+                                class="btn btn-primary orng-lorem-btn rounded-4 custom-rounded px-3 d-block mx-auto">Lorem</button>
+                        </div>
+                        <input type="file" id="imageUploadInput1" style="display: none;" accept="image/*">
+
+                        <div class="d-flex justify-content-between align-items-center mt-2 mb-3">
+                            <p class="fw-semibold dat-txt-p mb-0">Descripcion</p>
+                            <button id="editButton" class="editor-btn border-0" style="background-color: transparent;">Editar</button>
+                        </div>
+                        
+                        <p id="descriptionText" class="search-input descriptn-p text-center mb-4 px-lg-5">Descron Descropon Descpcion</p>
+                        <textarea id="descriptionInput" class="search-input descriptn-p text-center mb-4 px-lg-5" style="display: none;"></textarea>
+
+
+
+                        <!-- <div class="d-flex justify-content-between align-items-center mt-2 mb-3">
+                            <p class="fw-semibold dat-txt-p mb-0">Descropcion</p>
+                            <button href="" class="editor-btn border-0" style="background-color: transparent;">Editar</button>
+                        </div>
+
+
+                        <p class="search-input descriptn-p text-center mb-4 px-lg-5 ">Descron Descropon Descpcion</p> -->
+                        <button
+                            class="btn btn-primary orng-lorem-btn mb-2 rounded-4 custom-rounded px-3 d-block mx-auto">Lorem</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--#############> Header Start <##################  -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-lg-5 py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">SUBASTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn-scnd" href="#">VENDER TU AUTO</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COMUNIDAD</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center">
+                        <div class="position-relative me-2">
+                            <input class="custom-form-control form-control py-3" type="search"
+                                placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
+                            <span class="position-absolute custm-serch-icon1 ps-3">
+                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="18" height="18" fill="url(#pattern0_4035_18291)" />
+                                    <defs>
+                                        <pattern id="pattern0_4035_18291" patternContentUnits="objectBoundingBox"
+                                            width="1" height="1">
+                                            <use xlink:href="#image0_4035_18291" transform="scale(0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_4035_18291" width="34" height="34"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBvVfRceIwEF2ZBkgH7uCSCvBVAFcBvgou+bwPsD3wn6SCmAouV8E5FcQdnPKXzzQA5C0jMmKRbYE1vBkNaLV6fl6tpLUiD+R5PhwMBtPtdpuge40W78dgq5VSGu15vV6/wFfTGVDULiDBAzK0hPxRbjab4lRBqkHAMIqiDH9v6Xw8GEEfPs7KISKGiH9khb8HNMR894lO5CsCuVBhiW5BfIN2NZ/PFf9yn+2cKw7+HR/zUgeUJYKX49Uhgt/qJ8arDi7mmIDjvoHjpm2ZviJicuKAAG+5MgQVeQB+z+zP88RQbPgboQwBO/6XIrIsS+lMFEVRYsmmts3kS+Xy30UEE3Jh1xDSZ8eQma9tGx8FTf7KFQ0o/8Fhpp7gc8gkv8195coV+EWJsNUhRBghFe828cDU5RshXGNhW1FAgP+v3TfXxLEQDMS2AaGrKCAkH4R9c/lxsl4Lm6aw0KIfU4OQA/jeDb7w5XMJGVJA+PKxEC1sMYVFLPq1UwiS52DAsZ17QfJhc7w5/TDwIhzHFBZTIeyPyynC9iptA1djfCJSAPBtTGJXcjnp8o04qx2n31PfpDVlxb0wl01F0m7XQEgh7LGD5CS46hIuHZv8vwojXNsPWJZfYpwL4btTzhYrEqltx8s+oqxovNEjyzGn462cctW2XC69Etjctq9SBAMvpNvmKkHUVrPWGCtNsmmOksmjGN88Izxo0vXZgfF0NputOoV0iQmBJjGuI16buvOResDMv3PYy8ViMT0S2EbG0eEyUtaeHQK4GCr2tSl+Oc+ejh4sIqN8yM1yJfg75voFJPYhpdH4+7dC/qxcO8xHjJeQEOgSczEhXWIuKqRFzMeALoyqqurRaPSGKEws8/vFhQgx+6T//QnonHH2sKAyywAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <!-- notifications icon -->
+                        <a href="#" class="Notification-icon ms-3 me-3">
+                            <img src="./img/About Us Images/bill icon.png" alt="notification icon" class="img-fluid"
+                                width="30px" height="30px">
+                        </a>
+
+                        <!-- user icon -->
+                        <a href="#" class="User-Icon">
+                            <img src="./img/About Us Images/User icon.png" alt="user icon" class="img-fluid"
+                                width="45px" height="45px">
+                        </a>
+
+
+                        <!-- <button class="btn btn-secondary px-3 py-2 border-3" type="submit">INICIA SESIÓN</button> -->
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--#############> Header End   <##################-->
+
+    <!--#############> Main Page  Start   <##################-->
+    <main>
+        <div class="position-relative">
+            <div class="container-fluid px-0">
+
+                <!-- profile-bg image -->
+                <div class="profile-banner position-relative" id="profileImagePreview1">
+                    <button class="profile-lorem position-absolute px-4 py-1 rounded-4 border-0">Lorem</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-relative" style="top: -70px;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-11 ">
+                        <div class="row d-flex justify-content-between">
+
+                            <div class="col-lg-4 ">
+                                <!-- Profile Card -->
+                                <div class="d-flex flex-column justify-content-center ">
+                                    <div class="profile-card text-center" style="bottom:12px;">
+                                        <div class="text-center pt-4">
+                                            <div class="profile-image-container-top position-relative">
+                                                <img id="profileImagePreview" src="./img/profile-eclips.png"
+                                                    alt="Profile" class="profile-image mb-3">
+                                                <!-- <button  class="btn profile-lorem profile-follow-btnn position-absolute rounded-pill px-4 pt-1 pb-1">Follow</button> -->
+                                                <button
+                                                    class="border-0 profile-follow-btnn position-absolute rounded-pill px-4"
+                                                    style="padding: 2px 0px;">Follow</button>
+
+                                            </div>
+
+                                            <h5 class="robrto-p mb-1">Roberto Gutierrezz</h5>
+                                            <h6 class="robrto-p2 mb-3">Roberto Gutierrezz</h6>
+                                            <p class="robrto-p mb-0 px-5">Roberto GGutierrezz utierrezz</p>
+                                            <hr class="light-clr mb-0">
+                                            <ul class="list-group list-group-flush">
+                                                <li
+                                                    class="profile-list-item list-group-item1 d-flex justify-content-between align-items-center">
+                                                    Lorem Ipsum
+                                                    <span class="profile-rating">5/5</span>
+                                                </li>
+                                                <hr class="light-clr mb-0 mt-0">
+
+                                                <li
+                                                    class="profile-list-item list-group-item1 d-flex justify-content-between align-items-center">
+                                                    Lorem Ipsum
+                                                    <span class="profile-rating">5/5</span>
+                                                </li>
+                                                <hr class="light-clr mb-0 mt-0">
+
+                                                <li
+                                                    class="profile-list-item list-group-item1 d-flex justify-content-between align-items-center">
+                                                    Lorem Ipsum
+                                                    <span class="profile-rating">5/5</span>
+                                                </li>
+                                                <hr class="light-clr mb-0 mt-0">
+
+                                                <li
+                                                    class="profile-list-item list-group-item1 d-flex justify-content-between align-items-center">
+                                                    Lorem Ipsum
+                                                    <span class="profile-rating">5/5</span>
+                                                </li>
+                                                <hr class="light-clr mb-0 mt-0">
+
+                                            </ul>
+
+                                            <!-- <button class="btn profile-action-btn text-white rounded-pill">Lorem</button> -->
+                                            <div class="btn btn-primary profile-loremm px-4 py-1 rounded-4 mt-4 mb-4">
+                                                Lorem
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-7 multi-pagination-margin">
+                                <div class="image-pto-container">
+                                    <div class="search-input-group d-flex align-items-center">
+                                        <input type="search" class="search-input form-control py-2 ps-4 rounded-5"
+                                            placeholder="Lorem Ipsum">
+                                        <!-- Button to Open Modal -->
+                                        <button class="btn search-btn" data-bs-toggle="modal"
+                                            data-bs-target="#select-photo-modal">
+                                            <img src="./img/photo-icon-modal-btn.svg" alt="Search Icon"
+                                                class="search-icon" width="18" height="18">
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="image-pto-container">
+                                    <p class="mb-0 dat-txt">12/02/2024</p>
+                                    <p class="fw-semibold dat-txt-p mb-0">Lorem Ipsum is simply dummy text ofLorem Ipsum
+                                        is
+                                        simply
+                                        dumt</p>
+                                </div>
+
+                                <div class="image-pto-container">
+                                    <p class="mb-0 dat-txt">12/02/2024</p>
+                                    <p class="fw-semibold dat-txt-p mb-0">Lorem Ipsum is simply dummy text ofLorem Ipsum
+                                        is
+                                        simply
+                                        dumt</p>
+                                </div>
+
+                                <div class="image-pto-container">
+                                    <p class="mb-0 dat-txt">12/02/2024</p>
+                                    <p class="fw-semibold dat-txt-p mb-0">Lorem Ipsum is simply dummy text ofLorem Ipsum
+                                        is
+                                        simply
+                                        dumt</p>
+                                </div>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination profile-pg-pginatn align-items-center justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link border-0 text-dark fw-bold px-0" href="#"
+                                                aria-label="Previous">
+                                                <!-- &laquo;&laquo; -->
+                                                <img src="./img/gren-pg-icon.svg">
+                                                <img src="./img/gren-pg-icon.svg">
+                                            </a>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <span
+                                                class="page-link profile-pg-link border-0 text-dark fw-bold bg-transparent">1
+                                                to
+                                                4</span>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link  border-0 text-dark fw-bold px-0" href="#"
+                                                aria-label="Next">
+                                                <!-- &raquo;&raquo; -->
+                                                <img src="./img/grn-pgination-nxt.svg">
+                                                <img src="./img/grn-pgination-nxt.svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--#############> carousel section start   <##################-->
+
+            <div class="container">
+                <div class="row d-flex justify-content-center mb-lg-5 mb-3">
+                    <div class="col-lg-4 mb-3">
+                        <div class="fame-container px-lg-5 px-3 pt-4 pb-3">
+                            <h5 class="fame-h">Reberto Gutierrezz</h5>
+                            <div id="fame-carousel" class="carousel slide">
+                                <div class="carousel-indicators fame-indicator">
+                                    <button type="button" data-bs-target="#fame-carousel" data-bs-slide-to="0"
+                                        class="active" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#fame-carousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <!-- <button type="button" data-bs-target="#fame-carousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#fame-carousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#fame-carousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button> -->
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="mb-3">
+                                                <div class="position-relative">
+                                                    <img src="./img/fame-carousel-img (1).png" style="width: 218;
+                                                height: 144;
+                                                " alt="Profile" class="w-100 rounded">
+                                                    <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                        style="top: 10px; right: 10px; font-size: 14px;">
+                                                        Lorem
+                                                    </div>
+                                                </div>
+                                                <p class="fame-p">Reberto Gutierrezz</p>
+
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="position-relative">
+                                                    <img src="./img/fame-carousel-img (2).png" alt="Profile"
+                                                        class="w-100 rounded">
+                                                    <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                        style="top: 10px; right: 10px; font-size: 14px;">
+                                                        Lorem
+                                                    </div>
+                                                </div>
+                                                <p class="fame-p">Reberto Gutierrezz</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="mb-3">
+                                                <div class="position-relative">
+                                                    <img src="./img/fame-carousel-img (3).png" alt="Profile"
+                                                        class="w-100 rounded">
+                                                    <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                        style="top: 10px; right: 10px; font-size: 14px;">
+                                                        Lorem
+                                                    </div>
+                                                </div>
+                                                <p class="fame-p">Reberto Gutierrezz</p>
+
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="position-relative">
+                                                    <img src="./img/fame-carousel-img (4).png" alt="Profile"
+                                                        class="w-100 rounded">
+                                                    <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                        style="top: 10px; right: 10px; font-size: 14px;">
+                                                        Lorem
+                                                    </div>
+                                                </div>
+                                                <p class="fame-p">Reberto Gutierrezz</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="carousel-control-prev d-none" type="button"
+                                        data-bs-target="#fame-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next d-none" type="button"
+                                        data-bs-target="#fame-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mb-3">
+                        <div class="fame-container px-lg-5 px-3 pt-4 pb-3">
+                            <h5 class="fame-h1 mb-5">Reberto Gutierrezz</h5>
+                            <div id="fame-carousel-unique" class="carousel slide">
+                                <div class="carousel-indicators fame-indicator">
+                                    <button type="button" data-bs-target="#fame-carousel-unique" data-bs-slide-to="0"
+                                        class="active" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#fame-carousel-unique" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="mb-4">
+                                            <div class="horz-famee-card">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="position-relative">
+                                                            <img src="./img/fame-carousel-img (1).png" alt="Profile"
+                                                                class="w-100 rounded">
+                                                            <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                                style="top: 10px; right: 10px; font-size: 14px;">
+                                                                Lorem
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body ps-lg-1">
+                                                            <h5 class="fame-h text-start">Reberto Gutierrezz</h5>
+                                                            <p class="fame-p">12/02/2024</p>
+                                                            <!-- <p class="mb-0 dat-txt">12/02/2024</p>                                                                   -->
+                                                            <p class="dat-txt" style="color: black;">
+                                                                Lorem Ipsum is simply dummy text ofLorem Ipsum is simply
+                                                                dummy text ofLorem Ipsum is simply dummy text of Lorem
+                                                                Ipsum
+                                                                is simply dummy text ofLorem Ipsum is simply dummy text
+                                                                ofLorem Ipsum is simply dummy text of
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <div class="horz-famee-card">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="position-relative">
+                                                            <img src="./img/fame-carousel-img (3).png" alt="Profile"
+                                                                class="w-100 rounded">
+                                                            <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                                style="top: 10px; right: 10px; font-size: 14px;">
+                                                                Lorem
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body ps-lg-1">
+                                                            <h5 class="fame-h text-start">Reberto Gutierrezz</h5>
+                                                            <p class="fame-p">12/02/2024</p>
+                                                            <!-- <p class="mb-0 dat-txt">12/02/2024</p>                                                                   -->
+                                                            <p class="dat-txt" style="color: black;">
+                                                                Lorem Ipsum is simply dummy text ofLorem Ipsum is simply
+                                                                dummy text ofLorem Ipsum is simply dummy text of Lorem
+                                                                Ipsum
+                                                                is simply dummy text ofLorem Ipsum is simply dummy text
+                                                                ofLorem Ipsum is simply dummy text of
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="mb-3">
+                                            <div class="horz-famee-card">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="position-relative">
+                                                            <img src="./img/fame-carousel-img (4).png" alt="Profile"
+                                                                class="w-100 rounded">
+                                                            <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                                style="top: 10px; right: 10px; font-size: 14px;">
+                                                                Lorem
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body ps-lg-1">
+                                                            <h5 class="fame-h text-start">Reberto Gutierrezz</h5>
+                                                            <p class="fame-p">12/02/2024</p>
+                                                            <!-- <p class="mb-0 dat-txt">12/02/2024</p>                                                                   -->
+                                                            <p class="dat-txt" style="color: black;">
+                                                                Lorem Ipsum is simply dummy text ofLorem Ipsum is simply
+                                                                dummy text ofLorem Ipsum is simply dummy text of Lorem
+                                                                Ipsum
+                                                                is simply dummy text ofLorem Ipsum is simply dummy text
+                                                                ofLorem Ipsum is simply dummy text of
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="horz-famee-card">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="position-relative">
+                                                            <img src="./img/fame-carousel-img (2).png" alt="Profile"
+                                                                class="w-100 rounded">
+                                                            <div class="position-absolute bg-orange-lorem text-white fw-bold rounded-pill px-4"
+                                                                style="top: 10px; right: 10px; font-size: 14px;">
+                                                                Lorem
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="card-body ps-lg-1">
+                                                            <h5 class="fame-h text-start">Reberto Gutierrezz</h5>
+                                                            <p class="fame-p">12/02/2024</p>
+                                                            <!-- <p class="mb-0 dat-txt">12/02/2024</p>                                                                   -->
+                                                            <p class="dat-txt" style="color: black;">
+                                                                Lorem Ipsum is simply dummy text ofLorem Ipsum is simply
+                                                                dummy text ofLorem Ipsum is simply dummy text of Lorem
+                                                                Ipsum
+                                                                is simply dummy text ofLorem Ipsum is simply dummy text
+                                                                ofLorem Ipsum is simply dummy text of
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="carousel-control-prev d-none" type="button"
+                                        data-bs-target="#fame-carousel-unique" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next d-none" type="button"
+                                        data-bs-target="#fame-carousel-unique" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--#############> carousel section end   <##################-->
+
+
+
+        </div>
+
+
+
+
+    </main>
+    <!--#############> Main Page   End   <##################-->
+
+
+
+    <!--#############> footer section  start   <##################-->
+    <footer class="footer pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 text-lg-center text-start">
+                    <div class="d-flex justify-content-lg-center justify-content-start">
+                        <img src="./img/footer-logo.png" class="brandfooter-logoo" alt="">
+                    </div>
+                    <p class="copyright mt-2">COPYRIGHT 2024 CARTENGO</p>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                        <li><a href="#">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+
+                        <li><a href="#">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <div class="social-icons d-flex flex-wrap gap-1">
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/u-tube-icon.svg" style="width: 23px; height: 23px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/insta-icon.svg" style="width: 22px; height: 22px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/fb-icon.svg" style="width: 22px; height: 22px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/tiktok-icon.svg" style="width: 22px; height: 22px;">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/twitter-icon.svg" style="width: 21px; height: 21px;">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--#############> footer section  end   <##################-->
+    <!--#############> Script   Start   <##################-->
+
+    <script src="js/app.js"></script>
+
+    <!--#############> Script  for changing profile-banner images through modal Start   <##################-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imageUploadBtn = document.getElementById('imageUploadBtn');
+            const imageUploadInput = document.getElementById('imageUploadInput');
+            const profileImagePreview = document.getElementById('profileImagePreview');
+            const modalImagePreview = document.getElementById('modalImagePreview');
+
+            // Trigger file input click when button is clicked
+            imageUploadBtn.addEventListener('click', function () {
+                imageUploadInput.click();
+            });
+
+            // Handle image selection
+            imageUploadInput.addEventListener('change', function (event) {
+                const file = event.target.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        // Update the src attribute of both image elements
+                        profileImagePreview.src = e.target.result;
+                        modalImagePreview.src = e.target.result;
+                    };
+
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please select a valid image file.');
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imageUploadBtn1 = document.getElementById('imageUploadBtn1');
+            const imageUploadInput1 = document.getElementById('imageUploadInput1');
+            const modalImagePreview1 = document.getElementById('modalImagePreview1');
+            const profileImagePreview1 = document.getElementById('profileImagePreview1');
+
+            // Trigger file input click when button is clicked
+            imageUploadBtn1.addEventListener('click', function () {
+                imageUploadInput1.click();
+            });
+
+            // Handle image selection
+            imageUploadInput1.addEventListener('change', function (event) {
+                const file = event.target.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        // Update the src attribute of the modal image preview
+                        modalImagePreview1.src = e.target.result;
+
+                        // Update the background image of the profile-banner div
+                        profileImagePreview1.style.backgroundImage = `url(${e.target.result})`;
+                    };
+
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please select a valid image file.');
+                }
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('editButton').addEventListener('click', function() {
+        const descriptionText = document.getElementById('descriptionText');
+        const descriptionInput = document.getElementById('descriptionInput');
+    
+        if (descriptionText.style.display !== 'none') {
+            // Switch to edit mode
+            descriptionText.style.display = 'none';
+            descriptionInput.style.display = 'block';
+            descriptionInput.value = descriptionText.innerText;
+            this.innerText = 'Guardar'; // Change button text to "Guardar"
+        } else {
+            // Save changes and switch back to view mode
+            descriptionText.style.display = 'block';
+            descriptionInput.style.display = 'none';
+            descriptionText.innerText = descriptionInput.value;
+            this.innerText = 'Editar'; // Change button text back to "Editar"
+        }
+    });
+    </script>
+    <!--#############> Script   End   <##################-->
+
+
+</body>
+
+</html>
