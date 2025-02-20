@@ -40596,11 +40596,7 @@ div.dataTables_wrapper span.select-item {
     font-size: 18px !important;
   }
 
-  .profile-lorem {
-    
-    top: 15px;
-    bottom: 128px !important;
-  }
+  
 
 }
 
@@ -40793,7 +40789,11 @@ body {
 
   }
 
-
+  .profile-lorem {
+    
+    top: 15px;
+    bottom: 128px !important;
+  }
 }
 
 @media (max-width: 992px) {
