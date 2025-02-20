@@ -41006,9 +41006,9 @@ body {
 }
 
 .carar-orange-heart {
-  top: 15px;
-  left: 15px;
-  width: 30px;
+  top: 15px !important;
+  left: 15px !important;
+  width: 30px !important;
 }
 
 .carar-orange-heart1 {

@@ -80,7 +80,6 @@
 .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -287,6 +286,7 @@
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 0px;
+    font-family: 'Montserrat';
 }
 
 .SellerPanel-LightText {
@@ -426,6 +426,13 @@
 }
 /* stepper styling ends here  */
 /* Seller Panel Page styling ends here */
+
+/* Favorites list Page styling starts here */
+.CartengoCards-img{
+    height: 140px !important;
+    /* border:2px solid green; */
+}
+/* Favorites list Page styling ends here */
 
 
 
