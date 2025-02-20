@@ -16608,24 +16608,16 @@ fieldset:disabled .btn {
   font-family: "Montserrat", serif;
 }
 
-.btn-primary.focus,
 .btn-primary.hover:not(:disabled):not(.disabled),
 .btn-primary:disabled,
-.btn-primary:focus,
-.btn-primary:hover:not(:disabled):not(.disabled),
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn-primary:hover:not(:disabled):not(.disabled){
   color: rgba(255, 111, 0, 1);
 }
 
 .btn-secondary.disabled,
-.btn-secondary.focus,
 .btn-secondary.hover:not(:disabled):not(.disabled),
 .btn-secondary:disabled,
-.btn-secondary:focus,
-.btn-secondary:hover:not(:disabled):not(.disabled),
-.btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active {
+.btn-secondary:hover:not(:disabled):not(.disabled){
   color: rgba(0, 66, 37, 1);
 }
 
