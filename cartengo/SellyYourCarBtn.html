@@ -17,74 +17,96 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon">
 
+    	<!-- AOS CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <!--#############> Header Start <##################  -->
-    <header>
+ 	<!-- ################> Window  Loader start <######## -->
+     <div class="loader-main">
+		<div class="loader"></div>
+	</div>
+	<!-- ################> Window  Loader  End <######## -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-lg-5 py-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" aria-current="page" href="#">SUBASTAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-btn-scnd" href="#">VENDER TU AUTO</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">COMUNIDAD</a>
-                        </li>
+	<!--#############> Back to top buttonbtmtop  start <#############-->
+	<a id="buttonbtmtop"></a>
+	<!--#############> Back to top buttonbtmtop  start <#############-->
 
 
-                    </ul>
-                    <form class="d-flex">
-                        <!-- <input class="custom-form-control form-control py-3 rounded-4  me-2" type="search" placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search"> -->
-                        <div class="position-relative me-2">
-                            <input class="custom-form-control form-control py-3" type="search"
-                                placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
-                            <span class="position-absolute custm-serch-icon1 ps-3">
-                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="18" height="18" fill="url(#pattern0_4035_18291)" />
-                                    <defs>
-                                        <pattern id="pattern0_4035_18291" patternContentUnits="objectBoundingBox"
-                                            width="1" height="1">
-                                            <use xlink:href="#image0_4035_18291" transform="scale(0.0294118)" />
-                                        </pattern>
-                                        <image id="image0_4035_18291" width="34" height="34"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBvVfRceIwEF2ZBkgH7uCSCvBVAFcBvgou+bwPsD3wn6SCmAouV8E5FcQdnPKXzzQA5C0jMmKRbYE1vBkNaLV6fl6tpLUiD+R5PhwMBtPtdpuge40W78dgq5VSGu15vV6/wFfTGVDULiDBAzK0hPxRbjab4lRBqkHAMIqiDH9v6Xw8GEEfPs7KISKGiH9khb8HNMR894lO5CsCuVBhiW5BfIN2NZ/PFf9yn+2cKw7+HR/zUgeUJYKX49Uhgt/qJ8arDi7mmIDjvoHjpm2ZviJicuKAAG+5MgQVeQB+z+zP88RQbPgboQwBO/6XIrIsS+lMFEVRYsmmts3kS+Xy30UEE3Jh1xDSZ8eQma9tGx8FTf7KFQ0o/8Fhpp7gc8gkv8195coV+EWJsNUhRBghFe828cDU5RshXGNhW1FAgP+v3TfXxLEQDMS2AaGrKCAkH4R9c/lxsl4Lm6aw0KIfU4OQA/jeDb7w5XMJGVJA+PKxEC1sMYVFLPq1UwiS52DAsZ17QfJhc7w5/TDwIhzHFBZTIeyPyynC9iptA1djfCJSAPBtTGJXcjnp8o04qx2n31PfpDVlxb0wl01F0m7XQEgh7LGD5CS46hIuHZv8vwojXNsPWJZfYpwL4btTzhYrEqltx8s+oqxovNEjyzGn462cctW2XC69Etjctq9SBAMvpNvmKkHUVrPWGCtNsmmOksmjGN88Izxo0vXZgfF0NputOoV0iQmBJjGuI16buvOResDMv3PYy8ViMT0S2EbG0eEyUtaeHQK4GCr2tSl+Oc+ejh4sIqN8yM1yJfg75voFJPYhpdH4+7dC/qxcO8xHjJeQEOgSczEhXWIuKqRFzMeALoyqqurRaPSGKEws8/vFhQgx+6T//QnonHH2sKAyywAAAABJRU5ErkJggg==" />
-                                    </defs>
-                                </svg>
-                            </span>
-                        </div>
+	<!--#############> Header Start <##################  -->
+	<header class="mainheader" data-aos="fade-down" data-aos-duration="1000">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-0 px-lg-5 py-lg-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">
+					<img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav align-items-start align-items-lg-center me-auto mb-2 mb-lg-0">
+						<li class="nav-item py-2 py-lg-0 px-lg-3 px-0">
+
+							<a class="nav-link active" aria-current="page" href="#">SUBASTAS</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link active" href="./Sell your car.html">VENDER TU AUTO</a>
+						</li>
+						<li class="nav-item py-2 px-lg-3 px-0">
+
+							<a class="nav-link" href="./About Us.html">NOSOTROS</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link" href="#">COMUNIDAD</a>
+						</li>
+					</ul>
+					<form class="d-flex flex-column flex-lg-row">
+
+						<!-- <input class="custom-form-control form-control py-3 rounded-4  me-2" type="search" placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search"> -->
+						<div class="position-relative me-lg-2 mb-md-2 mb-lg-0 mb-2">
+							<input class="custom-form-control form-control py-3" type="search"
+								placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
+							<span class="position-absolute custm-serch-icon1 ps-3">
+								<svg width="16" height="16" viewBox="0 0 18 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<rect width="18" height="18" fill="url(#pattern0_4035_18291)" />
+									<defs>
+										<pattern id="pattern0_4035_18291" patternContentUnits="objectBoundingBox"
+											width="1" height="1">
+											<use xlink:href="#image0_4035_18291" transform="scale(0.0294118)" />
+										</pattern>
+										<image id="image0_4035_18291" width="34" height="34"
+											xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBvVfRceIwEF2ZBkgH7uCSCvBVAFcBvgou+bwPsD3wn6SCmAouV8E5FcQdnPKXzzQA5C0jMmKRbYE1vBkNaLV6fl6tpLUiD+R5PhwMBtPtdpuge40W78dgq5VSGu15vV6/wFfTGVDULiDBAzK0hPxRbjab4lRBqkHAMIqiDH9v6Xw8GEEfPs7KISKGiH9khb8HNMR894lO5CsCuVBhiW5BfIN2NZ/PFf9yn+2cKw7+HR/zUgeUJYKX49Uhgt/qJ8arDi7mmIDjvoHjpm2ZviJicuKAAG+5MgQVeQB+z+zP88RQbPgboQwBO/6XIrIsS+lMFEVRYsmmts3kS+Xy30UEE3Jh1xDSZ8eQma9tGx8FTf7KFQ0o/8Fhpp7gc8gkv8195coV+EWJsNUhRBghFe828cDU5RshXGNhW1FAgP+v3TfXxLEQDMS2AaGrKCAkH4R9c/lxsl4Lm6aw0KIfU4OQA/jeDb7w5XMJGVJA+PKxEC1sMYVFLPq1UwiS52DAsZ17QfJhc7w5/TDwIhzHFBZTIeyPyynC9iptA1djfCJSAPBtTGJXcjnp8o04qx2n31PfpDVlxb0wl01F0m7XQEgh7LGD5CS46hIuHZv8vwojXNsPWJZfYpwL4btTzhYrEqltx8s+oqxovNEjyzGn462cctW2XC69Etjctq9SBAMvpNvmKkHUVrPWGCtNsmmOksmjGN88Izxo0vXZgfF0NputOoV0iQmBJjGuI16buvOResDMv3PYy8ViMT0S2EbG0eEyUtaeHQK4GCr2tSl+Oc+ejh4sIqN8yM1yJfg75voFJPYhpdH4+7dC/qxcO8xHjJeQEOgSczEhXWIuKqRFzMeALoyqqurRaPSGKEws8/vFhQgx+6T//QnonHH2sKAyywAAAABJRU5ErkJggg==" />
+									</defs>
+								</svg>
+							</span>
+						</div>
 
 
-                        <button class="btn btn-secondary px-3 py-2 border-3" type="submit">INICIA SESIÓN</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+						<!-- Log in" or "Sign in button ||  INICIA SESIÓN -->
+						<button
+							class="btn btn-secondary d-flex justify-content-center  px-3 my-2 my-lg-0 py-2 border-3 "
+							type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+							INICIA SESIÓN
+						</button>
 
-    </header>
-    <!--#############> Header End   <##################-->
+					</form>
+				</div>
+			</div>
+		</nav>
 
+	</header>
+	<!--#############> Header End   <##################-->
 
 
     <!--#############> Cards Section Start   <##################-->
-    <div class="container  mb-5 pb-5">
+    <div class="container  mb-5 pb-5" data-aos="fade-up" data-aos-duration="1000">
 
         <div class="row d-flex justify-content-center">
             <div class=" col-md-10 col-lg-6">
@@ -101,7 +123,7 @@
 
     <!--################> Crad Section Start <###############-->
     <div class="container my-5">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-md-11">
                 <div class="fravor p-3 p-md-4">
                     <p class="py-1">Por favor comparteous algunus details basicos dei auto que disease vendor</p>
@@ -132,7 +154,7 @@
 
 
     <!--##########> Form Start <########  -->
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="row d-flex justify-content-center">
             <div class="col-md-11 my-5 py-lg-5">
 
@@ -608,7 +630,19 @@
     <!--#############> footer section  end   <##################-->
 
     <!--#############> Script   Start   <##################-->
-    <script src="js/app.js"></script>
+     
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="./js/zahid.js"></script>
+	<script src="./js/stickyheader.js"></script>
+
+
+	<!-- AOS JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const video = document.getElementById('carr-viddeo');
