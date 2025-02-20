@@ -1,38 +1,44 @@
+<!--
+==========================================
+Project Name:Cartengo
+Version: 1.0
+Created By:FrontEnd Team Alright Tech 
+Date: 02/20/2025
+Description:A responsive car e-commerce website for browsing, selecting, and purchasing vehicles online, built with HTML, CSS, Bootstrap, and JavaScript
+==========================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
-	<meta name="author" content="Bootlab">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description"
+		content="A responsive car e-commerce website for browsing, selecting, and purchasing vehicles online, built with HTML, CSS, Bootstrap, and JavaScript" />
+	<meta name="author" content="Bootlab" />
+	<title>Cartenzo Website</title>
 
-	<title>Cartengo Website</title>
+	<!--###############> favicon  Link Start <################# -->
+	<link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon" />
+	<!--###############> favicon Link end <################# -->
 
-	<link href="./css/modern.css" rel="stylesheet">
+	<!--################> link css start <##################### -->
+	<link href="./css/modern.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/zahid-theme.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!--################> link css End <##################### -->
 
-
-		<!-- link css -->
-		<link rel="stylesheet" href="./css/zahid-theme.css">
-
-		<!-- bootstrap icons -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	
-	<!-- favicon -->
-	<link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon">
-
-
-	<!-- AOS CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
- 	<!-- ################> Window  Loader start <######## -->
-	 <div class="loader-main">
+	<!-- ################> Window  Loader start <######## -->
+	<div class="loader-main">
 		<div class="loader"></div>
 	</div>
 	<!-- ################> Window  Loader  End <######## -->
@@ -41,43 +47,38 @@
 	<a id="buttonbtmtop"></a>
 	<!--#############> Back to top buttonbtmtop  start <#############-->
 
-
 	<!--#############> Header Start <##################  -->
 	<header class="mainheader" data-aos="fade-down" data-aos-duration="1000">
-
 		<nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-0 px-lg-5 py-lg-3">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="/">
-					<img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="">
+				<a class="navbar-brand" href="">
+					<img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="" />
 				</a>
+
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav align-items-start align-items-lg-center me-auto mb-2 mb-lg-0">
-						<li class="nav-item py-2 py-lg-0 px-lg-3 px-0">
-
-							<a class="nav-link " aria-current="page" href="">SUBASTAS</a>
+					<ul class="navbar-nav align-items-lg-center me-auto mb-2 mb-lg-0">
+						<li class="nav-item py-2 py-lg-0 px-lg-3">
+							<a class="nav-link" aria-current="page" href="">SUBASTAS</a>
 						</li>
 						<li class="nav-item py-2 py-lg-0">
-							<a class="nav-link active" href="./Sell your car.html">VENDER TU AUTO</a>
+							<a class="nav-link active" href="">VENDER TU AUTO</a>
 						</li>
-						<li class="nav-item py-2 px-lg-3 px-0">
-
-							<a class="nav-link" href="./About Us.html">NOSOTROS</a>
+						<li class="nav-item py-2 py-lg-0 px-lg-3">
+							<a class="nav-link" href="">NOSOTROS</a>
 						</li>
 						<li class="nav-item py-2 py-lg-0">
 							<a class="nav-link" href="">COMUNIDAD</a>
 						</li>
 					</ul>
-					<form class="d-flex flex-column flex-lg-row">
-
-						<!-- <input class="custom-form-control form-control py-3 rounded-4  me-2" type="search" placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search"> -->
-						<div class="position-relative me-lg-2 mb-md-2 mb-lg-0 mb-2">
+					<form class="d-lg-flex">
+						<div class="position-relative me-2">
 							<input class="custom-form-control form-control py-3" type="search"
-								placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search">
+								placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search" />
 							<span class="position-absolute custm-serch-icon1 ps-3">
 								<svg width="16" height="16" viewBox="0 0 18 18" fill="none"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -94,1151 +95,1283 @@
 							</span>
 						</div>
 
-
-						<!-- Log in" or "Sign in button ||  INICIA SESIÓN -->
-						<button
-							class="btn btn-secondary d-flex justify-content-center  px-3 my-2 my-lg-0 py-2 border-3 "
+						<button class="btn btn-secondary d-flex justify-content-center px-3 my-2 my-lg-0 py-2 border-3"
 							type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
 							INICIA SESIÓN
 						</button>
-
 					</form>
+
+					<ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0 d-none">
+						<li class="nav-item dropdown ms-lg-2">
+							<a class="nav-link dropdown-toggle position-relative" href="" id="alertsDropdown"
+								data-bs-toggle="dropdown">
+								<svg width="30" height="30" viewBox="0 0 34 38" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.333374 32.125V28.375H4.50004V15.25C4.50004 12.6562 5.3681 10.3594 7.10421 8.35938C8.84032 6.32812 11.0973 5 13.875 4.375V3.0625C13.875 2.28125 14.1702 1.625 14.7605 1.09375C15.3855 0.531249 16.132 0.25 17 0.25C17.8681 0.25 18.5973 0.531249 19.1875 1.09375C19.8125 1.625 20.125 2.28125 20.125 3.0625V4.375C22.9028 5 25.1598 6.32812 26.8959 8.35938C28.632 10.3594 29.5 12.6562 29.5 15.25V28.375H33.6667V32.125H0.333374ZM17 37.75C15.8542 37.75 14.8646 37.3906 14.0313 36.6719C13.2327 35.9219 12.8334 35.0312 12.8334 34H21.1667C21.1667 35.0312 20.75 35.9219 19.9167 36.6719C19.1181 37.3906 18.1459 37.75 17 37.75ZM8.66671 28.375H25.3334V15.25C25.3334 13.1875 24.5174 11.4219 22.8855 9.95312C21.2535 8.48437 19.2917 7.75 17 7.75C14.7084 7.75 12.7466 8.48437 11.1146 9.95312C9.48268 11.4219 8.66671 13.1875 8.66671 15.25V28.375Z"
+										fill="#1D1B20" />
+								</svg>
+							</a>
+							<div class="dropdown-menu dropdown-menu-md dropdown-menu-end py-0"
+								aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">4 New Notifications</div>
+								<div class="list-group">
+									<a href="" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="ms-1 text-danger fas fa-fw fa-bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">
+													Restart server 12 to complete the update.
+												</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="ms-1 text-warning fas fa-fw fa-envelope-open"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">
+													Aliquam ex eros, imperdiet vulputate hendrerit et.
+												</div>
+												<div class="text-muted small mt-1">6h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="ms-1 text-primary fas fa-fw fa-building"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.1</div>
+												<div class="text-muted small mt-1">8h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="ms-1 text-success fas fa-fw fa-bell-slash"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">
+													Anna accepted your request.
+												</div>
+												<div class="text-muted small mt-1">12h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown ms-lg-2">
+							<a class="nav-link dropdown-toggle position-relative" href="" id="userDropdown"
+								data-bs-toggle="dropdown">
+								<svg width="30" height="30" viewBox="0 0 38 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M35.6667 37.625V33.7083C35.6667 31.6308 34.7887 29.6384 33.2259 28.1693C31.6631 26.7003 29.5435 25.875 27.3334 25.875H10.6667C8.45657 25.875 6.33695 26.7003 4.77415 28.1693C3.21135 29.6384 2.33337 31.6308 2.33337 33.7083V37.625M27.3334 10.2083C27.3334 14.5346 23.6024 18.0417 19 18.0417C14.3977 18.0417 10.6667 14.5346 10.6667 10.2083C10.6667 5.8821 14.3977 2.375 19 2.375C23.6024 2.375 27.3334 5.8821 27.3334 10.2083Z"
+										stroke="#FF6F00" stroke-width="4" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+								<a class="dropdown-item my-2" href="">
+									<div class="d-flex justify-content-between">
+										<div class="pt-3">Perfil</div>
+										<div>
+											<svg width="36" height="43" viewBox="0 0 36 43" fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink">
+												<rect width="36" height="43" fill="url(#pattern0_4035_10608)" />
+												<defs>
+													<pattern id="pattern0_4035_10608"
+														patternContentUnits="objectBoundingBox" width="1" height="1">
+														<use xlink:href="#image0_4035_10608"
+															transform="matrix(0.0277778 0 0 0.0232558 -3.94444 -0.883721)" />
+													</pattern>
+													<image id="image0_4035_10608" width="202" height="268"
+														preserveAspectRatio="none"
+														xlink:href="data:image/png;base64,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oSVLliTmZg/6QbjWnnjiiSaYnXbayc2YMcMyndj8yYpQqMkpeSiNEEfPnj0TS5zbddddrX+CgChfyAbU+pRmZJ/p06e7V1991U2dOjWxRQ0YYDKRjV5++WUbFDj88MOtL/D73//evfjii9bB5oFg/KFmU+C833nnndqJsqo+r7zyinviiSesv/P+++9b34cGgvOpf64LFixIbCU2F7IiFAJ/l112sfcIJt6ZpZ/CqBhTNBpEWUYnnPV4Sv/666+7U0891ZZFEHh02BkAeOCBB0wMZB468uyLYVueczC/Oa60gOjoK0VTQyUVwuYJ/mWXXeb++Mc/2ugXI28MTDR0rmLzQh6OQqSAASjQsIwQAUgoQgQgoQgRgIQiRAASihABSChCBCChCBGAhCJEABKKEAFIKEIEIKEIEYCEIkQAEooQAUgoQgQgoQgRgIQiRAASihABSChCBCChCBGAhCJEABKKEAFIKEIEIKEIEYCEIkQAEooQAUgoQgQgoQgRgIQiRAASihABZPzX7Nn9J5984v72t7+5Dz74wAx38EjBNRfD03TgvovdG6ZCOARjOHTbbbe5a6+91u29996JtZoPNhG49kZwjpgBYdew5557toiLF7YQOIndcMMNDRqeYjqECRHgMob9RWvDdeG+cQ+wr2hvZO3X7HHoveWWW8wsCM8TAuCggw5K66DVGnTv3t1dcsklZoN3yCGHmO/krbfe6v785z/XcRYW7Y+MCwXDUkx2Ro8ebc6+3//+9915551nrrybGmQRstTBBx/shg8f7u666y537LHHmtvwa6+9llhLtEey0kche+DLmAxstf/yl7+4YcOGuaFDh7rbb7/drN1CwQ6OrDVkyBB39tlnuylTptR6J1Kq4XyFbRwe71dccYWVcyHg1HXSSSeZizE+kzgVA+8xM+VcmcaNG1e7T0rNadOmuVGjRtlxKTGxyItDOuc7cr6sh2VdffCwxD6cdfhu8evBeSBe9h0d48knn6w9P7IfFnhkb7bnuoZcE+4D2ZP1mbADrKiosG3aOxkXCl7r+Bj++te/dk899ZTdjDjcPNx/CSZu2M0332zrjB071pyE04G/IvVz586dzTaOTIB13OOPP25BG4EPJGXVnXfe2ahau0uXLm7HHXc0j8jo3AnsH/7wh9afIDu++eab7umnn7bj8T3Gjx9v1nQciywat6Kj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" />
+												</defs>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a class="dropdown-item my-3" href="">Contacts</a>
+								<a class="dropdown-item my-3" href="">Analytics</a>
+								<a class="dropdown-item my-3" href=""> Settings</a>
+								<a class="dropdown-item my-3" href=""> Sign out</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
-
 	</header>
 	<!--#############> Header End   <##################-->
 
-	<!--#############> Hero Section Start   <##################-->
 
-	<div class="container mt-3 ">
-		<div class="row" data-aos="fade-up" data-aos-duration="1000">
-			<div class="col-lg-8">
-				<div class="d-flex gap-2">
-					<div class="grater-sign-bg d-flex align-items-center justify-content-center rounded-circle px-lg-2 px-3"
-						style="width: 40px; height: 40px;">
-						<img src="./img/greater-green-icon.svg" width="14" height="25">
+	<main>
+		<!--#############> Hero Section Start   <##################-->
+
+		<div class="container mt-3 ">
+			<div class="row" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-lg-8">
+					<div class="d-flex gap-2">
+						<div class="grater-sign-bg d-flex align-items-center justify-content-center rounded-circle px-lg-2 px-3"
+							style="width: 40px; height: 40px;">
+							<img src="./img/greater-green-icon.svg" width="14" height="25">
+						</div>
+						<h1 class="big-toyota-h">2014 Toyota FJ Cruiser Edicion Especial</h1>
+
 					</div>
-					<h1 class="big-toyota-h">2014 Toyota FJ Cruiser Edicion Especial</h1>
+					<p class="big-toyota-p">Modelo Unico 1 de 2,500 Fabricadas, 4x4, Mexico, Sin modificar</p>
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
+			<div class="row">
+				<!--#############> Left side Start   <##################-->
+
+				<div class="col-lg-8">
+
+					<div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-lg-12">
+
+							<div class="d-flex flex-wrap justify-content-between">
+								<div class="d-flex flex-wrap gap-3">
+									<div class="d-flex gap-3">
+										<div
+											class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
+											<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart2 me-1"
+												alt="Unsplash">
+											55:50
+										</div>
+									</div>
+									<div class="d-flex gap-3">
+										<div
+											class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
+											<img src="img/arrow1-wite.svg" class="carar-orange-heart2 me-1"
+												style="width: 19px !important;" alt="Unsplash">
+											$28,500
+										</div>
+									</div>
+									<div class="d-flex gap-3">
+										<div
+											class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
+											<img src="img/white-hash.svg" class="carar-orange-heart2 me-3"
+												style="width: 20px !important;" alt="Unsplash">
+											150
+										</div>
+									</div>
+									<div class="d-flex gap-3">
+										<div
+											class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
+											<img src="img/lines-num-icon.svg" class="carar-orange-heart2 me-3"
+												style="width: 20px !important;" alt="Unsplash">
+											30
+										</div>
+									</div>
+								</div>
+								<p class="terminal-p mb-0 mt-3">Terminael 18 de Septiembre a las 7:48 PM UTC</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="position-relative" data-aos="zoom-in" data-aos-duration="1000">
+								<img src="img/photos/detail-pg-car.png" class="img-fluid w-100" alt="Unsplash">
+								<div
+									class="amount-tag position-absolute d-flex justify-content-center align-items-center rounded-5 fs-lg-1 fs-4 px-lg-4 px-2 py-1">
+									$28,500</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-lg-3">
+						<div class="col-lg-6 position-relative" data-aos="zoom-in" data-aos-duration="1000">
+							<img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">
+							<p class="text-overlay-exterior text-white">EXTERIOR</p>
+						</div>
+						<div class="col-lg-6 position-relative" data-aos="zoom-in" data-aos-duration="1000">
+							<img src="img/photos/detailpg-cars.png" class="img-fluid w-100" alt="Unsplash">
+							<p class="text-overlay-exterior text-white">INTERIOR</p>
+						</div>
+					</div>
+
+					<div class="row" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-lg-12">
+							<div class="realizer-bg">
+								<div class="container">
+									<div class="row pt-3 pb-2 mt-2 mb-3">
+										<div class="col-lg-6 ps-lg-5">
+											<div
+												class="subscribe-input-container py-2 px-4 rounded-5 d-flex align-items-center">
+												<input type="text"
+													class="subscribe-input-fielddd text-start border-0 w-100"
+													placeholder="Ingrese oferta aqui">
+												<svg width="18" height="15" viewBox="0 0 21 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z"
+														fill="#666666" />
+												</svg>
+											</div>
+
+											<p class="mb-0 favo-txt1 ps-4 mt-1">Monto minimo actual $29,000</p>
+										</div>
+										<div class="col-lg-3">
+											<button class="btn btn-primary px-3 py-2 border-2 rounded-5"
+												style="  font-family: Montserrat, sans-serif;"> Realizer Oferta</button>
+
+
+										</div>
+										<div class="col-lg-3">
+											<div class="d-flex mt-2">
+												<img src="./img/grey-unfilled-heart.svg" class="me-2">
+												<p class="mb-0 favo-txt1 ">Agregar a Favoicos</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-flex mb-2" data-aos="fade-up" data-aos-duration="1000">
+						<h6 class="historico-txt me-2">Historico oficial</h6>
+						<div
+							class="grater-sign-bg d-flex align-items-center justify-content-center rounded-circle me-2">
+							<img src="./img/greater-green-icon.svg" width="5" height="9">
+						</div>
+						<h6 class="historico-txt">
+							<span class="historico-txt1">CARFA</span><span>X</span>
+						</h6>
+					</div>
+
+					<div class="row" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-lg-6">
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Toyoto</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Fj Cruiser</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Kilometraje</span>
+								<span class="brand-name">Lorem ipsum</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Toyoto</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Fj Cruiser</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Kilometraje</span>
+								<span class="brand-name">Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Toyoto</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Fj Cruiser</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Kilometraje</span>
+								<span class="brand-name">Lorem ipsum</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Toyoto</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Fabricante</span>
+								<span class="brand-name">Fj Cruiser</span>
+							</div>
+							<div class="filter-container-fabricante mb-1">
+								<span class="fabricante-pill text-center">Kilometraje</span>
+								<span class="brand-name">Lorem ipsum</span>
+							</div>
+
+						</div>
+					</div>
+
+					<div>
+						<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up"
+							data-aos-duration="1000">
+							<div
+								class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
+								<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+							</div>
+							<p class="auction-endng-son-p mb-0">Equipamento</p>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000">
+							<ul class="list-group ps-3 mt-3 mb-5">
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							</ul>
+						</div>
+
+					</div>
+					<div>
+						<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up"
+							data-aos-duration="1000">
+							<div
+								class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
+								<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+							</div>
+							<p class="auction-endng-son-p mb-0">Modificaciones</p>
+						</div>
+						<div>
+							<ul class="list-group ps-3 mt-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					<div>
+						<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up"
+							data-aos-duration="1000">
+							<div
+								class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
+								<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+							</div>
+							<p class="auction-endng-son-p mb-0">Detalles encontradoso</p>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000">
+							<ul class="list-group ps-3 mt-3 mb-5">
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div>
+						<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up"
+							data-aos-duration="1000">
+							<div
+								class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
+								<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+							</div>
+							<p class="auction-endng-son-p mb-0">Historia de servicios y manteimiento</p>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000">
+							<ul class="list-group ps-3 mt-3 mb-5">
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							</ul>
+						</div>
+
+					</div>
+
+
+
+					<!-- Tooltip Button -->
+					<div class="row" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-lg-12 text-end">
+							<button type="button" class="btn tol-tip-gren rounded-circle" data-bs-toggle="tooltip"
+								data-bs-placement="left" data-bs-custom-class="custom-tooltip1"
+								title="Tu decides Una vez tu carro es aceptado, tú eliges el precio mínimo por el que estás dispuesto a vender. ¡Recuerda, es grComisiones claras, precios justos: Solo cobramos entre entre 2.5% y 4% al ganador de la subasta, sobre el monto final ofertado.">
+								<img src="./img/tol-tip-personicon.svg">
+							</button>
+						</div>
+					</div>
+
+					<div>
+						<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up"
+							data-aos-duration="1000">
+							<div
+								class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
+								<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+							</div>
+							<p class="auction-endng-son-p mb-0">Otros elementos que incluyen la venta</p>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000">
+							<ul class="list-group ps-3 mt-3 mb-5">
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div>
+						<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up"
+							data-aos-duration="1000">
+							<div
+								class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-">
+								<img src="./img/greater-green-icon-down.svg" width="13" height="14">
+							</div>
+							<p class="auction-endng-son-p mb-0">Historia de propiedad</p>
+						</div>
+						<div data-aos="fade-up" data-aos-duration="1000">
+							<ul class="list-group ps-3 mt-3 mb-5">
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+								<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
+							</ul>
+						</div>
+
+					</div>
+
+
+
+
 
 				</div>
-				<p class="big-toyota-p">Modelo Unico 1 de 2,500 Fabricadas, 4x4, Mexico, Sin modificar</p>
-			</div>
-			<div class="col-lg-4"></div>
-		</div>
-		<div class="row">
-			<!--#############> Left side Start   <##################-->
+				<!--#############> Left side end   <##################-->
 
-			<div class="col-lg-8">
+				<!--#############> Right side Start   <##################-->
+				<div class="col-lg-4">
+					<div class="row mb-3">
+						<div class="d-flex justify-content-end gap-2">
+							<div class="d-flex mt-2" data-aos="fade-up" data-aos-duration="1000">
+								<img src="./img/grey-unfilled-heart.svg" class="me-2">
+								<p class="mb-0 terminal-p ">Agregar a Favoicos</p>
+							</div>
+							<div class="d-flex mt-2" data-aos="fade-up" data-aos-duration="1000">
+								<img src="./img/downld-icon.svg" class="me-2">
+								<p class="mb-0 terminal-p ">Compaile</p>
+							</div>
+						</div>
+					</div>
+					<div class="row" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-lg-12 mb-3 mt-2">
 
-				<div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
-					<div class="col-lg-12">
+							<img src="img/photos/detailpg-cars (2).png" class="img-fluid w-100" alt="Unsplash">
 
-						<div class="d-flex flex-wrap justify-content-between">
-							<div class="d-flex flex-wrap gap-3">
-								<div class="d-flex gap-3">
+						</div>
+					</div>
+					<div class="row" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-lg-12">
+
+							<img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">
+
+						</div>
+					</div>
+
+					<div class="row mt-lg-3">
+						<p class="auction-endng-son-p">Subastas que terminan pronto</p>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
 									<div
-										class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
-										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart2 me-1"
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
 											alt="Unsplash">
 										55:50
 									</div>
 								</div>
-								<div class="d-flex gap-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
 									<div
-										class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
-										<img src="img/arrow1-wite.svg" class="carar-orange-heart2 me-1" style="width: 19px !important;"  alt="Unsplash">
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+							<div class="card mb-0">
+								<div class="carar-container position-relative">
+									<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
+
+									<!-- Orange Heart - Top Left -->
+									<img src="img/photos/orange-unfilled-heart.svg"
+										class="carar-orange-heart1 position-absolute" alt="Unsplash">
+
+									<!-- Timer - Top Right -->
+
+									<div
+										class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
+										$28,500</div>
+
+									<!-- Price - Bottom Left -->
+
+									<div
+										class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
+										<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
+											alt="Unsplash">
+										55:50
+									</div>
+								</div>
+								<div class="card-header">
+									<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div>
+											<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
+											<p class="card-text toyota-card11">Azul marino</p>
+										</div>
+
+									</div>
+									<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--#############> Right side Start   <##################-->
+
+			</div>
+			<div class="row my-lg-5 my-3">
+				<div class="col-lg-8">
+					<div class="row">
+						<h1 class="big-toyota-h">2014 Toyota FJ Cruiser Edicion Especial</h1>
+						<div class="col-lg-5 mt-2">
+							<div class="stats-container">
+								<div class="stat-item pe-1">
+									<div class="stat-label text-center">Vendedor</div>
+									<div class="stat-value text-center">Juancho</div>
+								</div>
+								<div class="stat-item ps-1 pe-2">
+									<div class="stat-label text-center">Termina</div>
+									<div class="stat-value text-center">07/05/2024</div>
+								</div>
+								<div class="stat-item ps-1 pe-2">
+									<div class="stat-label text-center">Olertas</div>
+									<div class="stat-value text-center">5</div>
+								</div>
+								<div class="stat-item ps-1 pe-2">
+									<div class="stat-label text-center">Vistas</div>
+									<div class="stat-value text-center">2</div>
+								</div>
+							</div>
+							<div class="text-center mt-3">
+								<h5 class="actual-ofer-txt">Oferta Actual</h5>
+								<div class="w-100 d-flex justify-content-center align-items-center ">
+									<div class="actual-ofer-pric rounded-5 px-4 py-2">
 										$28,500
 									</div>
 								</div>
-								<div class="d-flex gap-3">
-									<div
-										class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
-										<img src="img/white-hash.svg" class="carar-orange-heart2 me-3" style="width: 20px !important;" alt="Unsplash">
-										150
-									</div>
-								</div>
-								<div class="d-flex gap-3">
-									<div
-										class="car-topp d-flex justify-content-center align-items-center px-3 rounded-5">
-										<img src="img/lines-num-icon.svg" class="carar-orange-heart2 me-3" style="width: 20px !important;"
-											alt="Unsplash">
-										30
-									</div>
-								</div>
 							</div>
-							<p class="terminal-p mb-0 mt-3">Terminael 18 de Septiembre a las 7:48 PM UTC</p>
+
 						</div>
-
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="position-relative" data-aos="zoom-in" data-aos-duration="1000">
-							<img src="img/photos/detail-pg-car.png" class="img-fluid w-100" alt="Unsplash">
-							<div class="amount-tag position-absolute d-flex justify-content-center align-items-center rounded-5 fs-lg-1 fs-4 px-lg-4 px-2 py-1">
-								$28,500</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-lg-3">
-					<div class="col-lg-6 position-relative" data-aos="zoom-in" data-aos-duration="1000">
-						<img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">
-						<p class="text-overlay-exterior text-white">EXTERIOR</p>
-					</div>
-					<div class="col-lg-6 position-relative" data-aos="zoom-in" data-aos-duration="1000">
-						<img src="img/photos/detailpg-cars.png" class="img-fluid w-100" alt="Unsplash">
-						<p class="text-overlay-exterior text-white">INTERIOR</p>
-					</div>
-				</div>
-
-				<div class="row" data-aos="fade-up" data-aos-duration="1000">
-					<div class="col-lg-12">
-						<div class="realizer-bg">
-							<div class="container">
-								<div class="row pt-3 pb-2 mt-2 mb-3">
-									<div class="col-lg-6 ps-lg-5">
-										<div
-											class="subscribe-input-container py-2 px-4 rounded-5 d-flex align-items-center">
-											<input type="text" class="subscribe-input-fielddd text-start border-0 w-100"
-												placeholder="Ingrese oferta aqui">
-											<svg width="18" height="15" viewBox="0 0 21 15" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z"
-													fill="#666666" />
-											</svg>
-										</div>
-
-										<p class="mb-0 favo-txt1 ps-4 mt-1">Monto minimo actual $29,000</p>
-									</div>
-									<div class="col-lg-3">
-										<button class="btn btn-primary px-3 py-2 border-2 rounded-5"
-											style="  font-family: Montserrat, sans-serif;"> Realizer Oferta</button>
-
-
-									</div>
-									<div class="col-lg-3">
-										<div class="d-flex mt-2">
-											<img src="./img/grey-unfilled-heart.svg" class="me-2">
-											<p class="mb-0 favo-txt1 ">Agregar a Favoicos</p>
-										</div>
-									</div>
+						<div class="col-lg-4 mt-2">
+							<form>
+								<div class="mb-3">
+									<input type="email" class="form-control py-2 rounded-5 inputs1-offerto"
+										placeholder="tu oferta">
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+								<div class="mb-3">
+									<input type="password" class="form-control py-2 rounded-5 inputs1-offerto"
+										placeholder="Comision cartengo">
+								</div>
+								<div class="mb-3">
+									<input type="password" class="form-control py-2 rounded-5 inputs1-offerto"
+										placeholder="Total">
+								</div>
 
-				<div class="d-flex mb-2"  data-aos="fade-up" data-aos-duration="1000">
-					<h6 class="historico-txt me-2">Historico oficial</h6>
-					<div class="grater-sign-bg d-flex align-items-center justify-content-center rounded-circle me-2">
-						<img src="./img/greater-green-icon.svg" width="5" height="9">
-					</div>
-					<h6 class="historico-txt">
-						<span class="historico-txt1">CARFA</span><span>X</span>
-					</h6>
-				</div>
-
-				<div class="row" data-aos="fade-up" data-aos-duration="1000">
-					<div class="col-lg-6">
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Toyoto</span>
+							</form>
 						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Fj Cruiser</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Kilometraje</span>
-							<span class="brand-name">Lorem ipsum</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Toyoto</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Fj Cruiser</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Kilometraje</span>
-							<span class="brand-name">Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="col-lg-6">
-
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Toyoto</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Fj Cruiser</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Kilometraje</span>
-							<span class="brand-name">Lorem ipsum</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Toyoto</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Fabricante</span>
-							<span class="brand-name">Fj Cruiser</span>
-						</div>
-						<div class="filter-container-fabricante mb-1">
-							<span class="fabricante-pill text-center">Kilometraje</span>
-							<span class="brand-name">Lorem ipsum</span>
+						<div class="col-lg-3 d-flex flex-column align-items-center gap-3 mt-lg-4 mt-2">
+							<button class="btn btn-primary px-3 py-2 border-2 rounded-5 oferta-btn">Realizar
+								Oferta</button>
+							<button class="btn border-2 rounded-5 tiener-btn">Tiener dudae?</button>
 						</div>
 
 					</div>
 				</div>
-
-				<div>
-					<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
-						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
-							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
-						</div>
-						<p class="auction-endng-son-p mb-0">Equipamento</p>
-					</div>
-					<div data-aos="fade-up" data-aos-duration="1000">
-						<ul class="list-group ps-3 mt-3 mb-5">
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-						</ul>
-					</div>
-
-				</div>
-				<div>
-					<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
-						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
-							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
-						</div>
-						<p class="auction-endng-son-p mb-0">Modificaciones</p>
-					</div>
-					<div>
-						<ul class="list-group ps-3 mt-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-
-						</ul>
-					</div>
-
-				</div>
-
-				<div>
-					<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
-						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
-							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
-						</div>
-						<p class="auction-endng-son-p mb-0">Detalles encontradoso</p>
-					</div>
-					<div data-aos="fade-up" data-aos-duration="1000">
-						<ul class="list-group ps-3 mt-3 mb-5">
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-						</ul>
-					</div>
-
-				</div>
-
-				<div>
-					<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
-						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
-							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
-						</div>
-						<p class="auction-endng-son-p mb-0">Historia de servicios y manteimiento</p>
-					</div>
-					<div data-aos="fade-up" data-aos-duration="1000">
-						<ul class="list-group ps-3 mt-3 mb-5">
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-						</ul>
-					</div>
-
-				</div>
-
-			 
-
-				<!-- Tooltip Button -->
-				<div class="row" data-aos="fade-up" data-aos-duration="1000">
-					<div class="col-lg-12 text-end">
-						<button type="button" class="btn tol-tip-gren rounded-circle" data-bs-toggle="tooltip"
-							data-bs-placement="left" data-bs-custom-class="custom-tooltip1"
-							title="Tu decides Una vez tu carro es aceptado, tú eliges el precio mínimo por el que estás dispuesto a vender. ¡Recuerda, es grComisiones claras, precios justos: Solo cobramos entre entre 2.5% y 4% al ganador de la subasta, sobre el monto final ofertado.">
-							<img src="./img/tol-tip-personicon.svg">
-						</button>
-					</div>
-				</div>
-
-				<div>
-					<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
-						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-2">
-							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
-						</div>
-						<p class="auction-endng-son-p mb-0">Otros elementos que incluyen la venta</p>
-					</div>
-					<div data-aos="fade-up" data-aos-duration="1000">
-						<ul class="list-group ps-3 mt-3 mb-5">
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-						</ul>
-					</div>
-
-				</div>
-
-				<div>
-					<div class="d-flex gap-3 align-items-center mt-lg-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
-						<div class="grater-sign-bg1 d-flex align-items-center justify-content-center rounded-circle px-">
-							<img src="./img/greater-green-icon-down.svg" width="13" height="14">
-						</div>
-						<p class="auction-endng-son-p mb-0">Historia de propiedad</p>
-					</div>
-					<div data-aos="fade-up" data-aos-duration="1000">
-						<ul class="list-group ps-3 mt-3 mb-5">
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-							<li class="list-group-item equip-item">Placa protectora de aluminio TRD</li>
-						</ul>
-					</div>
-
-				</div>
-
-
-
-
-
+				<div class="col-lg-4"></div>
 			</div>
-			<!--#############> Left side end   <##################-->
-
-			<!--#############> Right side Start   <##################-->
-			<div class="col-lg-4">
-				<div class="row mb-3">
-					<div class="d-flex justify-content-end gap-2">
-						<div class="d-flex mt-2" data-aos="fade-up" data-aos-duration="1000">
-							<img src="./img/grey-unfilled-heart.svg" class="me-2">
-							<p class="mb-0 terminal-p ">Agregar a Favoicos</p>
-						</div>
-						<div class="d-flex mt-2" data-aos="fade-up" data-aos-duration="1000">
-							<img src="./img/downld-icon.svg" class="me-2">
-							<p class="mb-0 terminal-p ">Compaile</p>
-						</div>
-					</div>
-				</div>
-				<div class="row" data-aos="fade-up" data-aos-duration="1000">
-					<div class="col-lg-12 mb-3 mt-2">
-
-						<img src="img/photos/detailpg-cars (2).png" class="img-fluid w-100" alt="Unsplash">
-
-					</div>
-				</div>
-				<div class="row" data-aos="fade-up" data-aos-duration="1000">
-					<div class="col-lg-12">
-
-						<img src="img/photos/detailpg-cars (1).png" class="img-fluid w-100" alt="Unsplash">
-
-					</div>
-				</div>
-
-				<div class="row mt-lg-3" >
-					<p class="auction-endng-son-p">Subastas que terminan pronto</p>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-						<div class="card mb-0">
-							<div class="carar-container position-relative">
-								<img class="card-img-top" src="img/photos/red-toyota.png" alt="Unsplash">
-
-								<!-- Orange Heart - Top Left -->
-								<img src="img/photos/orange-unfilled-heart.svg"
-									class="carar-orange-heart1 position-absolute" alt="Unsplash">
-
-								<!-- Timer - Top Right -->
-
-								<div
-									class="car-time22 position-absolute d-flex justify-content-center align-items-center rounded-5 px-2 ">
-									$28,500</div>
-
-								<!-- Price - Bottom Left -->
-
-								<div
-									class="car-time11 position-absolute d-flex justify-content-center align-items-center px-2">
-									<img src="img/photos/clok-wite-icon.svg" class="carar-orange-heart1 me-1"
-										alt="Unsplash">
-									55:50
-								</div>
-							</div>
-							<div class="card-header">
-								<h5 class="card-title mb-0 toyota-card1">2014 Toyota Fj Cruiser</h5>
-							</div>
-							<div class="card-body">
-								<div class="d-flex justify-content-between">
-									<div>
-										<p class="card-text mb-0 toyota-card11">Automatica, 4x4, 6 Cil.</p>
-										<p class="card-text toyota-card11">Azul marino</p>
-									</div>
-
-								</div>
-								<a href="" class="card-link toyota-card11">Cuauhtemoc, 06600</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--#############> Right side Start   <##################-->
 
 		</div>
-		<div class="row my-lg-5 my-3">
-			<div class="col-lg-8">
-				<div class="row">
-					<h1 class="big-toyota-h">2014 Toyota FJ Cruiser Edicion Especial</h1>
-					<div class="col-lg-5 mt-2">
-						<div class="stats-container">
-							<div class="stat-item pe-1">
-								<div class="stat-label text-center">Vendedor</div>
-								<div class="stat-value text-center">Juancho</div>
-							</div>
-							<div class="stat-item ps-1 pe-2">
-								<div class="stat-label text-center">Termina</div>
-								<div class="stat-value text-center">07/05/2024</div>
-							</div>
-							<div class="stat-item ps-1 pe-2">
-								<div class="stat-label text-center">Olertas</div>
-								<div class="stat-value text-center">5</div>
-							</div>
-							<div class="stat-item ps-1 pe-2">
-								<div class="stat-label text-center">Vistas</div>
-								<div class="stat-value text-center">2</div>
-							</div>
-						</div>
-						<div class="text-center mt-3">
-							<h5 class="actual-ofer-txt">Oferta Actual</h5>
-							<div class="w-100 d-flex justify-content-center align-items-center ">
-								<div class="actual-ofer-pric rounded-5 px-4 py-2">
-									$28,500
-								</div>
-							</div>
-						</div>
 
-					</div>
-					<div class="col-lg-4 mt-2">
-						<form>
-							<div class="mb-3">
-								<input type="email" class="form-control py-2 rounded-5 inputs1-offerto"
-									placeholder="tu oferta">
-							</div>
-							<div class="mb-3">
-								<input type="password" class="form-control py-2 rounded-5 inputs1-offerto"
-									placeholder="Comision cartengo">
-							</div>
-							<div class="mb-3">
-								<input type="password" class="form-control py-2 rounded-5 inputs1-offerto"
-									placeholder="Total">
-							</div>
+		<!--#############> Hero Section End   <##################-->
 
-						</form>
-					</div>
-					<div class="col-lg-3 d-flex flex-column align-items-center gap-3 mt-lg-4 mt-2">
-						<button class="btn btn-primary px-3 py-2 border-2 rounded-5 oferta-btn">Realizar Oferta</button>
-						<button class="btn border-2 rounded-5 tiener-btn">Tiener dudae?</button>
-					</div>
 
-				</div>
-			</div>
-			<div class="col-lg-4"></div>
-		</div>
+	</main>
 
-	</div>
-
-	<!--#############> Hero Section End   <##################-->
- 
-
- 
 	<!--#############> footer section  start   <##################-->
 	<footer class="footer pt-4">
 		<div class="container">
@@ -1319,7 +1452,7 @@
 	<!--#############> footer section  end   <##################-->
 
 
-		<!--#################> Navbar Modal start <################ -->
+	<!--#################> Navbar Modal start <################ -->
 
 	<!-- Modal for "log in" or "sign in" ||  INICIA SESIÓN modal -->
 	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1522,8 +1655,6 @@
 			</div>
 		</div>
 	</div>
-
-
 	<!-- Modal for check your Email -->
 	<div class="modal fade" id="Verify-Email-Modal" tabindex="-1" role="dialog" aria-hidden="true"
 		aria-labelledby="Verify-Email-Modal">
@@ -1544,8 +1675,6 @@
 			</div>
 		</div>
 	</div>
-
-
 
 	<!-- Modal for Recover Password || RECUPERAR CONTRASENA -->
 	<div class="modal fade" id="Recover-Password-Modal" tabindex="-1" role="dialog" aria-hidden="true"
@@ -1613,22 +1742,21 @@
 	</div>
 	<!--#################> Navbar Modal End   <################-->
 
+
+
 	<!--#############> Script   Start   <##################-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 	<script src="js/app.js"></script>
 	<script src="./js/zahid.js"></script>
 	<script src="./js/stickyheader.js"></script>
-
-
-	<!-- AOS JavaScript -->
+	<script src="js/commentSystem.js"></script>
+	<script src="./js/multistep.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 	<script>
-		AOS.init();
+		AOS.init()
 	</script>
-
 	<!--#############> Script   End   <##################-->
-
 
 </body>
 
