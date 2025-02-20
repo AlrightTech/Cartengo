@@ -17,7 +17,7 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
     <meta name="description"
         content="A responsive car e-commerce website for browsing, selecting, and purchasing vehicles online, built with HTML, CSS, Bootstrap, and JavaScript" />
     <meta name="author" content="Bootlab" />
-    <title>Cartenzo Website</title>
+    <title>Cartengo || VENDER TU AUTO</title>
 
     <!--###############> favicon  Link Start <################# -->
     <link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon" />
@@ -53,7 +53,7 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
     <header class="mainheader" data-aos="fade-down" data-aos-duration="1000">
         <nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-0 px-lg-5 py-lg-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" href="./index.html">
                     <img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="" />
                 </a>
 
@@ -64,19 +64,19 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-lg-center me-auto mb-2 mb-lg-0">
-                        <li class="nav-item py-2 py-lg-0 px-lg-3">
-                            <a class="nav-link" aria-current="page" href="">SUBASTAS</a>
-                        </li>
-                        <li class="nav-item py-2 py-lg-0">
-                            <a class="nav-link active" href="">VENDER TU AUTO</a>
-                        </li>
-                        <li class="nav-item py-2 py-lg-0 px-lg-3">
-                            <a class="nav-link" href="">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item py-2 py-lg-0">
-                            <a class="nav-link" href="">COMUNIDAD</a>
-                        </li>
-                    </ul>
+						<li class="nav-item py-2 py-lg-0 px-lg-3">
+							<a class="nav-link" aria-current="page" href="./index.html">SUBASTAS</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link active" href="#">VENDER TU AUTO</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0 px-lg-3">
+							<a class="nav-link" href="./About Us.html">NOSOTROS</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link" href="./Comunidad.html">COMUNIDAD</a>
+						</li>
+					</ul>
                     <form class="d-lg-flex">
                         <div class="position-relative me-2">
                             <input class="custom-form-control form-control py-3" type="search"
@@ -98,7 +98,7 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
                         </div>
 
                         <button class="btn btn-secondary d-flex justify-content-center px-3 my-2 my-lg-0 py-2 border-3"
-                            type="button" data-bs-toggle="modal" data-bs-target="#Offer">
+                            type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                             INICIA SESIÓN
                         </button>
                     </form>
@@ -775,243 +775,7 @@ Description:A responsive car e-commerce website for browsing, selecting, and pur
     <!--#############> footer section  end   <##################-->
 
 
-    <!--################> Offers Modal start <###############  -->
 
-    <!-- Offer modal -->
-    <div class="modal fade" id="Offer" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-md" role="document">
-            <div class="modal-content rounded-0">
-                <!-- close button of modal -->
-                <div class="d-flex justify-content-end w-100">
-                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer;" data-bs-dismiss="modal"
-                        aria-label="Close"></i>
-                </div>
-                <div class="modal-body p-0 mx-4 d-flex flex-column align-items-center justify-content-center">
-
-                    <h1 class="Cartengo-checkbox-highlightedtext fw-bolder text-center ">OFERTA</h1>
-                    <!-- logo -->
-                    <img src="./img/Modals Images/Brand.png" alt="logo" width="100px" height="100px" class="mt-3">
-
-                    <p class="mt-3 fw-semibold">Antes de ofertar, lea con atension:</p>
-
-                    <p class="OfferModal-Para">Antes de ofertar, lea con atension:Antes de ofertar,
-                        lea con atension:Antes
-                        de ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
-                        ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
-                        ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
-                        ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
-                        ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
-                        ofertar, lea con atension:Antes de ofertar, lea con atension:Antes de
-                        ofertar, lea con atension:Antes de ofertar, lea con atension.</p>
-
-                    <div class="container-fluid">
-
-                        <form action="">
-                            <!-- Offer input -->
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
-                                    <label for="YourOffer" class="fw-semibold">TU OFERTA</label>
-                                    <input type="text" class="form-control py-2 rounded-5 border-2" id="YourOffer">
-                                </div>
-                            </div>
-
-                            <!-- Cardholder's Name input -->
-                            <div class="row d-flex justify-content-center mt-3">
-                                <div class="col-12 col-md-8 col-lg-8 d-flex flex-column align-items-center">
-                                    <label for="CardHolder" class="fw-semibold">Nombre del Titular
-                                        en la Tarjeta</label>
-                                    <input type="email" class="form-control py-2 rounded-5 border-2" id="CardHolder">
-                                </div>
-                            </div>
-
-
-                            <!-- Card Number input -->
-                            <div class="row d-flex justify-content-center mt-3">
-                                <div class="col-12 col-md-8 col-lg-8 d-flex flex-column align-items-center">
-                                    <label for="Card-Number" class="fw-semibold">Numere de
-                                        Tarjeta</label>
-                                    <input type="number" class="form-control py-2 rounded-5 border-2" id="Card-Number">
-                                </div>
-                            </div>
-
-
-                            <!-- CCV & Expiration Date input -->
-                            <div class="row d-flex justify-content-center mt-3">
-                                <!-- CVV input field -->
-                                <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center">
-                                    <label for="CardVerification-Value" class="fw-semibold">CVV</label>
-                                    <input type="number" class="form-control py-2 rounded-5 border-2"
-                                        id="CardVerification-Value">
-                                </div>
-
-                                <!--Expiration Date input field || Fecha de expiracion  -->
-                                <div
-                                    class="col-12 col-md-4 col-lg-4 mt-3 mt-md-0 mt-lg-0 d-flex flex-column align-items-center">
-                                    <label for="Card-Expiration" class="fw-semibold">Fecha de
-                                        expiracion</label>
-                                    <input type="number" class="form-control py-2 rounded-5 border-2"
-                                        id="Card-Expiration">
-                                </div>
-                            </div>
-
-
-                            <!-- Postal Code || C.P & Contact Cell Phone || Celular de contacto input -->
-                            <div class="row d-flex justify-content-center mt-3">
-                                <!-- C.P, input field -->
-                                <div class="col-12 col-md-4 col-lg-4  d-flex flex-column align-items-center">
-                                    <label for="PostalCode" class="fw-semibold">C.P,</label>
-                                    <input type="number" class="form-control py-2 rounded-5 border-2" id="PostalCode">
-                                </div>
-
-                                <!--Contact Phone Number input field || Fecha de expiracion  -->
-                                <div
-                                    class="col-12 col-md-4 col-lg-4 mt-3 mt-md-0 mt-lg-0 d-flex flex-column align-items-center">
-                                    <label for="ContactNumber" class="fw-semibold">Celular de
-                                        contacto</label>
-                                    <input type="number" class="form-control py-2 rounded-5 border-2"
-                                        id="ContactNumber">
-                                </div>
-                            </div>
-
-                            <!-- Accept terms and conditions 1 -->
-                            <div class="px-md-5 ms-md-5 mt-3 d-flex align-items-center gap-2">
-                                <input type="checkbox" class="" id="Accept-Terms&Conditions1">
-                                <label class="fw-semibold" for="Accept-Terms&Conditions1"><span class="Modal-MutedText">
-                                        Accept </span> Terms &
-                                    Condition</label>
-                            </div>
-
-                            <!-- Accept terms and conditions 2 -->
-                            <div class="px-md-5 ms-md-5 d-flex align-items-center gap-2">
-                                <input type="checkbox" class="" id="Accept-Terms&Conditions2">
-                                <label class="fw-semibold" for="Accept-Terms&Conditions2"><span class="Modal-MutedText">
-                                        Accept </span> Terms &
-                                    Condition</label>
-                            </div>
-
-
-
-                            <!-- Next button -->
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-primary m-5 px-5 py-2 border-2 rounded-5 mt-4" type="button"
-                                    data-bs-target="#CarImgModal" data-bs-toggle="modal"> SIGUIENTE</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Car image Modal -->
-    <div class="modal fade" id="CarImgModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-md" role="document">
-            <div class="modal-content rounded-0">
-                <!-- close button of modal -->
-                <div class="d-flex justify-content-end w-100">
-                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer;" data-bs-dismiss="modal"
-                        aria-label="Close"></i>
-                </div>
-                <div class="modal-body p-0 d-flex flex-column align-items-center justify-content-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <img class="card-img-top" src="./img/Modals Images/Car img modal.png"
-                                    alt="car img modal">
-                                <div class="card-header">
-                                    <h5 class="card-title text-center mb-0 fs-5">2014 Toyota FJ
-                                        Cruiser Trail Teams Ultimate Edition</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div
-                                            class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center">
-                                            <img src="./img/Modals Images/Brand.png" alt="logo" width="100px"
-                                                height="100px">
-                                        </div>
-
-                                        <div
-                                            class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center">
-                                            <!-- Modal Inputs field -->
-                                            <div class="d-flex flex-column align-items-center">
-
-
-                                                <!-- YOUR OFFER Input field || TU OFERTA  -->
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <input type="text" id=""
-                                                            class="Cartengo-Modals-input rounded-5 py-2"
-                                                            placeholder="TU OFERTA">
-                                                    </div>
-                                                </div>
-
-
-                                                <!-- CARTENGO COMMISSION Input field || COMISION CARTENGO  -->
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <input type="text" id=""
-                                                            class="Cartengo-Modals-input rounded-5 px-2 py-2"
-                                                            placeholder="COMISION CARTENGO">
-                                                    </div>
-                                                </div>
-                                                <!-- TOTAL Input field   -->
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <input type="number" id=""
-                                                            class="Cartengo-Modals-input rounded-5 py-2"
-                                                            placeholder="TOTAL">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                                            <!-- Offer Button || OFERTA Button -->
-                                            <button class="btn btn-primary px-md-5 py-md-5 rounded-5"
-                                                data-bs-target="#GoodLuck-Modal" data-bs-toggle="modal">OFERTA</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Good Luck Modal  -->
-    <div class="modal fade" id="GoodLuck-Modal" tabindex="-1" role="dialog" aria-hidden="true"
-        aria-labelledby="GoodLuck-Modal">
-        <div class="modal-dialog modal-md d-flex justify-content-center align-items-center">
-            <div class="modal-content rounded-0 ">
-                <!-- close button of modal -->
-                <div class="d-flex justify-content-end w-100">
-                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer;" data-bs-dismiss="modal"
-                        aria-label="Close"></i>
-                </div>
-                <div class="modal-body p-0 d-flex flex-column justify-content-center align-items-center">
-                    <!-- Logo -->
-                    <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px">
-                    <h4 class="Cartengo-Modal-title mt-3 mb-3 ">Estas cada vez mas cerca del auto
-                        que deseas.<br>
-                        <span class="Cartengo-checkbox-highlightedtext">!Buena suerte!</span>
-                    </h4>
-                    <p class="Cartengo-checkbox-highlightedtext px-2">Nos pondremos en contacto contigo
-                        si resultas ganador.<br>
-                        Checa tus correos, por ese medio te avisaremos si alguien ha superado tu
-                        oferta. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--################> Offers Modal End   <###############-->
 
 
 
