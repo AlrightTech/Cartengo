@@ -40626,6 +40626,22 @@ div.dataTables_wrapper span.select-item {
   font-size: 12.7px !important;
   color: #262626;
 }
+.custom-form-control1{
+  background-color: transparent;
+  border: 1px solid;
+  /* max-width: 300px; */
+  color: rgba(38, 38, 38, 1);
+  width: 100%;
+  padding-left: 42px;
+  padding-block: 12px !important;
+  border-radius: 10px;
+}
+
+.custom-form-control1::first-line{
+  font-weight: 400;
+  font-size: 12.7px !important;
+  color: #262626;
+}
 
 :root {
   --body-bg: #ffffff;
@@ -41931,3 +41947,213 @@ color: #666666;
 }
  
 /*##################> From Bottom to top Button End   <################*/
+     /* +++++++++++ Bootstrap Classes modified ++++++++++++++++ */
+     .btn-mustard {
+      color: #FFFFFF !important;
+      background-color: #FF6F00 !important;
+      font-size: large;
+      font-weight: 500;
+      transition: all ease 0.2s;
+      padding: 0.8rem 0.7rem !important;
+      border-radius: 12px;
+  }
+
+  .btn-mustard:hover {
+      color: #FF6F00 !important;
+      background-color: #FFFFFF !important;
+  }
+
+  .community-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+      padding: 10px;
+      border: 3px solid #FF6F00;
+      display: inline-block;
+      border-radius: 10px;
+  }
+
+  .post-card {
+      border: 1px solid #ddd;
+      border-radius: 22px;
+      padding: 15px;
+      background-color: white;
+      margin-bottom: 15px;
+  }
+
+
+  .border_bold {
+      border: 3px solid rgba(223, 221, 221, 0.5);
+      border-radius: 22px !important;
+  }
+
+  .sidebar1 {
+      color: #333333;
+      border-radius: 22px;
+  }
+  .sidebar1 h6{
+    color: rgba(51, 51, 51, 1) !important;
+    font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+
+font-family: "Montserrat", serif;
+  }
+  .sidebar_heading {
+      border-bottom: 3px solid rgba(223, 221, 221, 0.5);
+  }
+
+  .sidebarlists h5{
+    color: rgba(51, 51, 51, 1) !important;
+    font-size: 18px;
+font-weight: 700;
+line-height: 21.94px;
+
+font-family: "Montserrat", serif;
+  }
+  .sidebar_list a {
+      text-decoration: none;
+      color: rgba(51, 51, 51, 1) !important;
+       font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+
+  font-family: "Montserrat", serif;
+
+      
+  }
+ .post-card h5{
+  color:  rgba(0, 0, 0, 1);
+  font-size: 20px;
+font-weight: 700;
+line-height: 24.38px;
+
+font-family: "Montserrat", serif;
+ }
+ .post-card p{
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+
+font-family: "Montserrat", serif;
+ }
+  .icons div {
+      height: 1.5rem;
+  }
+
+  .icons_img:hover {
+      cursor: pointer;
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+
+
+  }
+
+  .sidebar1,
+  .sponsors {
+      background: white;
+      padding: 15px;
+  }
+
+  .post-img {
+      width: 100%;
+      border-radius: 10px;
+      height: 100%;
+  }
+
+  .comment_field {
+      border: none;
+      background-color: #DEDCDC !important;
+      color: #333333 !important;
+      padding: 10px;
+      font-weight: normal;
+  }
+
+  .reply_comment {
+      margin-left: 5rem;
+  }
+
+  .circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      text-align: center;
+  }
+
+  .listsecondee h6{
+    color: rgba(51, 51, 51, 1) !important;
+    font-size: 18px;
+font-weight: 700;
+line-height: 21.94px;
+
+font-family: "Montserrat", serif;
+  }
+  .listsecondee ul li{
+    color: rgba(51, 51, 51, 1) !important;
+    font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+
+font-family: "Montserrat", serif;
+  }
+  .circle  span{
+       color: rgba(151, 151, 151, 1) !important;
+       font-size: 16px;
+  font-weight: 500;
+  line-height: 21.94px;
+
+  font-family: "Montserrat", serif;
+  }
+
+  .circle::before,
+  .circle::after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 85px;
+      background-image: url('../img/Group 94.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .circle::before {
+      top: -15px;
+  }
+
+  .circle::after {
+      bottom: -15px;
+      transform: translateX(-50%) scaleY(-1);
+  }
+
+  @media (max-width:400px) {
+
+     
+
+      .whole_page h5 {
+          font-size: 1.1rem;
+      }
+
+      .whole_page p {
+          font-size: 1rem;
+      }
+
+      .post_image_cont {
+          min-height: 10rem;
+      }
+
+      .post-img {
+
+          object-fit: contain !important;
+          vertical-align: middle;
+          height: 10rem;
+
+      }
+  }
