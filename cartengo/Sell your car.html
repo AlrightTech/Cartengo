@@ -1,0 +1,1114 @@
+<!--
+==========================================
+Project Name:Cartengo
+Version: 1.0
+Created By:FrontEnd Team Alright Tech 
+Date: 02/20/2025
+Description:A responsive car e-commerce website for browsing, selecting, and purchasing vehicles online, built with HTML, CSS, Bootstrap, and JavaScript
+==========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="A responsive car e-commerce website for browsing, selecting, and purchasing vehicles online, built with HTML, CSS, Bootstrap, and JavaScript" />
+    <meta name="author" content="Bootlab" />
+    <title>Cartengo || VENDER TU AUTO</title>
+
+    <!--###############> favicon  Link Start <################# -->
+    <link rel="shortcut icon" href="./img/brands/brandheader-logo.svg" type="image/x-icon" />
+    <!--###############> favicon Link end <################# -->
+
+    <!--################> link css start <##################### -->
+    <link href="./css/modern.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/zahid-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--################> link css End <##################### -->
+
+
+</head>
+
+
+<body>
+
+    <!-- ################> Window  Loader start <######## -->
+    <div class="loader-main">
+        <div class="loader"></div>
+    </div>
+    <!-- ################> Window  Loader  End <######## -->
+
+    <!--#############> Back to top buttonbtmtop  start <#############-->
+    <a id="buttonbtmtop"></a>
+    <!--#############> Back to top buttonbtmtop  start <#############-->
+
+    <!--#############> Header Start <##################  -->
+    <header class="mainheader" data-aos="fade-down" data-aos-duration="1000">
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-bg px-0 px-lg-5 py-lg-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/brands/brandheader-logo.svg" class="brandheader-logoo" alt="" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-lg-center me-auto mb-2 mb-lg-0">
+						<li class="nav-item py-2 py-lg-0 px-lg-3">
+							<a class="nav-link" aria-current="page" href="./index.html">SUBASTAS</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link active" href="#">VENDER TU AUTO</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0 px-lg-3">
+							<a class="nav-link" href="./About Us.html">NOSOTROS</a>
+						</li>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link" href="./Comunidad.html">COMUNIDAD</a>
+						</li>
+					</ul>
+                    <form class="d-lg-flex">
+                        <div class="position-relative me-2">
+                            <input class="custom-form-control form-control py-3" type="search"
+                                placeholder="Search for cars (ex. BMW, Audi, Ford)" aria-label="Search" />
+                            <span class="position-absolute custm-serch-icon1 ps-3">
+                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="18" height="18" fill="url(#pattern0_4035_18291)" />
+                                    <defs>
+                                        <pattern id="pattern0_4035_18291" patternContentUnits="objectBoundingBox"
+                                            width="1" height="1">
+                                            <use xlink:href="#image0_4035_18291" transform="scale(0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_4035_18291" width="34" height="34"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBvVfRceIwEF2ZBkgH7uCSCvBVAFcBvgou+bwPsD3wn6SCmAouV8E5FcQdnPKXzzQA5C0jMmKRbYE1vBkNaLV6fl6tpLUiD+R5PhwMBtPtdpuge40W78dgq5VSGu15vV6/wFfTGVDULiDBAzK0hPxRbjab4lRBqkHAMIqiDH9v6Xw8GEEfPs7KISKGiH9khb8HNMR894lO5CsCuVBhiW5BfIN2NZ/PFf9yn+2cKw7+HR/zUgeUJYKX49Uhgt/qJ8arDi7mmIDjvoHjpm2ZviJicuKAAG+5MgQVeQB+z+zP88RQbPgboQwBO/6XIrIsS+lMFEVRYsmmts3kS+Xy30UEE3Jh1xDSZ8eQma9tGx8FTf7KFQ0o/8Fhpp7gc8gkv8195coV+EWJsNUhRBghFe828cDU5RshXGNhW1FAgP+v3TfXxLEQDMS2AaGrKCAkH4R9c/lxsl4Lm6aw0KIfU4OQA/jeDb7w5XMJGVJA+PKxEC1sMYVFLPq1UwiS52DAsZ17QfJhc7w5/TDwIhzHFBZTIeyPyynC9iptA1djfCJSAPBtTGJXcjnp8o04qx2n31PfpDVlxb0wl01F0m7XQEgh7LGD5CS46hIuHZv8vwojXNsPWJZfYpwL4btTzhYrEqltx8s+oqxovNEjyzGn462cctW2XC69Etjctq9SBAMvpNvmKkHUVrPWGCtNsmmOksmjGN88Izxo0vXZgfF0NputOoV0iQmBJjGuI16buvOResDMv3PYy8ViMT0S2EbG0eEyUtaeHQK4GCr2tSl+Oc+ejh4sIqN8yM1yJfg75voFJPYhpdH4+7dC/qxcO8xHjJeQEOgSczEhXWIuKqRFzMeALoyqqurRaPSGKEws8/vFhQgx+6T//QnonHH2sKAyywAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <button class="btn btn-secondary d-flex justify-content-center px-3 my-2 my-lg-0 py-2 border-3"
+                            type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            INICIA SESIÓN
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0 d-none">
+                        <li class="nav-item dropdown ms-lg-2">
+                            <a class="nav-link dropdown-toggle position-relative" href="" id="alertsDropdown"
+                                data-bs-toggle="dropdown">
+                                <svg width="30" height="30" viewBox="0 0 34 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.333374 32.125V28.375H4.50004V15.25C4.50004 12.6562 5.3681 10.3594 7.10421 8.35938C8.84032 6.32812 11.0973 5 13.875 4.375V3.0625C13.875 2.28125 14.1702 1.625 14.7605 1.09375C15.3855 0.531249 16.132 0.25 17 0.25C17.8681 0.25 18.5973 0.531249 19.1875 1.09375C19.8125 1.625 20.125 2.28125 20.125 3.0625V4.375C22.9028 5 25.1598 6.32812 26.8959 8.35938C28.632 10.3594 29.5 12.6562 29.5 15.25V28.375H33.6667V32.125H0.333374ZM17 37.75C15.8542 37.75 14.8646 37.3906 14.0313 36.6719C13.2327 35.9219 12.8334 35.0312 12.8334 34H21.1667C21.1667 35.0312 20.75 35.9219 19.9167 36.6719C19.1181 37.3906 18.1459 37.75 17 37.75ZM8.66671 28.375H25.3334V15.25C25.3334 13.1875 24.5174 11.4219 22.8855 9.95312C21.2535 8.48437 19.2917 7.75 17 7.75C14.7084 7.75 12.7466 8.48437 11.1146 9.95312C9.48268 11.4219 8.66671 13.1875 8.66671 15.25V28.375Z"
+                                        fill="#1D1B20" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-end py-0"
+                                aria-labelledby="alertsDropdown">
+                                <div class="dropdown-menu-header">4 New Notifications</div>
+                                <div class="list-group">
+                                    <a href="" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-danger fas fa-fw fa-bell"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Update completed</div>
+                                                <div class="text-muted small mt-1">
+                                                    Restart server 12 to complete the update.
+                                                </div>
+                                                <div class="text-muted small mt-1">2h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-warning fas fa-fw fa-envelope-open"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Lorem ipsum</div>
+                                                <div class="text-muted small mt-1">
+                                                    Aliquam ex eros, imperdiet vulputate hendrerit et.
+                                                </div>
+                                                <div class="text-muted small mt-1">6h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-primary fas fa-fw fa-building"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Login from 192.186.1.1</div>
+                                                <div class="text-muted small mt-1">8h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-success fas fa-fw fa-bell-slash"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">New connection</div>
+                                                <div class="text-muted small mt-1">
+                                                    Anna accepted your request.
+                                                </div>
+                                                <div class="text-muted small mt-1">12h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-footer">
+                                    <a href="" class="text-muted">Show all notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown ms-lg-2">
+                            <a class="nav-link dropdown-toggle position-relative" href="" id="userDropdown"
+                                data-bs-toggle="dropdown">
+                                <svg width="30" height="30" viewBox="0 0 38 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M35.6667 37.625V33.7083C35.6667 31.6308 34.7887 29.6384 33.2259 28.1693C31.6631 26.7003 29.5435 25.875 27.3334 25.875H10.6667C8.45657 25.875 6.33695 26.7003 4.77415 28.1693C3.21135 29.6384 2.33337 31.6308 2.33337 33.7083V37.625M27.3334 10.2083C27.3334 14.5346 23.6024 18.0417 19 18.0417C14.3977 18.0417 10.6667 14.5346 10.6667 10.2083C10.6667 5.8821 14.3977 2.375 19 2.375C23.6024 2.375 27.3334 5.8821 27.3334 10.2083Z"
+                                        stroke="#FF6F00" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <a class="dropdown-item my-2" href="">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="pt-3">Perfil</div>
+                                        <div>
+                                            <svg width="36" height="43" viewBox="0 0 36 43" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="36" height="43" fill="url(#pattern0_4035_10608)" />
+                                                <defs>
+                                                    <pattern id="pattern0_4035_10608"
+                                                        patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_4035_10608"
+                                                            transform="matrix(0.0277778 0 0 0.0232558 -3.94444 -0.883721)" />
+                                                    </pattern>
+                                                    <image id="image0_4035_10608" width="202" height="268"
+                                                        preserveAspectRatio="none"
+                                                        xlink:href="data:image/png;base64,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oSVLliTmZg/6QbjWnnjiiSaYnXbayc2YMcMyndj8yYpQqMkpeSiNEEfPnj0TS5zbddddrX+CgChfyAbU+pRmZJ/p06e7V1991U2dOjWxRQ0YYDKRjV5++WUbFDj88MOtL/D73//evfjii9bB5oFg/KFmU+C833nnndqJsqo+r7zyinviiSesv/P+++9b34cGgvOpf64LFixIbCU2F7IiFAJ/l112sfcIJt6ZpZ/CqBhTNBpEWUYnnPV4Sv/666+7U0891ZZFEHh02BkAeOCBB0wMZB468uyLYVueczC/Oa60gOjoK0VTQyUVwuYJ/mWXXeb++Mc/2ugXI28MTDR0rmLzQh6OQqSAASjQsIwQAUgoQgQgoQgRgIQiRAASihABSChCBCChCBGAhCJEABKKEAFIKEIEIKEIEYCEIkQAEooQAUgoQgQgoQgRgIQiRAASihABSChCBCChCBGAhCJEABKKEAFIKEIEIKEIEYCEIkQAEooQAUgoQgQgoQgRgIQiRAASihABZPzX7Nn9J5984v72t7+5Dz74wAx38EjBNRfD03TgvovdG6ZCOARjOHTbbbe5a6+91u29996JtZoPNhG49kZwjpgBYdew5557toiLF7YQOIndcMMNDRqeYjqECRHgMob9RWvDdeG+cQ+wr2hvZO3X7HHoveWWW8wsCM8TAuCggw5K66DVGnTv3t1dcsklZoN3yCGHmO/krbfe6v785z/XcRYW7Y+MCwXDUkx2Ro8ebc6+3//+9915551nrrybGmQRstTBBx/shg8f7u666y537LHHmtvwa6+9llhLtEey0kche+DLmAxstf/yl7+4YcOGuaFDh7rbb7/drN1CwQ6OrDVkyBB39tlnuylTptR6J1Kq4XyFbRwe71dccYWVcyHg1HXSSSeZizE+kzgVA+8xM+VcmcaNG1e7T0rNadOmuVGjRtlxKTGxyItDOuc7cr6sh2VdffCwxD6cdfhu8evBeSBe9h0d48knn6w9P7IfFnhkb7bnuoZcE+4D2ZP1mbADrKiosG3aOxkXCl7r+Bj++te/dk899ZTdjDjcPNx/CSZu2M0332zrjB071pyE04G/IvVz586dzTaOTIB13OOPP25BG4EPJGXVnXfe2ahau0uXLm7HHXc0j8jo3AnsH/7wh9afIDu++eab7umnn7bj8T3Gjx9v1nQciywat6Kj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" />
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item my-3" href="">Contacts</a>
+                                <a class="dropdown-item my-3" href="">Analytics</a>
+                                <a class="dropdown-item my-3" href=""> Settings</a>
+                                <a class="dropdown-item my-3" href=""> Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--#############> Header End   <##################-->
+
+    <!--#############> Main Page  Start   <##################-->
+    <main>
+
+        <!-- Carousel Starts here -->
+        <div class="container-fluid sell-car-main-banner   py-0  py-md-5 ">
+            <div id="carouselExampleIndicators" class="carousel slide ">
+                <div class="carousel-indicators sell-cars-carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="sell-your-cars-carousel-btns active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="sell-your-cars-carousel-btns"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3" class="sell-your-cars-carousel-btns"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 3" class="sell-your-cars-carousel-btns"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 3" class="sell-your-cars-carousel-btns"></button>
+                </div>
+                <div class="carousel-inner   py-5 ">
+                    <!-- carousel item 1 -->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="col-lg-7">
+                                <h1 class="header-subtitle" data-aos="fade-up" data-aos-duration="2000">!VERDE TU CARRO
+                                    EN
+                                    CARTENGO!</h1>
+                                <p class="header-detail-down mt-5" data-aos="fade-up" data-aos-duration="2000">MAS
+                                    RAPIDO Y
+                                    SIN ESTRES</p>
+                                <button class="btn btn-primary mt-4 px-5 py-2 border-2 rounded-5">Vende tu auto</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item 2 -->
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="col-lg-7">
+                                <h1 class="header-subtitle">!VERDE TU CARRO EN CARTENGO!</h1>
+                                <p class="header-detail-down mt-5">MAS RAPIDO Y SIN ESTRES</p>
+                                <button class="btn btn-primary mt-4 px-5 py-2 border-2 rounded-5">Vende tu auto</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item 3 -->
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="col-lg-7">
+                                <h1 class="header-subtitle">!VERDE TU CARRO EN CARTENGO!</h1>
+                                <p class="header-detail-down mt-5">MAS RAPIDO Y SIN ESTRES</p>
+                                <button class="btn btn-primary mt-4 px-5 py-2 border-2 rounded-5">Vende tu auto</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item 4 -->
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="col-lg-7">
+                                <h1 class="header-subtitle">!VERDE TU CARRO EN CARTENGO!</h1>
+                                <p class="header-detail-down mt-5">MAS RAPIDO Y SIN ESTRES</p>
+                                <button class="btn btn-primary mt-4 px-5 py-2 border-2 rounded-5">Vende tu auto</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item 5-->
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="col-lg-7">
+                                <h1 class="header-subtitle">!VERDE TU CARRO EN CARTENGO!</h1>
+                                <p class="header-detail-down mt-5">MAS RAPIDO Y SIN ESTRES</p>
+                                <button class="btn btn-primary mt-4 px-5 py-2 border-2 rounded-5">Vende tu auto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel Ends here -->
+
+        <!-- sell your cars main cards -->
+        <div class="container mb-4 mt-4">
+            <div class="row d-flex justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-duration="2000">
+                <!-- key card -->
+                <div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+                    <img src="./img/sell your car images/key img.png" alt="key image"
+                        class="img-fluid sellcars-cards-icons">
+                    <p class="text-center sellcars-cards-description">Vende gratis y recive el 100% del precio de venta
+                    </p>
+                </div>
+
+                <!-- right arrow -->
+                <div class="col-6 col-md-1 col-lg-1 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-arrow-right sell-cars-rightarrow"></i>
+                    <!-- <img src="./img/sell your car images/right arrow.png" alt="right arrow"
+                        class="img-fluid sell-cars-rightarrow"> -->
+                </div>
+
+
+                <!-- person message div -->
+                <div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+                    <img src="./img/sell your car images/person-message-icon.png" alt="person with message icon"
+                        class="img-fluid sellcars-cards-icons">
+                    <p class="text-center sellcars-cards-description">Apoyo y compromiso de nuestro equipo</p>
+
+                </div>
+
+                <!-- right arrow -->
+                <div class="col-6 col-md-1 col-lg-1 d-flex justify-content-center align-items-center">
+                    <!-- <img src="./img/sell your car images/right arrow.png" alt="right arrow"
+                        class="img-fluid sell-cars-rightarrow"> -->
+                    <i class="bi bi-arrow-right sell-cars-rightarrow"></i>
+                </div>
+                <!-- Speaker with world icon -->
+                <div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+                    <img src="./img/sell your car images/speaker img.png" alt="speaker and world icon"
+                        class="img-fluid sellcars-cards-icons">
+                    <p class="text-center sellcars-cards-description sell-cars-lastdesc">Vende tu auto en tiempo record
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sell your car green section -->
+        <section class="sell-yourcar-section text-white p-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="container p-0 p-md-4 p-lg-4">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <!-- apply in minutes -->
+                    <div class="col-12 col-md-6 col-lg-6 ">
+                        <h3 class="px-0 px-md-5 px-lg-5 car-sell-apply">Aplica en minutos y te responderemos en el
+                            transurso de 1 dia o
+                            menos</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                        <a href="./SellyYourCarBtn.html">
+                            <button class="btn btn-primary px-5 py-2 border-2 rounded-5">Vende tu auto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How does it work section-->
+        <section>
+            <!-- How does it work title -->
+            <div class="d-flex justify-content-center align-items-center position-relative mt-3" data-aos="fade-up"
+                data-aos-duration="2000">
+                <img src="./img/sell your car images/strip-circle.png" alt="strip cicle image" class="img-fluid w-25 howitsworks-bg-img
+                ">
+                <p class="Sellcars-howitsworks mt-5 mb-5 text-center">?Como Funciona?</p>
+            </div>
+
+            <!-- How does it work cards section -->
+            <div class="container mt-5">
+                <!-- cards row 1 -->
+                <div class="row d-flex justify-content-between align-items-center" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <!-- car information card 1-->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid cars-cards-images" src="img/sell your car images/car.png"
+                                alt="car">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">Envia la informacion de tu auto</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-link text-center">Completa nuestro formulario en linea con los detalles
+                                    de tu auto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right arrow  -->
+                    <div class="col-12 col-md-1 col-lg-1 text-center sell-cars-rightarrow"><i
+                            class="bi bi-arrow-right "></i></div>
+
+                    <!-- car card 2 -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid cars-cards-images"
+                                src="img/sell your car images/car with list.png" alt="car">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">Envia la informacion de tu auto</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-link text-center">Revisaremos tu solicitud y te avisaremos si fue
+                                    aceptada.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right arrow -->
+                    <div class="col-12 col-md-1 col-lg-1 text-center sell-cars-rightarrow"><i
+                            class="bi bi-arrow-right "></i></div>
+
+                    <!-- car card 3 -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid cars-cards-images"
+                                src="img/sell your car images/Car with badge.png" alt="car">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">Si es aceptado, se agenda:</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-link text-center">Diagnostico con un mecanico certificado por cartengo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- cards row 2 -->
+                <div class="row d-flex justify-content-between align-items-center" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <!-- car card 1-->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid cars-cards-images"
+                                src="img/sell your car images/car with windows.png" alt="car with windows image">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">Crearemos la pagina de tu anuncio.</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-link text-center">Incluiremos la descripcion de tu carro de maera clara y
+                                    atractiva</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right arrow  -->
+                    <div class="col-12 col-md-1 col-lg-1 text-center sell-cars-rightarrow"><i
+                            class="bi bi-arrow-right "></i></div>
+
+                    <!-- car card 2 -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid cars-cards-images"
+                                src="img/sell your car images/car with windows dollars.png"
+                                alt="car with windows dollars">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">!Tu anuncio esta listo para comenzar la subasta!
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-link text-center">Es crucial comumicarse con los compradores para una
+                                    venta exitosa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right arrow -->
+                    <div class="col-12 col-md-1 col-lg-1 text-center sell-cars-rightarrow"><i
+                            class="bi bi-arrow-right "></i></div>
+
+                    <!-- car card 3 -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid cars-cards-images"
+                                src="img/sell your car images/cars with dollars hands.png"
+                                alt="cars with dollars hands img">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">AI finalizar la subasta, te uniremos con el
+                                    mejor postor.</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-link text-center">AI finalizar la subasta, te ayudaremos a cerrar la
+                                    venta de forma segura.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Gray section -->
+        <section class="sellcars-middle-gray-sctn" data-aos="fade-up" data-aos-duration="2000">
+            <div class="container">
+                <!-- row 1 -->
+                <div class="row d-flex justify-content-between align-items-center">
+                    <!-- card 1-->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid w-50"
+                                src="img/sell your car images/car with down arrow.png" alt="car with down arrow" />
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">Tu mismo asignas un precio minimo para vender tu
+                                    auto. Precio no visible para los usuarios que pujen</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right arrow  -->
+                    <div class="col-12 col-md-1 col-lg-1 text-center sell-cars-rightarrow"><i
+                            class="bi bi-arrow-right "></i></div>
+
+                    <!-- card 2 -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid w-50" src="img/sell your car images/car in hand.png"
+                                alt="car in hand img" />
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">Si no se alcanza ese minimo, el auto no se
+                                    vende.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right arrow -->
+                    <div class="col-12 col-md-1 col-lg-1 text-center sell-cars-rightarrow"><i
+                            class="bi bi-arrow-right "></i></div>
+
+                    <!-- card 3 -->
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <div class="card d-flex justify-content-center align-items-center">
+                            <img class="card-img-top img-fluid w-50" src="img/sell your car images/car with persons.png"
+                                alt="car with persons" />
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 text-center">En caso de no alcanzar tu precio minimo, te
+                                    contactemos con el postor mas alto para intentar Ilegar a un acuerdo.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Recent Auctions section-->
+        <section>
+            <!-- Recent Auctions title -->
+            <div class="d-flex justify-content-center align-items-center position-relative mt-5 mb-5" data-aos="fade-up"
+                data-aos-duration="2000">
+                <img src="./img/sell your car images/strip-circle.png" alt="strip cicle image" class="img-fluid w-25 howitsworks-bg-img
+                ">
+                <p class="Sellcars-howitsworks text-center mt-3">Subastas Recientes</p>
+            </div>
+
+
+
+            <!-- Subastas Recientes cards section -->
+            <div class="container position-relative" data-aos="fade-up" data-aos-duration="2000">
+                <!-- Swiper for jeep cards on bottom -->
+                <div class="swiper mySwiper mb-5 mt-5 h-100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <!-- jeep card 1  -->
+                            <div class="card mb-0">
+                                <div class="carar-container position-relative">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                    <div
+                                        class="car-time2 position-absolute d-flex justify-content-center align-items-center px-1 py-1">
+                                        Sold for $17,000
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 2  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container position-relative">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                    <div
+                                        class="car-time2 position-absolute d-flex justify-content-center align-items-center px-1 py-1">
+                                        Sold for $17,000
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 3  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container position-relative">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                    <div
+                                        class="car-time2 position-absolute d-flex justify-content-center align-items-center px-1 py-1">
+                                        Sold for $17,000
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 4  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container position-relative">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                    <div
+                                        class="car-time2 position-absolute d-flex justify-content-center align-items-center px-1 py-1">
+                                        Sold for $17,000
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- jeep card 5  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container position-relative">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                    <div
+                                        class="car-time2 position-absolute d-flex justify-content-center align-items-center px-1 py-1">
+                                        Sold for $17,000
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- jeep card 6  -->
+                        <div class="swiper-slide">
+                            <div class="card mb-0">
+                                <div class="carar-container position-relative">
+                                    <img class="card-img-top rounded-0" src="img/sell your car images/jeep image.png"
+                                        alt="jeep img 1">
+                                    <div
+                                        class="car-time2 position-absolute d-flex justify-content-center align-items-center px-1 py-1">
+                                        Sold for $17,000
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 text-start">2014 Toyota Fj Cruiser</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <!--#############> Main Page   End   <##################-->
+
+
+
+
+    <!--#############> footer section  start   <##################-->
+    <footer class="footer pt-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 text-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="./img/footer-logo.png" class="brandfooter-logoo" alt="">
+                    </div>
+                    <p class="copyright mt-2">COPYRIGHT 2024 CARTENGO</p>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+                        <li><a href="">Comprar un carro</a></li>
+                        <li><a href="">Comprar un carro</a></li>
+                        <li><a href="">Comprar un carro</a></li>
+                        <li><a href="">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+                        <li><a href="">Comprar un carro</a></li>
+                        <li><a href="">Comprar un carro</a></li>
+                        <li><a href="">Comprar un carro</a></li>
+                        <li><a href="">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <ul class="footer-links">
+
+                        <li><a href="">Comprar un carro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4">
+                    <p class="footer-headings">COMO FUNCIONA</p>
+                    <div class="social-icons d-flex flex-wrap gap-1">
+                        <a href="" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/u-tube-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/insta-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/fb-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/tiktok-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="bg-black px-1 py-2 d-flex justify-content-center align-items-center rounded-circle social-icons-box"
+                                style="width: 50px; height: 50px;">
+                                <img src="./img/twitter-icon.svg" style="width: 24px; height: 24px;">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--#############> footer section  end   <##################-->
+
+
+
+
+
+
+
+    <!--#################> Navbar Modal start <################ -->
+    <!-- Modal for "log in" or "sign in" ||  INICIA SESIÓN modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+            <div class="modal-content rounded-0 LogIn-SignUp-Modal">
+                <!-- close button of modal -->
+                <div class="d-flex justify-content-end w-100">
+                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div>
+                <div
+                    class="modal-body p-0 m-0 m-md-3 m-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <!-- Logo -->
+                    <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
+                    <h4 class="Cartengo-Modal-title mt-3">INICIAR SESION</h4>
+                    <p class="Modal-paragraph">
+                        Necesitas crear una cuenta?
+                        <a class="Cartengo-Modal-links" type="button" data-bs-toggle="modal"
+                            data-bs-target="#ForgetPasswrodModal">Da click aqui</a>
+                    </p>
+
+                    <!-- buttons starts here -->
+                    <div class="mb-5">
+                        <!-- continue with these platforms -->
+                        <!-- continue with facebook -->
+                        <div class="row text-white">
+                            <div class="col-12">
+                                <div
+                                    class="ContinueWith-Buttons Continue-Facebook px-2 py-2 gap-2 d-flex justify-content-center align-items-center text-nowrap">
+                                    <i class="bi bi-facebook"></i>
+                                    <p class="mb-0">Continue with Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- continue with Google -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div
+                                    class="ContinueWith-Buttons Modal-outline-btn px-3 py-2 gap-2 d-flex justify-content-center align-items-center">
+                                    <img src="./img/Modals Images/Google icon.png" alt="google icon" width="20px"
+                                        height="20px" />
+                                    <p class="mb-0">Continue with Google</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- continue with Apple -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div
+                                    class="ContinueWith-Buttons ContinueWith-Apple px-4 py-2 gap-2 d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-apple"></i>
+                                    <p class="mb-0">Continue with Apple</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Input field  -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="text" id="Cartengo-Modals-Email" class="Cartengo-Modals-input py-2"
+                                    placeholder="Email" />
+                            </div>
+                        </div>
+
+                        <!-- Password input field CONTRASENA* -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="text" id="Cartengo-Modals-Passwrod" class="Cartengo-Modals-input py-2"
+                                    placeholder="CONTRASENA*" />
+                            </div>
+                        </div>
+
+                        <!-- submit button || Iniciar sesión -->
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary mt-3 w-100 rounded-3">
+                                    Iniciar sesión
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- buttons ends here -->
+
+                    <!-- forgot password -->
+                    <a type="button" class="mt-5 mb-2" data-bs-target="#Recover-Password-Modal"
+                        data-bs-toggle="modal">Olvide mi contrasena</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Registration || Olvide mi contrasena-->
+    <div class="modal fade" id="ForgetPasswrodModal" tabindex="-1" role="dialog" aria-hidden="true"
+        aria-labelledby="ForgetPasswrodModal">
+        <div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+            <div class="modal-content rounded-0 LogIn-SignUp-Modal">
+                <!-- close button of modal -->
+                <div class="d-flex justify-content-end w-100">
+                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div>
+                <div class="modal-body p-0 m-0 d-flex flex-column justify-content-center align-items-center">
+                    <!-- Logo -->
+                    <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
+                    <h4 class="Cartengo-Modal-title mt-3 mb-3">REGISTRATE</h4>
+
+                    <!-- buttons starts here -->
+                    <div class="mb-5">
+                        <!-- continue with these platforms -->
+                        <!-- continue with facebook -->
+                        <div class="row text-white">
+                            <div class="col-12">
+                                <div
+                                    class="ContinueWith-Buttons Continue-Facebook px-2 py-2 gap-2 d-flex justify-content-center align-items-center text-nowrap">
+                                    <i class="bi bi-facebook"></i>
+                                    <p class="mb-0">Continue with Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- continue with Google -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div
+                                    class="ContinueWith-Buttons Modal-outline-btn px-3 py-2 gap-2 d-flex justify-content-center align-items-center">
+                                    <img src="./img/Modals Images/Google icon.png" alt="google icon" width="20px"
+                                        height="20px" />
+                                    <p class="mb-0">Continue with Google</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- continue with Apple -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div
+                                    class="ContinueWith-Buttons ContinueWith-Apple px-4 py-2 gap-2 d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-apple"></i>
+                                    <p class="mb-0">Continue with Apple</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Input field  -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="text" id="" class="Cartengo-Modals-input" placeholder="Email" />
+                            </div>
+                        </div>
+
+                        <!-- Username Input field  -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="text" id="" class="Cartengo-Modals-input" placeholder="USERNAME*" />
+                            </div>
+                        </div>
+
+                        <!-- Password input field CONTRASENA* -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="text" id="" class="Cartengo-Modals-input" placeholder="CONTRASENA*" />
+                            </div>
+                        </div>
+
+                        <!-- checkbox -->
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <input type="checkbox" class="Cartengo-Checkbox" checked />
+                                <label class="Cartengo-Checkbox-label">
+                                    Accept
+                                    <span class="Cartengo-checkbox-highlightedtext">Terms & Condition</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Sign up button || Iniciar sesión -->
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-center">
+                                <button class="btn btn-primary rounded-3" type="button"
+                                    data-bs-target="#Verify-Email-Modal" data-bs-toggle="modal">
+                                    Registrate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- buttons ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for check your Email -->
+    <div class="modal fade" id="Verify-Email-Modal" tabindex="-1" role="dialog" aria-hidden="true"
+        aria-labelledby="Verify-Email-Modal">
+        <div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+            <div class="modal-content rounded-0 LogIn-SignUp-Modal">
+                <!-- close button of modal -->
+                <div class="d-flex justify-content-end w-100">
+                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div>
+                <div class="modal-body p-0 m-0 d-flex flex-column justify-content-center align-items-center">
+                    <!-- Logo -->
+                    <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
+                    <h4 class="Cartengo-Modal-title mt-3 mb-3">VERIFICA TU CORREO</h4>
+                    <p class="Verify-Email-Modal-text">
+                        TE HEMOS ENVIADO UN LINK PARA VERIFICAR TU CUENTA
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Recover Password || RECUPERAR CONTRASENA -->
+    <div class="modal fade" id="Recover-Password-Modal" tabindex="-1" role="dialog" aria-hidden="true"
+        aria-labelledby="Verify-Email-Modal">
+        <div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+            <div class="modal-content rounded-0 LogIn-SignUp-Modal">
+                <!-- close button of modal -->
+                <div class="d-flex justify-content-end w-100">
+                    <i class="bi bi-x-circle fs-1 text-end me-2" style="cursor: pointer" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div>
+                <div class="modal-body m-0 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <!-- Logo -->
+                    <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
+                    <h4 class="Cartengo-Modal-title mt-3 mb-3">RECUPERAR CONTRASENA</h4>
+
+                    <!-- this will display if user not put full email -->
+                    <p class="Verify-Email-Modal-text d-none No-Email-Found">
+                        No se encontro cuenta existent con ese correo.
+                    </p>
+
+                    <!-- Email Input field  -->
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <input type="email" id="UserPassword-Email" class="Cartengo-Modals-input py-2"
+                                placeholder="Email" required />
+                        </div>
+                    </div>
+
+                    <!-- Next button || Siguiente button -->
+                    <div class="row mt-4">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button class="btn btn-primary rounded-3 mb-3" type="button"
+                                data-bs-target="#EmailSend-toAccount" data-bs-toggle="modal">
+                                Siguiente
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Email Send to account || RECUPERAR CONTRASENA -->
+    <div class="modal fade" id="EmailSend-toAccount" tabindex="-1" role="dialog" aria-hidden="true"
+        aria-labelledby="EmailSend-toAccount">
+        <div class="modal-dialog modal-sm d-flex justify-content-center align-items-center" role="document">
+            <div class="modal-content rounded-0 LogIn-SignUp-Modal">
+                <!-- close button of modal -->
+                <div class="d-flex justify-content-end w-100">
+                    <i class="bi bi-x-circle fs-1 me-2" style="cursor: pointer" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div>
+                <div
+                    class="modal-body p-0 m-0 m-md-3 m-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <!-- Logo -->
+                    <img src="./img/Modals Images/Brand.png" alt="website Logo img" width="100px" height="100px" />
+                    <h4 class="Cartengo-Modal-title mt-3 mb-3 EmailsendText">
+                        REVISA TU BANDEJA. <br />TE HEMOS ENVIADO UN CORREO PARA <br />
+                        <span class="Cartengo-checkbox-highlightedtext">RECUPERAR TU CONTRASENA</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#################> Navbar Modal End   <################-->
+
+
+
+
+
+    <!--#############> Script   Start   <##################-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="./js/zahid.js"></script>
+    <script src="./js/stickyheader.js"></script>
+    <script src="js/commentSystem.js"></script>
+    <script src="./js/multistep.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <!--#############> Script   End   <##################-->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 4,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
+    <!--#############> Script   End   <##################-->
+
+
+</body>
+
+</html>

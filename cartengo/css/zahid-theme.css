@@ -1,0 +1,474 @@
+/* zahid khattak id - 0396 starts here */
+
+/* Sell your Car page styling start here */
+.sell-car-main-banner {
+    background-image: url("../img/sell your car images/banner img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sell-your-cars-carousel-btns {
+    width: 20px !important;
+    height: 0px !important;
+    border-radius: 50%;
+    background: #202020 !important;
+}
+
+.sellcars-cards-icons {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.sellcars-cards-description {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sell-yourcar-section {
+    background-color: #003e15;
+}
+
+.car-sell-apply {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.Sellcars-howitsworks {
+    position: absolute;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 49.98px;
+    letter-spacing: 0%;
+}
+
+.sell-cars-rightarrow {
+    font-size: 4rem;
+}
+
+.cars-cards-images {
+    width: 130px;
+    height: 130px;
+}
+
+.sellcars-middle-gray-sctn {
+    background-color: #d9d9d9;
+}
+
+/* swiper styling starts here */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* swiper styling ends here */
+
+/* Sell your Car page styling start here */
+
+/* About Us page styling start here */
+
+.AboutUs-Smalltext {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0%;
+
+}
+
+.AboutUs-Notifications {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+.AboutUs-FormInput {
+    border: 1.4px solid #c5c5c6ab !important;
+    color: #828282 !important;
+}
+
+.AboutUs-FormInput::placeholder {
+    color: #828282;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 13.48px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+
+
+/* About Us page styling ends here */
+
+
+
+/* Modals styling starts here */
+/* .LogIn-SignUp-Modal {
+    width: 350px;
+    height: auto;
+    font-family: Montserrat;
+} */
+
+
+
+.Cartengo-Modal-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 29.26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.Cartengo-Modal-links {
+    color: #FF6F00 !important;
+}
+
+.Modal-paragraph {
+    font-family: Montserrat;
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 21.94px;
+    letter-spacing: 0%;
+}
+
+.Cartengo-Modal-links:hover {
+    cursor: pointer;
+}
+
+.ContinueWith-Buttons {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 3px gray !important;
+    font-weight: 500;
+}
+
+.ContinueWith-Buttons:hover {
+    background-color: transparent !important;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+
+    bi {
+        filter: invert(1);
+    }
+}
+
+.Continue-Facebook {
+    background-color: #0078F6 !important;
+}
+
+.Modal-outline-btn:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.ContinueWith-Apple {
+    background-color: black;
+    color: white;
+}
+
+.ContinueWith-Apple:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.Cartengo-Modals-input {
+    width: 100%;
+    padding-block: 7px;
+    border: 1px solid #787878;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333333 !important;
+}
+
+.Cartengo-Modals-input::placeholder {
+    color: #333333 !important;
+}
+
+.Cartengo-Modals-input::placeholder,
+.Cartengo-Modals-input {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Cartengo-Modals-input:focus {
+    outline: 1px solid black;
+}
+
+.Cartengo-Checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #FF6F00;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+/* When checked, show the tick image */
+.Cartengo-Checkbox:checked {
+    background-image: url('../img/Modals Images/checkbox tick icon.png');
+    background-size: 14px 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Cartengo-Checkbox-label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.Cartengo-checkbox-highlightedtext {
+    color: #FF6F00;
+}
+
+.Verify-Email-Modal-text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #FF2B2B;
+}
+
+.EmailsendText {
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    line-height: 16px !important;
+}
+
+.OfferModal-Para {
+    color: #07070780;
+}
+
+.Modal-MutedText {
+    color: #666666;
+}
+
+/* Modals styling ends here */
+
+
+/* Seller Panel Page styling starts here */
+.SellerPanel-Heading {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat';
+}
+
+.SellerPanel-LightText {
+    color: #5c5c5cbf;
+}
+
+.SellerPanel-cardheading {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19.8px;
+    letter-spacing: 0%;
+
+}
+
+.SellerPanel-Cardtext {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.SellerPanel-SeeMore {
+    color: #0011CF !important;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+
+}
+
+.SellerPanel-CardtextSmall {
+    color: #9C9B9B;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+
+}
+
+.SellerPanel-inputs{
+    border: 1px solid #CDCDCD;
+}
+.SellerPanel-inputs::placeholder{
+    color: #CDCDCD;
+    font-size: 13px !important;
+}
+
+
+/* stepper styling starts here  */
+:root {
+	--bs-gray-200: #eee;
+	--bs-gray-500: #999;
+	--bs-gray-600: #777;
+	--bs-gray-800: #444;
+	--bs-light: #f9f9f9;
+	--bs-pink: #b94e91;
+
+	--fnt: sans-serif;
+	--fnt-size: 1rem;
+}
+
+.stepper {
+	font-family: var(--fnt);
+	font-size: var(--fnt-size);
+	position: relative;
+	counter-reset: step 0;
+	width: 100%;
+	margin: 2rem 0;
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 0;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.stepper > .step {
+	position: relative;
+	counter-increment: step;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.stepper > .step::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #000000;
+	left: 0;
+	top: 1.1rem;
+}
+.stepper > .step > .step-label {
+	position: relative;
+	width: 2.2rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background: var(--bs-gray-200);
+	color: var(--bs-gray-600);
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.stepper > .step > .step-label::before {
+	content: counter(step);
+}
+.stepper > .step.active::before {
+	background: #000000;
+}
+.stepper > .step.active > .step-label {
+	background: #000000;
+	color: var(--bs-light);
+	font-weight: bold;
+}
+.stepper > .step.completed::before {
+	background: #000000;
+}
+.stepper > .step.completed > .step-label {
+	background: #000000;
+	color: var(--bs-light);
+}
+.stepper > .step > .step-description {
+	font-size: x-small;
+	color: var(--bs-gray-500);
+	margin-top: 0.5rem;
+	overflow-wrap: break-word;
+	hyphens: auto;
+	text-align: center;
+}
+.stepper > .step.active > .step-description,
+.stepper > .step.completed > .step-description {
+	color: var(--bs-gray-800);
+}
+.stepper > .step.active > .step-description {
+	font-weight: bold;
+}
+/* stepper styling ends here  */
+/* Seller Panel Page styling ends here */
+
+/* Favorites list Page styling starts here */
+.CartengoCards-img{
+    height: 140px !important;
+    /* border:2px solid green; */
+}
+/* Favorites list Page styling ends here */
+
+
+
+
+/* Query for mobile screens */
+@media (min-width: 320px) and (max-width: 768px) {
+    .sell-cars-rightarrow {
+        transform: rotate(90deg);
+    }
+
+    .howitsworks-bg-img {
+        width: 100% !important;
+    }
+
+    .sell-car-main-banner {
+        background-image: none;
+        background-color: #e9e9e9;
+    }
+
+    /* .sell-cars-carousel-indicators {
+        top: 15rem !important;
+    } */
+
+    .AboutUs-Titles,
+    .Main-heading-Underline {
+        font-size: 30px !important;
+    }
+
+    .AboutUS-WhyChooseUS-text {
+        font-size: 29px !important;
+    }
+
+    .How-We-Work,
+    .How-We-Work>.Main-heading-Underline {
+        font-size: 26px !important;
+    }
+}
+
+/* zahid khattak id - 0396 ends here */
